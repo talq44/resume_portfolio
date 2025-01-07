@@ -67,14 +67,25 @@
 ### thePay
 
 ### 엘리시안
+
 <table>
-<tr>
-  <td> ![image01](asset/elysian/image_01.png) </td>
-  <td>스크린샷/영상</td>
-  <td>스크린샷/영상</td>
-  <td>스크린샷/영상</td>
-</tr>
+  <tr>
+    <td> 이미지 </td>
+    <td> <img src="asset/elysian/image_01.png" alt="이미지1" /> </td>
+    <td> <img src="asset/elysian/image_02.png" alt="이미지1" /> </td>
+    <td> <img src="asset/elysian/image_03.png" alt="이미지1" /> </td>
+    <td> <img src="asset/elysian/image_04.png" alt="이미지1" /> </td>
+  </tr>
+  <tr>
+    <td>사용기술</td>
+    <td colspan="4"> 내용 입력</td>
+  </tr>
+  <tr>
+    <td>설명</td>
+    <td colspan="4"> 내용 입력</td>
+  </tr>
 </table>
+
 
 ## 유니텍 (14.07 ~ 15.04)
 ### MFCC 
