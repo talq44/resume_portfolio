@@ -2,6 +2,26 @@
 
 ## 비주얼 (21.07 ~ 24.12)
 
+### 아몬즈App 아키텍처 개선
+- MVC -> MVVM 개선 (21.07 ~ 21.12)
+  - viewModel에 viewDelegate 주입
+  - input / output 아키텍처
+
+- ViewModel ReactorKit 적용(22.01 ~ 23.01)
+  - Action/State 형태로 ViewModel interface 화
+
+- Clean Architecture 도입 및 개선(23.02 ~ 24.12)
+  - ViewModel에서 Domain 영역 분리
+  - API Core 분리
+
+- 모듈화 및 TMA(23.05 ~ 24.12)
+  - Application / Feature / Domain / Core / Shared layer 분리
+  - 모듈별 인터페이스화
+
+### CI/CD 구축
+- CI 환경 구축
+- CD 환경 구축
+
 ## 하나모바일 (18.01 ~ 21.06)
 ### 다다
 ### 더티켓
