@@ -67,6 +67,14 @@
 ### thePay
 
 ### 엘리시안
+<table>
+<tr>
+  <td> ![image01](asset/elysian/image_01.png) </td>
+  <td>스크린샷/영상</td>
+  <td>스크린샷/영상</td>
+  <td>스크린샷/영상</td>
+</tr>
+</table>
 
 ## 유니텍 (14.07 ~ 15.04)
 ### MFCC 
