@@ -5,11 +5,13 @@ gantt
   dateFormat  YYYY-MM
   section Language
   Swift :i3, 2018-03, 2025-01
-  Objective-c :i2, 2015-08, 2018-06
-  typeScript :a1, 2019-04, 2020-01
   typeScript :a1, 2024-10, 2024-12
-  Android(Java) :i1, 2015-05, 2016-06
-  Android(Java) :i1, 2011-09, 2013-01
+  typeScript :a1, 2019-04, 2020-01
+  Objective-c :l5, 2015-08, 2018-06
+  Android(Java) :l4, 2015-05, 2016-06
+  MFC(c++) :l3, 2014-07, 2015-04
+  SQL :l2, 2012-09, 2013-01
+  Android(Java) :l1, 2011-09, 2014-02
 
   section Architecture
   MVVM :a1, 2020-05, 2025-01
