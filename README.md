@@ -15,6 +15,7 @@
 
 ### 정보
 - 강원대학교 정보통신공학전공 학부 졸업 (2007.03 ~ 2014.02)
+- Github : https://github.com/talq44 / https://github.com/bejewel-changkyu
 - 개인블로그 : https://medium.com/@talq44
 
 
