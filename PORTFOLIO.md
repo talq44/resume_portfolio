@@ -15,9 +15,9 @@ gantt
 
   section Architecture
   MVVM :a1, 2020-05, 2025-01
-  Clean Architecture :a1, 2022-06, 2025-01
   TMA: a5, 2024-01, 2025-01
   MVI :a2, 2022-07, 2025-01
+  Clean Architecture :a1, 2022-06, 2025-01
   VIPER: a4, 2022-01, 2022-06
   Ribs: a4, 2022-03, 2022-09
   VIPER: a4, 2020-06, 2021-06
@@ -34,8 +34,8 @@ gantt
 
   section Asynchronous
   Async/Await: r3, 2022-07, 2025-01
-  RxSwift: r1, 2020-07, 2025-01
   Combine: r2, 2022-02, 2025-01
+  RxSwift: r1, 2020-07, 2025-01
 
   section Analytics/Ad
   AirBridge : s3, 2023-01, 2024-12
@@ -61,9 +61,42 @@ gantt
 
 ### 아몬즈 아키텍처 개선 Tuist 적용 및 TMA (24.04 ~ 24.12)
 
+<table>
+<tr>
+<td> 역할 </td>
+<td>
+iOS 개발 및 리딩 (참여인원: iOS 3)
+</td>
+</tr>
+<td> 주요 기술 </td>
+<td>
+  
+
+</td>
+</tr>
+
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+  
+</td>
+</tr>
+<td> 성과/지표 </td>
+<td>
+
+</td>
+</tr>
+
+<td> 배운점 </td>
+<td>
+
+
+</td>
+</tr>
+</table>
+
 | **항목**              | **내용**                                           |
 |----------------------|---------------------------------------------------|
-| **역할**               | iOS 개발 및 리딩 (참여인원: iOS 3)                                     |
+| **역할**               |                                      |
 | **주요 기술**           | Tuist, Swinject                                   |
 | **도전 과제 및 해결 방법** | Application / Feature / Domain / Core / Shared 계층 분리      |
 | **성과/지표**           | 빌드속도 50% 감소, 개발속도 10% 증가,                  |
@@ -106,13 +139,17 @@ gantt
 | **성과/지표**           | 전체 화면 중 30% 적용, Crash율 0.5% 상승, 버그율 10% 상승                                             |
 | **배운 점**             | 업무 파악 전 무리한 적용으로 안정성 하락, 명확한 아키텍처 통일 필요, 테스트 코드 필요성 확인, 팀원간 협업 및 내용 공유 부족함을 실감  |
 
+<div style="text-align: center;">
+  <img src="https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png" alt="description" width="500">
+</div>
+
 ### MVC -> MVVM 개선 (21.10 ~ 22.01)
 
 | **항목**              | **내용**                                           |
 |----------------------|---------------------------------------------------|
 | **역할**               | iOS 개발                                           |
 | **주요 기술**           | MVVM, input/output 패턴         |
-| **도전 과제 및 해결 방법** | viewDelegate선언 및 viewModel에 viewDelegate 주입,                             |
+| **도전 과제 및 해결 방법** | viewDelegate선언 및 viewModel에 viewDelegate 주입<br> 하락                             |
 | **성과/지표**           | 전체 화면 중 30% 적용, Crash율 0.5% 상승, 버그율 10% 상승                                             |
 | **배운 점**             | 업무 파악 전 무리한 적용으로 안정성 하락, 명확한 아키텍처 통일 필요, 테스트 코드 필요성 확인, 팀원간 협업 및 내용 공유 부족함을 실감  |
 
