@@ -20,6 +20,45 @@
 
 
 ### 기술 스택
+
+``` mermaid
+gantt
+  dateFormat  YYYY-MM
+  section Language
+  Swift :i3, 2018-03, 2025-01
+  Objective-c :i2, 2015-08, 2018-06
+  typeScript :a1, 2019-04, 2020-01
+  typeScript :a1, 2024-10, 2024-12
+  Android(Java) :i1, 2015-05, 2016-06
+  Android(Java) :i1, 2011-09, 2013-01
+
+  section Architecture
+  MVVM :a1, 2020-05, 2025-01
+  Clean Architecture :a1, 2022-06, 2025-01
+  TMA: a5, 2024-01, 2025-01
+  MVI :a2, 2022-07, 2025-01
+  VIPER: a4, 2022-01, 2022-06
+  Ribs: a4, 2022-03, 2022-09
+  VIPER: a4, 2020-06, 2021-06
+  Ribs: a4, 2020-06, 2021-06
+  MVC : a3, 2015-05, 2020-12
+
+  section UI
+  AutoLayout : c1, 2016-07, 2025-01
+  SnapKit : c1, 2022-01, 2025-01
+
+  section Asynchronous
+  RxSwift: r1, 2019-07, 2025-01
+  Combine: r2, 2022-02, 2025-01
+  Async/Await: r3, 2022-07, 2025-01
+
+  section Analytics
+  FireBase(GoogleAnayltics) : s2, 2016-12, 2025-01
+  Ampltude : s2, 2022-03, 2024-12
+  Braze : s2, 2021-07, 2024-12
+  AirBridge : s3, 2023-01, 2024-12
+```
+
 - MVVM, MVI, Tuist, Swinject
 - RxSwift, Combine, ReactorKit, TCA
 - AutoLayout, SnapKit, SwiftUI
