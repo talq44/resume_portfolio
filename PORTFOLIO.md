@@ -66,21 +66,24 @@ gantt
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
-iOS 개발 및 리딩 (참여인원: iOS 3)
+
+- iOS 개발 및 리딩 (참여인원: iOS 3)
 </td>
 </tr>
 <td> 주요 기술 </td>
 <td>
-Tuist, Swinject  
+
+- [Tuist](https://docs.tuist.dev/en/), [The Modular Architecture (TMA)](https://docs.tuist.dev/en/guides/develop/projects/tma-architecture), [Swinject](https://github.com/Swinject/Swinject)  
 
 </td>
 </tr>
 
 <td> 도전 과제 및 해결 방법 </td>
 <td>
-Application / Feature / Domain / Core / Shared 계층 분리<br>
-모듈별 구조 확립 및 테스트 코드 작성 유도<br>
-모듈생성시 스크립트를 통해 동일한 구조로 자동 생성
+
+- Application / Feature / Domain / Core / Shared 계층 분리
+- 모듈별 구조 확립 및 테스트 코드 작성 유도
+- 모듈생성시 스크립트를 통해 동일한 구조로 자동 생성
 
 ```mermaid
 flowchart TD
@@ -98,20 +101,21 @@ flowchart TD
 <td> 성과/지표 </td>
 <td>
 
-CI 빌드테스트 속도 50% 감소(12분 -> 5분)<br>
-개발속도 10% 증가(모듈별 빌드)<br>
-테스트 커버리지 13% 증가<br>
-머지 컨플릭 비율 감소(.xcodeproj/* ignore)<br>
-[관련 블로그](https://medium.com/@talq44/github-action과-self-hosted-runner로-ios-build-test를-돌리는-거기에-tuist를-곁들인-ea4af8ace455)
+- CI 빌드테스트 속도 50% 감소(12분 -> 5분)
+- 개발속도 10% 증가(모듈별 빌드)
+- 테스트 커버리지 13% 증가
+- 머지 컨플릭 비율 감소(.xcodeproj/* ignore)
+- [관련 블로그](https://medium.com/@talq44/github-action과-self-hosted-runner로-ios-build-test를-돌리는-거기에-tuist를-곁들인-ea4af8ace455)
 
 </td>
 </tr>
 <td> 배운점 </td>
 <td>
-명확한 계층정의로 협업 맴버 공통된 형태의 모듈 개발<br>
-모듈별 테스트가 추가되어 안정성 향상<br>
-project 파일이 더이상 추가되지 않아 코드 형상 관리가 간편해짐
 
+- 명확한 계층정의로 협업 맴버 공통된 형태의 모듈 개발
+- 모듈별 테스트가 추가되어 안정성 향상
+- project 파일이 더이상 추가되지 않아 코드 형상 관리가 간편해짐
+- 모듈별 interface로 더 명확한 캡슐화
 </td>
 </tr>
 </table>
@@ -122,29 +126,52 @@ project 파일이 더이상 추가되지 않아 코드 형상 관리가 간편�
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
-스쿼드 리더 (참여 인원 : Android 1, iOS 1, PO 1, QA 1)
+
+- 스쿼드 리더 (참여 인원 : Android 1, iOS 1, PO 1, QA 1)
 </td>
 </tr>
 <td> 주요 기술 </td>
 <td>
-Trunk Based Develpment(TBD), Feature Flag, Jira Automation, Slack
+
+- [Trunk Based Develpment(TBD)](https://trunkbaseddevelopment.com/), Feature Flag, Jira Automation, Slack
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
-배포 관련 일정 논의 및 결정(매주 1회, 검수 프로세스 월~목, 심사 제출 금, 실 배포 화)
+
+- 배포 관련 일정 논의 및 결정
+  - 매주 1회
+  - 검수 프로세스 월~목
+  - 심사 제출 금
+  - 실 배포 화요일
+- 배포 자동화
+  - FeatureFlag 상태가 개발중 -> 작업완료시 자동 내부 배포
+  - PO / QA 슬랙을 통해 배포 앱 생성 기능 제공
+  - 금요일 오전 최종 확인용 앱 자동 내부 배포
+- 슬랙 리마인더
+  - 작업 담장자 가이드 문구 자동 노출
+  - PO / QA 내용 공유
+  - 포함되는 기능(티켓 + 피쳐플래그) 내용 공유
+- 지라 상태 자동화
+  - 개발 완료시 상태 변경 자동화
+  - 담당자 지정 자동화
+  - (실) 배포 완료시 상태 변경 자동화 
 </td>
 </tr>
 <td> 성과/지표 </td>
 <td>
-주마다 배포 횟수 21% 증가  / 슬랙 배포 관련 논의 15% 감소
 
+- 주당 배포 횟수 21% 증가
+- 슬랙 배포 관련 논의 15% 감소
+- 피쳐플래그를 통해 잘못된 배포 disable 처리 기능 제공
+- [관련 블로그](https://medium.com/@talq44/작은-pr-feature-flag-trunk-based-developement-그리고-자동화로-매일-develop-매주-production-배포하는-팀-되기-1-c9b2b63f424a)
 </td>
 </tr>
 <td> 배운점 </td>
 <td>
-유연한 CI/CD를 정해둬 어렵지 않게 적용.
 
+- 유연한 CI/CD를 토대로 빠른 적용
+- 하나의 팀으로 정확한 내용공유
 </td>
 </tr>
 </table>
@@ -193,11 +220,17 @@ Trunk Based Develpment(TBD), Feature Flag, Jira Automation, Slack
 
 ## 하나모바일 (18.01 ~ 21.06)
 ### 다다
+
 ### 더티켓
+
 ### 흔들어대리운전
+
 ### 두줄운세
+
 ### 위피캠
+
 ### Pickmecam
+
 ### BizID
 
 ### 더스타 온라인 iOS/Web
@@ -229,30 +262,125 @@ Trunk Based Develpment(TBD), Feature Flag, Jira Automation, Slack
 
 ### CJ One Card
 
+<table style="width: 100%;">
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/cjonecard/image_00.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/cjonecard/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/cjonecard/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/cjonecard/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- cocoapods, Objective-c, WebView, Deeplink, APNs
+- Server-Driven UI, Firebase, Mobile application Accessibility
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- [CJ One Card AppStore](https://apps.apple.com/us/app/cj-one/id387363739)
+- 앱 모바일 접근성을 위한 UI배치, 가이드 문구 연결, 포커싱 지정
+- 서버드리븐한 홈 구성을 위한 다이나믹 UI 적용
+- 디자인 가이드 정의를 통한 값 변경 유동성 제공
+- 버튼마다 Firebase Analytics 전송을 위한 컴퍼넌트 정의
+
+</td>
+</tr>
+</table>
+
 ### 아주캐피탈 
 
-### 99Pay
+### thePay / 99Pay
 
-### thePay
+<table style="width: 100%;">
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/thepay/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/thepay/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/thepay/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/99pay/image_01.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- cocoapods, Objective-c, WebView, APNs, Localizable
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- [The Pay AppStore](https://apps.apple.com/kr/app/thepay-mobile-recharge/id1088189940) / [99 Pay AppStore](https://apps.apple.com/kr/app/99pay-mobile-recharge/id1229582503?l=en-GB)
+- 13개 언어 지원을 위해, 화면 노출 시점에 문구 설정
+- 디바이스 언어 외에도 직접 변경이 가능하도록 shared 한 언어 설정값 사용
+- sheet -> Strings.localizable 변경되는 스크립트 생성
+- Strings.localizable -> enum 자동 변경되는 스크립트 생성
+- (파일을 통한)모듈화로 앱간의 통일성 향상
+- 하단 유동 배너 광고 지원
+
+</td>
+</tr>
+</table>
 
 ### 엘리시안
 
-<table>
-  <tr>
+<table style="width: 100%;">
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+<tr>
     <td> 이미지 </td>
-    <td> <img src="asset/elysian/image_01.png" alt="이미지1" /> </td>
-    <td> <img src="asset/elysian/image_02.png" alt="이미지1" /> </td>
-    <td> <img src="asset/elysian/image_03.png" alt="이미지1" /> </td>
-    <td> <img src="asset/elysian/image_04.png" alt="이미지1" /> </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/elysian/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/elysian/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/elysian/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/elysian/image_04.png" alt="이미지4" style="width: 24%; height: auto;" />
+      </div>
+    </td>
   </tr>
-  <tr>
-    <td>사용기술</td>
-    <td colspan="4"> 내용 입력</td>
-  </tr>
-  <tr>
-    <td>설명</td>
-    <td colspan="4"> 내용 입력</td>
-  </tr>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- cocoapods, Objective-c, WebView, APNs
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- [엘리시안 AppStore](https://apps.apple.com/pw/app/%EC%97%98%EB%A6%AC%EC%8B%9C%EC%95%88-%EB%A6%AC%EC%A1%B0%ED%8A%B8/id6447748695)
+</td>
+</tr>
 </table>
 
 
