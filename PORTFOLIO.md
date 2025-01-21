@@ -1,5 +1,6 @@
 # 포트폴리오
 ## 기술 스택
+
 ``` mermaid
 gantt
   dateFormat  YYYY-MM
@@ -59,58 +60,94 @@ gantt
 
 ## 비주얼 (21.07 ~ 24.12)
 
-### 아몬즈 아키텍처 개선 Tuist 적용 및 TMA (24.04 ~ 24.12)
+### 아몬즈 아키텍처 개선 Tuist 적용 및 TMA 구조 확립 (24.04 ~ 24.12)
 
-<table>
+<table style="width: 100%;">
 <tr>
-<td> 역할 </td>
+<td style="width: 150px;"> 역할 </td>
 <td>
 iOS 개발 및 리딩 (참여인원: iOS 3)
 </td>
 </tr>
 <td> 주요 기술 </td>
 <td>
-  
+Tuist, Swinject  
 
 </td>
 </tr>
 
 <td> 도전 과제 및 해결 방법 </td>
 <td>
+Application / Feature / Domain / Core / Shared 계층 분리<br>
+모듈별 구조 확립 및 테스트 코드 작성 유도<br>
+모듈생성시 스크립트를 통해 동일한 구조로 자동 생성
+
+```mermaid
+flowchart TD
+  FeatureExample --> Feature
+  FeatureExample --> FeatureTesting
+  Feature --> FeatureInterface
+  FeatureTests --> Feature
+  FeatureTests --> FeatureTesting
+  FeatureTesting --> FeatureInterface
   
+```
+
 </td>
 </tr>
 <td> 성과/지표 </td>
 <td>
 
+CI 빌드테스트 속도 50% 감소(12분 -> 5분)<br>
+개발속도 10% 증가(모듈별 빌드)<br>
+테스트 커버리지 13% 증가<br>
+머지 컨플릭 비율 감소(.xcodeproj/* ignore)<br>
+[관련 블로그](https://medium.com/@talq44/github-action과-self-hosted-runner로-ios-build-test를-돌리는-거기에-tuist를-곁들인-ea4af8ace455)
+
 </td>
 </tr>
-
 <td> 배운점 </td>
 <td>
-
+명확한 계층정의로 협업 맴버 공통된 형태의 모듈 개발<br>
+모듈별 테스트가 추가되어 안정성 향상<br>
+project 파일이 더이상 추가되지 않아 코드 형상 관리가 간편해짐
 
 </td>
 </tr>
 </table>
 
-| **항목**              | **내용**                                           |
-|----------------------|---------------------------------------------------|
-| **역할**               |                                      |
-| **주요 기술**           | Tuist, Swinject                                   |
-| **도전 과제 및 해결 방법** | Application / Feature / Domain / Core / Shared 계층 분리      |
-| **성과/지표**           | 빌드속도 50% 감소, 개발속도 10% 증가,                  |
-| **배운 점**             | 명확한 계층정의로 공통된 모듈 개발                             |
-
 ### App팀 배포열차 도입 (24.07 ~ 24.12)
 
-| **항목**              | **내용**                                                       |
-|----------------------|---------------------------------------------------------------|
-| **역할**               | 스쿼드 리더 (참여 인원 : Android 1, iOS 1, PO 1, QA 1)                               |
-| **주요 기술**           | Trunk Based Develpment, Feature Flag, Jira Automation, Slack   |
-| **도전 과제 및 해결 방법** | 배포 관련 일정 논의 및 결정(매주 1회, 검수 프로세스 월~목, 심사 제출 금, 실 배포 화) |
-| **성과/지표**           | 주마다 배포 횟수 21% 증가  / 슬랙 배포 관련 논의 15% 감소 |
-| **배운 점**            | 유연한 CI/CD를 정해둬 어렵지 않게 적용.               |
+<table style="width: 100%;">
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+스쿼드 리더 (참여 인원 : Android 1, iOS 1, PO 1, QA 1)
+</td>
+</tr>
+<td> 주요 기술 </td>
+<td>
+Trunk Based Develpment(TBD), Feature Flag, Jira Automation, Slack
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+배포 관련 일정 논의 및 결정(매주 1회, 검수 프로세스 월~목, 심사 제출 금, 실 배포 화)
+</td>
+</tr>
+<td> 성과/지표 </td>
+<td>
+주마다 배포 횟수 21% 증가  / 슬랙 배포 관련 논의 15% 감소
+
+</td>
+</tr>
+<td> 배운점 </td>
+<td>
+유연한 CI/CD를 정해둬 어렵지 않게 적용.
+
+</td>
+</tr>
+</table>
 
 ### Swagger -> Swift 파일 전환 자동화 (23.05 ~ 23.06)
 | **항목**              | **내용**                                                       |
