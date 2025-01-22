@@ -8,7 +8,7 @@ gantt
   Swift :i3, 2018-03, 2025-01
   typeScript :a1, 2024-10, 2024-12
   typeScript :a1, 2019-04, 2020-01
-  Objective-c :l5, 2015-08, 2018-06
+  Objective-c :l5, 2015-08, 2019-02
   Android(Java) :l4, 2015-05, 2016-06
   MFC(c++) :l3, 2014-07, 2015-04
   SQL :l2, 2012-09, 2013-01
@@ -43,7 +43,19 @@ gantt
   Google Ads: aa2, 2019-11, 2021-06
   IGAWorks : aa1, 2017-10, 2021-06
   FireBase(GoogleAnayltics) : s2, 2016-12, 2025-01
+
+  section Tools
+  Github-Action: t6, 2022-01, 2025-01
+  Slack: t5, 2021-07, 2024-12
+  Jira: t4, 2021-02, 2024-12
+  Figma: t3, 2020-07, 2025-01
+  Zeplin: t2, 2018-07, 2025-01
+  Git: t1, 2016-06, 2025-01
+  SVN: t0, 2011-09, 2019-02
 ```
+
+<br><br>
+
 # 경력 사항
 
 ``` mermaid
@@ -57,6 +69,8 @@ gantt
   section 인턴/계약직
   강원대학교 :a2, 2011-09, 2013-03
 ```
+
+<br><br>
 
 # 비주얼 (21.07 ~ 24.12)
 
@@ -218,9 +232,9 @@ flowchart TD
 | **배운 점**             | 업무 파악 전 무리한 적용으로 안정성 하락, 명확한 아키텍처 통일 필요, 테스트 코드 필요성 확인, 팀원간 협업 및 내용 공유 부족함을 실감  |
 
 
-# 하나모바일 (18.01 ~ 21.06)
-## 다다
+<br><br>
 
+# 하나모바일 (18.01 ~ 21.06)
 ## 더티켓
 <table style="width: 100%;">
 <tr>
@@ -246,18 +260,24 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
+- Alamofire, Firebase(Core, Analytics, Auth, Crashlytics)
+- RxSwift, RxCocoa, RxGesture
 
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
+- 티켓 예약 내역 및 이벤트/관람 정보를 확인 가능
+- 별도 상세 접수화면에서 추가 사항 기입 가능
+- SNS를 통한 간편 로그인 기능 제공
+- Rx를 활용한 MVVM구조 프로젝트 작성
 
 </td>
 </tr>
 </table>
 
-## [흔들어대리운전](https://apps.apple.com/kr/app/%ED%9D%94%EB%93%A4%EC%96%B4%EB%8C%80%EB%A6%AC%EC%9A%B4%EC%A0%84-13-%EC%A0%81%EB%A6%BD/id1245517555)
+## [흔들어대리운전 (20.10 ~ 20.11)](https://apps.apple.com/kr/app/%ED%9D%94%EB%93%A4%EC%96%B4%EB%8C%80%EB%A6%AC%EC%9A%B4%EC%A0%84-13-%EC%A0%81%EB%A6%BD/id1245517555)
 <table style="width: 100%;">
 <tr>
     <td> 이미지 </td>
@@ -282,11 +302,19 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
+- Alamofire, NMapsMap(네이버맵), Firebase(Core, Analytics, Auth, Crashlytics)
+- RxSwift, RxCocoa, RxGesture
 
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
+
+- 위치좌표 및 모션 캡쳐를 활용한 대리운전 앱
+- 네이버 맵을 이용한 현재 위치 표현
+- 별도 상세 접수화면에서 추가 사항 기입 가능
+- Rx를 활용한 MVVM구조의 프로젝트 작성
+- 위치좌표의 정확성에 따른 알럿창 구분
 
 
 </td>
@@ -299,11 +327,9 @@ flowchart TD
 <tr>
     <td> 이미지 </td>
     <td> 
-      <div style="display: flex; justify-content: space-between;">
+      <div>
         <img src="asset/twolinefortune/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/twolinefortune/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
-        <img src="asset/twolinefortune/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
-        <img src="asset/twolinefortune/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
       </div>
     </td>
   </tr>
@@ -319,20 +345,24 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
+- Alamofire, Socket.IO-Client-Swift, Firebase(Core, Analytics, Auth, Crashlytics)
+- RxSwift, RxCocoa, RxGesture
+- Kingfiser
 
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
+- 운세 상담 및 전화상담 서비스 제공 App
+- 메인 페이지 및 회원가입을 네이티브로 제작
+- 그외 추가 상세페이지는 웹뷰로 이동
 
 </td>
 </tr>
 </table>
 
-## [위픽캠](https://play.google.com/store/apps/details?id=com.live.camtalk&hl=ko)
-
-## [Pickmecam](https://apps.apple.com/kr/app/%ED%94%BD%EB%AF%B8%EC%BA%A0-%EC%98%81%EC%83%81%EC%B1%84%ED%8C%85-%ED%99%94%EC%83%81%EC%B1%84%ED%8C%85/id1503303615)
+## [Pickmecam](https://apps.apple.com/kr/app/%ED%94%BD%EB%AF%B8%EC%BA%A0-%EC%98%81%EC%83%81%EC%B1%84%ED%8C%85-%ED%99%94%EC%83%81%EC%B1%84%ED%8C%85/id1503303615) / [위픽캠](https://play.google.com/store/apps/details?id=com.live.camtalk&hl=ko)
 <table style="width: 100%;">
 <tr>
     <td> 이미지 </td>
@@ -357,24 +387,37 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-
+- Alamofire, Socket.IO-Client-Swift, Firebase, SVPorogressHUD, Toask-Swift
+- StoreKit IgaworksCore, AdPopcornOfferwall, TwilioVideo, AdBrixRemastered
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
-
+- 1:1 실시간 동영상 채팅 지원 App
+- 채팅과 동영상채팅 등의 실시간 지원을 위한 소켓 통신 지원
+- SNS 로그인 지원 ( 페이스북, 구글, 카카오톡, 네이버 )
+- 광고 지원 ( Adbrix, Nas )
+- 인앱 구매 지원
+- 동영상 채팅은 Twilio를 사용해 지원
+- 소켓통신을 통해 실시간 채팅, 음성채팅 요청 및 연결 실시간 지원
 </td>
 </tr>
 </table>
 
-## BizID
+
+## 더스타 온라인 iOS/Web
+
+## Enjoy J Tour
 <table style="width: 100%;">
 <tr>
     <td> 이미지 </td>
     <td> 
       <div style="display: flex; justify-content: space-between;">
-        <img src="asset/bizid/image_01.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/smartimage/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/smartimage/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/smartimage/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/smartimage/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
       </div>
     </td>
   </tr>
@@ -390,26 +433,20 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
+- typescript, Angular2
 
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
+- 일본 내 숙소 예약용 페이지
+- Angular2 로 제작
+- 예약의 전반적인 기능 수행
 
 </td>
 </tr>
 </table>
-
-## 더스타 온라인 iOS/Web
-
-## Enjoy J Tour
-
-## 2018 KPMA
-
-## 2018 서울가요대상
-
-## 2018 더서울어워즈
 
 ## [스마트이미지](https://apps.apple.com/kr/app/smartimages/id889795772)
 <table style="width: 100%;">
@@ -436,18 +473,73 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
+- Alamofire, Firebase(Core, Messaging)
+- MXParallaxHeader, MXSegmentedPager, Kingfisher
 
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
-
+- 유료이미지 등록 및 판매를 위한 앱
+- 스마트폰에 있는 이미지 등록 지원
+- 이미지 크기 조절을 위한 이미지 프로세싱 기능 지원
+- 이미지 설명을 위한 태그 기능 지원
+- 서버 부담을 줄이기 위해 최대 이미지 고정 및 자동 사이즈 조정
+- 이미지별 사이즈에 맞게 보여주기 위한 이미지 리사이즈 리스트 반영 지원
 </td>
 </tr>
 </table>
 
-## 미스코리아(투표)
+## 시상식 투표앱
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/theseoulawards/image_00.png" alt="이미지1" style="width: 15%; height: auto;" />
+        <img src="asset/misskorea/image_00.png" alt="이미지2" style="width: 15%; height: auto;" />
+        <img src="asset/soribadaawards/image_00.png" alt="이미지3" style="width: 15%; height: auto;" />
+        <img src="asset/kpma/image_00.png" alt="이미지3" style="width: 15%; height: auto;" />
+        <img src="asset/misskorea/image_02.png" alt="이미지2" style="width: 15%; height: auto;" />
+        <img src="asset/misskorea/image_04.png" alt="이미지3" style="width: 15%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- Alamofire, RealmSwift, Firebase
+- GoogleSignIn, TwitterKit, Facebook
+- StoreKit, IgaworksCore, AdPopcornOfferwal
+
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 더서울어워즈, 미스코리아, 서울가요대전, 소리바다, KPMA
+- 각 시상식별 투표를 위한 앱
+- 지역화 지원 ( 한국어, 영어, 중국어 간체/번체 )
+- 시상식 후반 100만건 이상 접속을 위한 서버 통신 최적화
+- 인앱 결제 지원, 광고 지원 ( AdPopcorn, Adbrix, Tapjoy )
+- 타 플랫폼과 포인트 교환을 위한 Scheme 지원
+- UI의 변경을 쉽게 변경하기 위해 Design System화
+- 공통 모듈화 진행
+- 파이어베이스 DB를 별도 구축해 실시간 인앱구매 내역을 저장
+
+</td>
+</tr>
+</table>
 
 ## [FanPoint](https://apps.apple.com/us/app/%ED%8C%AC%ED%8F%AC%EC%9D%B8%ED%8A%B8-fanpoint-%ED%88%AC%ED%91%9C-%EB%AF%B8%EC%85%98-%EB%A6%AC%EC%9B%8C%EB%93%9C%EC%95%B1/id1258031653?l=ko)
 <table style="width: 100%;">
@@ -475,15 +567,24 @@ flowchart TD
 <td>
 
 
+- Alamofire, Kingfisher, Firbase(Core, Messaging, Crash), RealmSwift
+- StoreKit, TabjoySDK, Igaworkscore, AdPopcornOfferwall
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
+- 시상식 앱과 연동해 포인트 교환 및 결제를 지원하는 앱
+- 지역화를 통해 4개언어 지원( 한국어, 영어, 중국어 간체/번체 )
+- 인앱결제 추가 및 인앱결제 재구매 프로세스 추가
+- Swift 1달 학습 후 투입된 첫 프로젝트
+- 각종 시상식과 연계 가능한 Scheme 모듈화 진행
 
 </td>
 </tr>
 </table>
+
+<br><br>
 
 # 새움테크 (15.05 ~ 18.01)
 ## [마이홈플러스포인트](https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%B4-%ED%99%88%ED%94%8C%EB%9F%AC%EC%8A%A4/id1297108925)
@@ -511,8 +612,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- cocoapod, AFNetworking, ZXingObjc, Firbase(Core, Messaging, Crash)
-- Facebook(Core, Login, Share), Bolts, IgaworksCore
+- , AFNetworking, ZXingObjc, Firbase(Core, Messaging, Crash)
+- Facocoapod, cebook(Core, Login, Share), Bolts, IgaworksCore
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
@@ -554,8 +655,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- cocoapod, AFNetworking, Firbase(Core, Messaging, Crash)
-</td>
+- , AFNetworking, Firbase(Core, Messaging, Crash)
+</tdcocoapod, >
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
@@ -595,8 +696,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- cocoapod, AFNetworking, Realm, Firbase(Core, Messaging), MXParallaxHeader
-</td>
+- , AFNetworking, Realm, Firbase(Core, Messaging), MXParallaxHeader
+</tdcocoapod, >
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
@@ -613,8 +714,6 @@ flowchart TD
 </tr>
 </table>
 
-## [우리캐피탈](https://apps.apple.com/kr/app/%EC%9A%B0%EB%A6%ACwon%EC%BA%90%ED%94%BC%ED%83%88/id1615492175)
-
 ## 현대라이프 상담사용
 
 <table style="width: 100%;">
@@ -629,8 +728,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- cocoapods
-- AFNetworking, Realm, Firbase
+- 
+- AFcocoapods, Networking, Realm, Firbase
 - SVProgressHUD, ZBarSDK, SDWebImage, SDVersion
 - MDM, AppIron, INISAFE, MVaccine, MTransKey
 
@@ -679,8 +778,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- cocoapods, Objective-c, WebView, Deeplink, APNs
-- Server-Driven UI, Firebase, Mobile application Accessibility
+- , Objective-c, WebView, Deeplink, APNs
+- Secocoapods, rver-Driven UI, Firebase, Mobile application Accessibility
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
@@ -768,8 +867,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- cocoapods, Objective-c, WebView, APNs, AFNetworking, Localizable
-</td>
+- , Objective-c, WebView, APNs, AFNetworking, Localizable
+</tdcocoapods, >
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
@@ -811,8 +910,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- cocoapods, Objective-c, WebView, APNs, AFNetworking
-</td>
+- , Objective-c, WebView, APNs, AFNetworking
+</tdcocoapods, >
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
@@ -826,6 +925,7 @@ flowchart TD
 </tr>
 </table>
 
+<br><br>
 
 # 유니텍 (14.07 ~ 15.04)
 ## MFCC(Multi Function Control console)
@@ -864,6 +964,7 @@ flowchart TD
 </tr>
 </table>
 
+<br><br>
 
 # 강원대학교 전산원 (11.07 ~ 13.02)
 ## [강원대학교 App](https://play.google.com/store/apps/details?id=kr.ac.kangwon.kmobile&hl=ko&pli=1)
