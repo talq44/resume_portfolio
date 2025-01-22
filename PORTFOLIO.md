@@ -1,5 +1,5 @@
 # 포트폴리오
-## 기술 스택
+# 기술 스택
 
 ``` mermaid
 gantt
@@ -18,11 +18,9 @@ gantt
   MVVM :a1, 2020-05, 2025-01
   TMA: a5, 2024-01, 2025-01
   MVI :a2, 2022-07, 2025-01
-  Clean Architecture :a1, 2022-06, 2025-01
-  VIPER: a4, 2022-01, 2022-06
-  Ribs: a4, 2022-03, 2022-09
-  VIPER: a4, 2020-06, 2021-06
-  Ribs: a4, 2020-06, 2021-06
+  Clean Architecture :a1, 2022-01, 2025-01
+  VIPER: a4, 2020-06, 2022-06
+  Ribs: a4, 2020-06, 2022-09
   MVC : a3, 2015-05, 2020-12
 
   section UI
@@ -35,32 +33,34 @@ gantt
 
   section Asynchronous
   Async/Await: r3, 2022-07, 2025-01
-  Combine: r2, 2022-02, 2025-01
-  RxSwift: r1, 2020-07, 2025-01
+  Combine: r2, 2020-02, 2025-01
+  RxSwift: r1, 2019-07, 2025-01
 
   section Analytics/Ad
   AirBridge : s3, 2023-01, 2024-12
   Ampltude : s2, 2022-03, 2024-12
   Braze : s2, 2021-07, 2024-12
   Google Ads: aa2, 2019-11, 2021-06
-  IGAWorks : aa1, 2018-01, 2021-06
+  IGAWorks : aa1, 2017-10, 2021-06
   FireBase(GoogleAnayltics) : s2, 2016-12, 2025-01
 ```
-## 경력 사항
+# 경력 사항
 
 ``` mermaid
 gantt
   dateFormat  YYYY-MM
+  section 정규직
   비주얼 :i3, 2021-07, 2024-12
   하나모바일 :i2, 2018-01, 2021-06
   새움테크 :i1, 2015-05, 2018-01
   유니텍 : c1, 2014-07, 2015-04
+  section 인턴/계약직
   강원대학교 :a2, 2011-09, 2013-03
 ```
 
-## 비주얼 (21.07 ~ 24.12)
+# 비주얼 (21.07 ~ 24.12)
 
-### 아몬즈 아키텍처 개선 Tuist 적용 및 TMA 구조 확립 (24.04 ~ 24.12)
+## 아몬즈 아키텍처 개선 Tuist 적용 및 TMA 구조 확립 (24.04 ~ 24.12)
 
 <table style="width: 100%;">
 <tr>
@@ -120,7 +120,7 @@ flowchart TD
 </tr>
 </table>
 
-### App팀 배포열차 도입 (24.07 ~ 24.12)
+## App팀 배포열차 도입 (24.07 ~ 24.12)
 
 <table style="width: 100%;">
 <tr>
@@ -176,7 +176,7 @@ flowchart TD
 </tr>
 </table>
 
-### Swagger -> Swift 파일 전환 자동화 (23.05 ~ 23.06)
+## Swagger -> Swift 파일 전환 자동화 (23.05 ~ 23.06)
 | **항목**              | **내용**                                                       |
 |----------------------|---------------------------------------------------------------|
 | **주요 기술**           | OpenAPISpec 3.0, RestfulAPI, Moya, Alamofire, yaml   |
@@ -184,7 +184,7 @@ flowchart TD
 | **성과/지표**           | API관련 이슈 90% 감소, 디코딩 에러 파악율 100% 달성, 작업속도 10% 이상 증가, 관련 블로그 작성 |
 | **배운 점**            | 사람은 실수를 할 수 있어도, 기계는 실수하지 않는다. 자동화된 테스트코드 생성이 안정성 증가에 큰 도움을 줌   |
 
-### Clean Architecture 도입 및 개선(23.02 ~ 23.12)
+## Clean Architecture 도입 및 개선(23.02 ~ 23.12)
 | **항목**              | **내용**                                                       |
 |----------------------|---------------------------------------------------------------|
 | **역할**               | 팀 스터디 리딩 및 iOS 메인 개발 (참여 인원: Android 2, iOS 3, QA 1)          |
@@ -193,7 +193,7 @@ flowchart TD
 | **성과/지표**           | 관련 블로그 작성, Android <-> iOS 통일성 향상(도메인 30% 로직 통일), 버그율 13% 감소 |
 | **배운 점**            | 참여인원 모두 공부가 필요, 비개발자도 이해할 수 있는 설명 진행, 계층을 나누기 위해서도 그안에 명확한 정의 필요               |
 
-### ReactorKit을 활용한 ViewModel 마이그레이션 (22.03 ~ 22.12)
+## ReactorKit을 활용한 ViewModel 마이그레이션 (22.03 ~ 22.12)
 
 | **항목**              | **내용**                                           |
 |----------------------|---------------------------------------------------|
@@ -207,7 +207,7 @@ flowchart TD
   <img src="https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png" alt="description" width="500">
 </div>
 
-### MVC -> MVVM 개선 (21.10 ~ 22.01)
+## MVC -> MVVM 개선 (21.10 ~ 22.01)
 
 | **항목**              | **내용**                                           |
 |----------------------|---------------------------------------------------|
@@ -218,49 +218,404 @@ flowchart TD
 | **배운 점**             | 업무 파악 전 무리한 적용으로 안정성 하락, 명확한 아키텍처 통일 필요, 테스트 코드 필요성 확인, 팀원간 협업 및 내용 공유 부족함을 실감  |
 
 
-## 하나모바일 (18.01 ~ 21.06)
-### 다다
+# 하나모바일 (18.01 ~ 21.06)
+## 다다
 
-### 더티켓
+## 더티켓
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/theticket/image_00.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/theticket/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/theticket/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/theticket/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
 
-### 흔들어대리운전
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
 
-### 두줄운세
 
-### 위피캠
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
 
-### Pickmecam
 
-### BizID
+</td>
+</tr>
+</table>
 
-### 더스타 온라인 iOS/Web
+## [흔들어대리운전](https://apps.apple.com/kr/app/%ED%9D%94%EB%93%A4%EC%96%B4%EB%8C%80%EB%A6%AC%EC%9A%B4%EC%A0%84-13-%EC%A0%81%EB%A6%BD/id1245517555)
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/shakecall/image_00.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/shakecall/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/shakecall/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/shakecall/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
 
-### Enjoy J Tour
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
 
-### 2018 KPMA
 
-### 2018 서울가요대상
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
 
-### 2018 더서울어워즈
 
-### 스마트이미지
+</td>
+</tr>
+</table>
 
-### 미스코리아(투표)
 
-### FanPoint
+## 두줄운세
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/twolinefortune/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/twolinefortune/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/twolinefortune/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/twolinefortune/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
 
-## 새움테크 (15.05 ~ 18.01)
-### 마이홈플러스포인트
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
 
-### 와인그래프
 
-### 나눔로또
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
 
-### 우리캐피탈
 
-### 현대라이프 상담사용
+</td>
+</tr>
+</table>
 
-### CJ One Card
+## [위픽캠](https://play.google.com/store/apps/details?id=com.live.camtalk&hl=ko)
+
+## [Pickmecam](https://apps.apple.com/kr/app/%ED%94%BD%EB%AF%B8%EC%BA%A0-%EC%98%81%EC%83%81%EC%B1%84%ED%8C%85-%ED%99%94%EC%83%81%EC%B1%84%ED%8C%85/id1503303615)
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/pickmecam/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/pickmecam/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/pickmecam/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/pickmecam/image_05.png" alt="이미지5" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+
+</td>
+</tr>
+</table>
+
+## BizID
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/bizid/image_01.png" alt="이미지2" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+
+</td>
+</tr>
+</table>
+
+## 더스타 온라인 iOS/Web
+
+## Enjoy J Tour
+
+## 2018 KPMA
+
+## 2018 서울가요대상
+
+## 2018 더서울어워즈
+
+## [스마트이미지](https://apps.apple.com/kr/app/smartimages/id889795772)
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/smartimage/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/smartimage/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/smartimage/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/smartimage/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+
+</td>
+</tr>
+</table>
+
+## 미스코리아(투표)
+
+## [FanPoint](https://apps.apple.com/us/app/%ED%8C%AC%ED%8F%AC%EC%9D%B8%ED%8A%B8-fanpoint-%ED%88%AC%ED%91%9C-%EB%AF%B8%EC%85%98-%EB%A6%AC%EC%9B%8C%EB%93%9C%EC%95%B1/id1258031653?l=ko)
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/fanpoint/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/fanpoint/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/fanpoint/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/fanpoint/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+
+</td>
+</tr>
+</table>
+
+# 새움테크 (15.05 ~ 18.01)
+## [마이홈플러스포인트](https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%B4-%ED%99%88%ED%94%8C%EB%9F%AC%EC%8A%A4/id1297108925)
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/myhomeplus/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/myhomeplus/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/myhomeplus/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/myhomeplus/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- cocoapod, AFNetworking, ZXingObjc, Firbase(Core, Messaging, Crash)
+- Facebook(Core, Login, Share), Bolts, IgaworksCore
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 홈플러스 사용 고객 마일리지 적립을 위한 서비스 App
+- 추후 관리 용이성을 위해 Webview로 제작
+- 마일리지 적립을 위한 바코드 리더 추가
+- 모바일 통신을 처음 경험한 서버개발자와 API 구축
+- 기초 20개 지원 후 10개 API 추후 추가
+- 업데이트를 최소화 하기 위해 스마트폰에 데이터를 저장/읽기 기능 지원
+
+</td>
+</tr>
+</table>
+
+## [와인그래프](https://apps.apple.com/kr/app/%EC%99%80%EC%9D%B8%EA%B7%B8%EB%9E%98%ED%94%84-winegraph-%EC%99%80%EC%9D%B8-%EA%B2%80%EC%83%89-%EC%B6%94%EC%B2%9C/id1232552236)
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/winegraph/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/winegraph/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/winegraph/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/winegraph/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- cocoapod, AFNetworking, Firbase(Core, Messaging, Crash)
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 와인 정보와 게시물을 확인할 수 있는 와인 SNS 종합 정보 앱
+- 페이스북과 인스타그램의 장점만을 종합한 앱
+- SNS 로그인 지원
+- SNS 게시글 빠른 로드를 위해 API통신 추가 개발
+- 와인 라벨 스캔을 통한 검색 기능 지원
+
+</td>
+</tr>
+</table>
+
+## [나눔로또](https://apps.apple.com/kr/app/%EB%8F%99%ED%96%89%EB%B3%B5%EA%B6%8C/id1444390490)
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/nanumlotto/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/nanumlotto/image_05.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/nanumlotto/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/nanumlotto/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- cocoapod, AFNetworking, Realm, Firbase(Core, Messaging), MXParallaxHeader
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 나눔로또 정보 확인 및 판매점 정보 확인을 위한 App
+- 서버 부하를 방지하기 위해 앱에 페이지 정보 데이터 저장
+- 업데이트를 통해 웹페이지 데이터 다운로드 및 변경 지원
+- QR Reader를 통해 복권 당첨여부 실시간 확인 가능
+- 복권 판매점 정보를 스마트폰에 저장을 위해 Realm 사용
+- 현재 위치 좌표 수신 및 실시간 사용
+- Git을 통해 프로젝트 공유 경험
+
+</td>
+</tr>
+</table>
+
+## [우리캐피탈](https://apps.apple.com/kr/app/%EC%9A%B0%EB%A6%ACwon%EC%BA%90%ED%94%BC%ED%83%88/id1615492175)
+
+## 현대라이프 상담사용
 
 <table style="width: 100%;">
 <tr>
@@ -269,6 +624,38 @@ flowchart TD
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- cocoapods
+- AFNetworking, Realm, Firbase
+- SVProgressHUD, ZBarSDK, SDWebImage, SDVersion
+- MDM, AppIron, INISAFE, MVaccine, MTransKey
+
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 보험설계사가 고객 가입을 위해 사용하는 App
+- 보험권 App이기에 보안 라이브러리 다수 사용
+- iPhone/iPad 사이즈 모두 지원 ( 별개 스토리보드로 구현 후 지원 )
+- Enterprise 계정을 사용한 앱 공유
+- 공인인증서 지원
+- 웹 + 네이티브 병합된 형태로 script통신 지원
+- 프로젝트 이전 개발자가 1달 개발 후 나가 이어서 작업 시작
+- Firebase Crashlytics 지원으로 앱 크래시 체크
+- 실시간 디버깅을 위해 디버그 모드 및 로그 출력 화면 추가 지원
+
+</td>
+</tr>
+</table>
+
+## [CJ One Card](https://apps.apple.com/us/app/cj-one/id387363739)
+
+<table style="width: 100%;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -282,6 +669,13 @@ flowchart TD
   </tr>
 </tr>
 <tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
 <td> 주요 기술 </td>
 <td>
 
@@ -292,27 +686,65 @@ flowchart TD
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
-- [CJ One Card AppStore](https://apps.apple.com/us/app/cj-one/id387363739)
 - 앱 모바일 접근성을 위한 UI배치, 가이드 문구 연결, 포커싱 지정
 - 서버드리븐한 홈 구성을 위한 다이나믹 UI 적용
 - 디자인 가이드 정의를 통한 값 변경 유동성 제공
 - 버튼마다 Firebase Analytics 전송을 위한 컴퍼넌트 정의
+- 그외 페이지는 관리 용이성을 위해 웹뷰를 사용
+- 애니메이션, 속도 향상에 중점적 작업
+- Voice Over 기능 확인
 
 </td>
 </tr>
 </table>
 
-### 아주캐피탈 
-
-### thePay / 99Pay
+## 아주캐피탈 
 
 <table style="width: 100%;">
 <tr>
-<td style="width: 150px;"> 역할 </td>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/ajucapital/image_00.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/ajucapital/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/ajucapital/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/ajucapital/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td> 역할 </td>
 <td>
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
+</tr>
+<tr>
+<td style="width: 150px;"> 주요 기술 </td>
+<td>
+
+- Sanne, NAppProtect, MDM, NFilter, SmartAIBFramework
+- KWPki, MagicSE, MagicXSign, MagicMRS
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 아주캐피탈 리뉴얼과 아주캐피탈 직원용 앱 개발
+- 직원용의 경우 **Enterprise 계정**을 통해 내부 배포
+- 관리의 용이성을 위해 Webview 사용률을 높임
+- 은행권 앱이기에 다양한 보안 모듈 사용 경험
+- 와이파이가 지원되지 않아 폐쇄적인 상황에서도 정상적인 개발 실시
+
+
+</td>
+</tr>
+</table>
+
+## [thePay](https://apps.apple.com/kr/app/thepay-mobile-recharge/id1088189940) / [99Pay](https://apps.apple.com/kr/app/99pay-mobile-recharge/id1229582503?l=en-GB)
+
+<table style="width: 100%;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -326,16 +758,22 @@ flowchart TD
   </tr>
 </tr>
 <tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
 <td> 주요 기술 </td>
 <td>
 
-- cocoapods, Objective-c, WebView, APNs, Localizable
+- cocoapods, Objective-c, WebView, APNs, AFNetworking, Localizable
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
-- [The Pay AppStore](https://apps.apple.com/kr/app/thepay-mobile-recharge/id1088189940) / [99 Pay AppStore](https://apps.apple.com/kr/app/99pay-mobile-recharge/id1229582503?l=en-GB)
 - 13개 언어 지원을 위해, 화면 노출 시점에 문구 설정
 - 디바이스 언어 외에도 직접 변경이 가능하도록 shared 한 언어 설정값 사용
 - sheet -> Strings.localizable 변경되는 스크립트 생성
@@ -347,15 +785,9 @@ flowchart TD
 </tr>
 </table>
 
-### 엘리시안
+## [엘리시안](https://apps.apple.com/pw/app/%EC%97%98%EB%A6%AC%EC%8B%9C%EC%95%88-%EB%A6%AC%EC%A1%B0%ED%8A%B8/id6447748695)
 
 <table style="width: 100%;">
-<tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
-
-- iOS 메인 개발자 (참여 인원 : iOS 1)
-</td>
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -369,23 +801,110 @@ flowchart TD
   </tr>
 </tr>
 <tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발자 (참여 인원 : iOS 1)
+</td>
+</tr>
+<tr>
 <td> 주요 기술 </td>
 <td>
 
-- cocoapods, Objective-c, WebView, APNs
+- cocoapods, Objective-c, WebView, APNs, AFNetworking
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
-- [엘리시안 AppStore](https://apps.apple.com/pw/app/%EC%97%98%EB%A6%AC%EC%8B%9C%EC%95%88-%EB%A6%AC%EC%A1%B0%ED%8A%B8/id6447748695)
+- 엘리시안 강촌/제주 예약 지원 앱
+- CCTV를 통해 스키장 현재 상태 확인 가능
+- 숙소 예약의 경우 외부 결제 지원
+- 네이티브와 웹의 병합된 형태
+- APNS 푸시 지원
 </td>
 </tr>
 </table>
 
 
-## 유니텍 (14.07 ~ 15.04)
-### MFCC 
+# 유니텍 (14.07 ~ 15.04)
+## MFCC(Multi Function Control console)
 
-## 강원대학교 전산원 (11.07 ~ 13.02)
-### 강원대학교 App
+<table style="width: 100%;">
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- 인터페이스 연결 및 UI 개발 담당(투입인원: 3명)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- MFC, c++
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 선유도 어뢰 관리통제를 위한 사용자 프로그램
+- LIG 넥스원과 차기중어뢰 개발 협력
+- 선에 연결된 어뢰와 데이터를 실시간으로 주고받으며 화면에 표시
+- 모의 전투를 위한 시뮬레이션 기능 제공
+- 유속, 방향, 레이더, 어뢰 속도 등의 추가 정보 화면에 표시
+- 연결 선의 최적 길이 및 속도 확인 가능
+- 인터페이스 연결 및 실시간 반영 속도 최적화
+- 진해 국방과학연구소에서 2달이상 파견 근무
+- 독일 어뢰 업체로부터 기술 자문 ( 업체명은 극비 사항 )
+- 실제 어뢰발사를 위해 바다에서 테스트
+- 발사한 위치와 현재 발사체와의 거리 추가 기능 지원
+
+</td>
+</tr>
+</table>
+
+
+# 강원대학교 전산원 (11.07 ~ 13.02)
+## [강원대학교 App](https://play.google.com/store/apps/details?id=kr.ac.kangwon.kmobile&hl=ko&pli=1)
+
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/kangwonuniv/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+        <img src="asset/kangwonuniv/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+        <img src="asset/kangwonuniv/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/kangwonuniv/image_04.png" alt="이미지4" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- Android 메인 개발자 (참여 인원 : Android 1)
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- Android Java
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 강원대학교 학생 편의를 위한 App
+- 시간표, 식단표, 셔틀버스, 성적 조회 등 편의성 기능 제공
+- 최초 Native제작 참여, 추후 Flex Moblie로 변경 시 어시스턴스
+- 현재위치좌표, 암호화, 내부 DB사용
+- 안드로이드 디바이스 8가지 최소 지원
+
+</td>
+</tr>
+</table>
+
