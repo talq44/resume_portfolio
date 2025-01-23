@@ -9,10 +9,9 @@ gantt
   typeScript :a1, 2024-10, 2024-12
   typeScript :a1, 2019-04, 2020-01
   Objective-c :l5, 2015-08, 2019-02
-  Android(Java) :l4, 2015-05, 2016-06
-  MFC(c++) :l3, 2014-07, 2015-04
-  SQL :l2, 2012-09, 2013-01
-  Android(Java) :l1, 2011-09, 2014-02
+  MFC(c++) :l3, 2014-03, 2015-04
+  SQL :l2, 2012-09, 2014-01
+  Android(Java) :l1, 2011-09, 2016-06
 
   section Architecture
   MVVM :a1, 2020-05, 2025-01
@@ -45,6 +44,7 @@ gantt
   FireBase(GoogleAnayltics) : s2, 2016-12, 2025-01
 
   section Tools
+  Xcode-cloud: t6, 2022-06, 2025-01
   Github-Action: t6, 2022-01, 2025-01
   Slack: t5, 2021-07, 2024-12
   Jira: t4, 2021-02, 2024-12
@@ -123,13 +123,16 @@ flowchart TD
 
 </td>
 </tr>
-<td> 배운점 </td>
+<td> 배운점/아쉬운점 </td>
 <td>
 
 - 명확한 계층정의로 협업 맴버 공통된 형태의 모듈 개발
 - 모듈별 테스트가 추가되어 안정성 향상
 - project 파일이 더이상 추가되지 않아 코드 형상 관리가 간편해짐
 - 모듈별 interface로 더 명확한 캡슐화
+- 클린아키텍처, cocoapods -> SPM으로 모두 변경, 모듈 레이어 등 선행이 필요한 업무가 늦어지며 너무 늦게 반영한데에 대한 아쉬움
+- 마이그레이션 하며 기존 코드도 지우는 프로세스를 확립하지 못함
+- 80% 이상 모듈로 대체하려 했으나 회사 사정으로 모두 완수하지 못한데에 대한 아쉬움
 </td>
 </tr>
 </table>
@@ -181,45 +184,163 @@ flowchart TD
 - [관련 블로그](https://medium.com/@talq44/작은-pr-feature-flag-trunk-based-developement-그리고-자동화로-매일-develop-매주-production-배포하는-팀-되기-1-c9b2b63f424a)
 </td>
 </tr>
-<td> 배운점 </td>
+<td> 배운점/아쉬운점 </td>
 <td>
 
 - 유연한 CI/CD를 토대로 빠른 적용
 - 하나의 팀으로 정확한 내용공유
+- Store 심사제출까지 자동화 하지 못한 아쉬움
 </td>
 </tr>
 </table>
 
 ## Swagger -> Swift 파일 전환 자동화 (23.05 ~ 23.06)
-| **항목**              | **내용**                                                       |
-|----------------------|---------------------------------------------------------------|
-| **주요 기술**           | OpenAPISpec 3.0, RestfulAPI, Moya, Alamofire, yaml   |
-| **도전 과제 및 해결 방법** | 배포 관련 일정 논의 및 결정(매주 1회, 검수 프로세스 월~목, 심사 제출 금, 실 배포 화) |
-| **성과/지표**           | API관련 이슈 90% 감소, 디코딩 에러 파악율 100% 달성, 작업속도 10% 이상 증가, 관련 블로그 작성 |
-| **배운 점**            | 사람은 실수를 할 수 있어도, 기계는 실수하지 않는다. 자동화된 테스트코드 생성이 안정성 증가에 큰 도움을 줌   |
+
+<table style="width: 100%;">
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- 메인 개발 (참여 인원 : iOS 1)
+</td>
+</tr>
+<td> 주요 기술 </td>
+<td>
+
+- Swift, OpenAPISpec 3.0, RestfulAPI, Moya, Alamofire, yaml
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- OAS 3.0기준 Swagger 문서를 UserAPI모듈로 생성하기
+  - SwaggerCodeGen은 단순 DTO만 생성해서 탈락
+  - 직접 대체할수 있도록 Swift로 제작
+- 네트워크 모듈 형식 결정 필요
+  - TMA 외부 노출 인터페이스 생성
+  - 내부 형태는 Moya 형식으로 사용하기로 결정
+  - Rx 비율을 낮추기 위해 Asyn/Await으로 결정
+- 팀원 동일한 형식 사용
+  - 별도 앱으로 생성해 작업시 변경되면 담당자가 덮어씌우도록 결정
+</td>
+</tr>
+<td> 성과/지표 </td>
+<td>
+
+- API관련 이슈 90% 감소
+- 디코딩 에러 파악율 100% 달성
+- 작업속도 10% 이상 증가
+- API관련 논의 30% 감소
+- [관련 블로그](https://medium.com/bejewel/swagger-converter-제작기-84e4726f2be2)
+</td>
+</tr>
+<td> 배운점/아쉬운점 </td>
+<td>
+
+- 사람은 실수를 할 수 있어도, 기계는 실수하지 않는다. 
+- 자동화된 테스트코드 생성이 안정성 증가에 큰 도움을 줌
+- User API가 변경되면 Github에서 PR이 생성되서 대체하고 싶었으나 리소스 부족으로 포기
+  - 당시 Feature Flag가 확립되지 않아, 서비스에 영향을 끼칠 우려가 있어 미룸
+  - 파이썬으로 코드를 대체해 Github Action으로 만들 구상까지 하고 다른 업무로 포기
+</td>
+</tr>
+</table>
 
 ## Clean Architecture 도입 및 개선(23.02 ~ 23.12)
-| **항목**              | **내용**                                                       |
-|----------------------|---------------------------------------------------------------|
-| **역할**               | 팀 스터디 리딩 및 iOS 메인 개발 (참여 인원: Android 2, iOS 3, QA 1)          |
-| **주요 기술**           | Clean Architecture, Present/Domain/Data Layer   |
-| **도전 과제 및 해결 방법** | DTO의 view에서 사용하는 비율 축소, Domain의 분리, API 모듈 분리 |
-| **성과/지표**           | 관련 블로그 작성, Android <-> iOS 통일성 향상(도메인 30% 로직 통일), 버그율 13% 감소 |
-| **배운 점**            | 참여인원 모두 공부가 필요, 비개발자도 이해할 수 있는 설명 진행, 계층을 나누기 위해서도 그안에 명확한 정의 필요               |
+
+<table style="width: 100%;">
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- App 팀 리드 (참여 인원 : Android 2, iOS 3, PO 1, QA 1)
+</td>
+</tr>
+<td> 주요 기술 </td>
+<td>
+
+- Clean Architecture, Snapshot Test
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 클린아키텍처에 대한 전반적인 지식 부족
+  - 스터디 진행 및 지속적 가이드 실시
+- 전체 프로젝트에 대한 적용의 어려움
+  - ViewModel 마이그레이션이 완료된 부분에 한해 적용 시작
+  - ViewModel에서 Domain/Data 부분 분리를 우선적으로 시작
+- 명확한 계층 분리에 대한 의견 대립
+  - PO가 이야기하는건 Domain, Back-end가 이야기하는건 Data, UX가 이야기하는건 Presenter로 단순화해 내용 공유
+  - 비지니스 로직에 대해, 크게 바뀌지 않으면서도 중요한 부분이란 인식을 학습시킴
+- 마이그레이션이 부족한 화면의 경우 DTO에 너무 강하게 묶임
+  - DTO와 ViewState의 분리에 대해 강조 후 서로 다름을 인지시키도록 학습
+  - 스냅샷 테스트를 통해, ViewState로 대체해가면서도 안정성있게 작업할 수 있도록 테스트코드 우선
+
+<img src="https://techblog.woowahan.com/wp-content/uploads/img/2019-10-02/the-clean-architecture.png" alt="클린아키텍처01" style="width: 45%; height: auto;" />
+<img src="https://jonghoonpark.com/assets/images/2023-10-24-%ED%81%B4%EB%A6%B0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/diagram-of-web-based-java-system.png" alt="클린아키텍처02" style="width: 45%; height: auto;" />
+
+</td>
+</tr>
+<td> 성과/지표 </td>
+<td>
+
+- 버그율 5% 감소
+- 작업속도 5% 증가
+- Android, iOS 공통 도메인 로직 생성
+- [관련 블로그](https://medium.com/bejewel/저희는-클린한-구조를-지향하고-있습니다-888a3dc1c03a)
+</td>
+</tr>
+<td> 배운점 </td>
+<td>
+
+- Data에 휘둘리지 않는 작업이 가능해짐
+- Backend-Client 동시 작업이 가능해짐
+- 개발자간의 대화보다도 중요한 Domain의 중요성에 대해 팀적 공유
+  - 추가) Domain Driven Design(DDD) 스터디 추가 진행
+  - 추가) Design First 도입
+</td>
+</tr>
+</table>
 
 ## ReactorKit을 활용한 ViewModel 마이그레이션 (22.03 ~ 22.12)
 
-| **항목**              | **내용**                                           |
-|----------------------|---------------------------------------------------|
-| **역할**               | 스터디 주최 및 iOS 개발                                           |
-| **주요 기술**           | ReactorKit, MVVM, Action/State, RxSwift                                    |
-| **도전 과제 및 해결 방법** | viewDelegate선언 및 viewModel에 viewDelegate 주입,                             |
-| **성과/지표**           | 전체 화면 중 30% 적용, Crash율 0.5% 상승, 버그율 10% 상승                                             |
-| **배운 점**             | 업무 파악 전 무리한 적용으로 안정성 하락, 명확한 아키텍처 통일 필요, 테스트 코드 필요성 확인, 팀원간 협업 및 내용 공유 부족함을 실감  |
+<table style="width: 100%;">
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
 
-<div style="text-align: center;">
-  <img src="https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png" alt="description" width="500">
-</div>
+- iOS파트 리드 (참여 인원 : iOS 2)
+</td>
+</tr>
+<td> 주요 기술 </td>
+<td>
+
+- ReactorKit, MVVM, RxSwift, Action/State
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+
+<img src="https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png" alt="리액터킷" style="width: 45%; height: auto;" />
+
+</td>
+</tr>
+<td> 성과/지표 </td>
+<td>
+
+</td>
+</tr>
+<td> 배운점/아쉬운점 </td>
+<td>
+
+- Action -> State로 단방향 흐름이 되며, 복잡한 기능은 없음을 다시한번 경험
+- 컴퍼넌트별 모듈 분리도 함께 진행했다면 더 빠른 모듈 분리가 진행되었겠으나, iOS만 진행되어 페이지단위 분리만 진행
+
+</td>
+</tr>
+</table>
 
 ## MVC -> MVVM 개선 (21.10 ~ 22.01)
 
@@ -260,8 +381,7 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- Alamofire, Firebase(Core, Analytics, Auth, Crashlytics)
-- RxSwift, RxCocoa, RxGesture
+- Alamofire, Firebase, RxSwift, RxCocoa, RxGesture
 
 </td>
 </tr>
@@ -302,7 +422,7 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- Alamofire, NMapsMap(네이버맵), Firebase(Core, Analytics, Auth, Crashlytics)
+- Alamofire, NMapsMap(네이버맵), Firebase
 - RxSwift, RxCocoa, RxGesture
 
 </td>
@@ -345,9 +465,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- Alamofire, Socket.IO-Client-Swift, Firebase(Core, Analytics, Auth, Crashlytics)
+- Alamofire, Socket.IO-Client-Swift, Firebase, Kingfiser
 - RxSwift, RxCocoa, RxGesture
-- Kingfiser
 
 </td>
 </tr>
@@ -406,18 +525,14 @@ flowchart TD
 </table>
 
 
-## 더스타 온라인 iOS/Web
+## 더스타 온라인(iOS/[Web](https://www.thestar.kr))
 
-## Enjoy J Tour
 <table style="width: 100%;">
 <tr>
     <td> 이미지 </td>
     <td> 
       <div style="display: flex; justify-content: space-between;">
-        <img src="asset/smartimage/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
-        <img src="asset/smartimage/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
-        <img src="asset/smartimage/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
-        <img src="asset/smartimage/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
+        <img src="asset/thestarmagazine/image_02.png" alt="이미지1" style="width: 24%; height: auto;" />
       </div>
     </td>
   </tr>
@@ -426,7 +541,43 @@ flowchart TD
 <td style="width: 150px;"> 역할 </td>
 <td>
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- iOS 메인 개발 및 web 개발
+</td>
+</tr>
+<tr>
+<td> 주요 기술 </td>
+<td>
+
+- typescript, Angular2
+
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- 더스타 매거진
+- Angular2 로 제작
+
+</td>
+</tr>
+</table>
+
+## Enjoy J Tour(iOS/Web)
+<table style="width: 100%;">
+<tr>
+    <td> 이미지 </td>
+    <td> 
+      <div style="display: flex; justify-content: space-between;">
+        <img src="asset/enjoyjtour/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 메인 개발 및 web 개발
 </td>
 </tr>
 <tr>
@@ -612,8 +763,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- , AFNetworking, ZXingObjc, Firbase(Core, Messaging, Crash)
-- Facocoapod, cebook(Core, Login, Share), Bolts, IgaworksCore
+- AFNetworking, ZXingObjc, Firbase(Core, Messaging, Crash)
+- Facebook(Core, Login, Share), Bolts, IgaworksCore
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
@@ -655,8 +806,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- , AFNetworking, Firbase(Core, Messaging, Crash)
-</tdcocoapod, >
+- AFNetworking, Firbase(Core, Messaging, Crash)
+</td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
@@ -696,8 +847,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- , AFNetworking, Realm, Firbase(Core, Messaging), MXParallaxHeader
-</tdcocoapod, >
+- AFNetworking, Realm, Firbase(Core, Messaging), MXParallaxHeader
+</td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
@@ -728,8 +879,7 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- 
-- AFcocoapods, Networking, Realm, Firbase
+- AFNetworking, Realm, Firbase
 - SVProgressHUD, ZBarSDK, SDWebImage, SDVersion
 - MDM, AppIron, INISAFE, MVaccine, MTransKey
 
@@ -778,8 +928,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- , Objective-c, WebView, Deeplink, APNs
-- Secocoapods, rver-Driven UI, Firebase, Mobile application Accessibility
+- Objective-c, WebView, Deeplink, APNs
+- Server-Driven UI, Firebase, Mobile application Accessibility
 </td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
@@ -867,8 +1017,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- , Objective-c, WebView, APNs, AFNetworking, Localizable
-</tdcocoapods, >
+- Objective-c, WebView, APNs, AFNetworking, Localizable
+</td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
@@ -910,8 +1060,8 @@ flowchart TD
 <td> 주요 기술 </td>
 <td>
 
-- , Objective-c, WebView, APNs, AFNetworking
-</tdcocoapods, >
+- Objective-c, WebView, APNs, AFNetworking
+</td>
 </tr>
 <td> 도전 과제 및 해결 방법 </td>
 <td>
