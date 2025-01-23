@@ -310,7 +310,7 @@ flowchart TD
 <td style="width: 150px;"> 역할 </td>
 <td>
 
-- iOS파트 리드 (참여 인원 : iOS 2)
+- iOS 파트 리드(참여 인원 : iOS 2)
 </td>
 </tr>
 <td> 주요 기술 </td>
@@ -322,7 +322,8 @@ flowchart TD
 <td> 도전 과제 및 해결 방법 </td>
 <td>
 
-
+- Input/Output 패턴보다 더 명확한 Action/State로 변경
+- 
 <img src="https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png" alt="리액터킷" style="width: 45%; height: auto;" />
 
 </td>
@@ -330,13 +331,21 @@ flowchart TD
 <td> 성과/지표 </td>
 <td>
 
+- 전체 페이지의 60% ReactorKit으로 대체
+- ReactorKit으로 대체한 화면의 Action당 테스트코드 0.7개 생성
+- 테스트커버리지 15% 향상
+- 버그 발생율 30% 감소
 </td>
 </tr>
 <td> 배운점/아쉬운점 </td>
 <td>
 
-- Action -> State로 단방향 흐름이 되며, 복잡한 기능은 없음을 다시한번 경험
-- 컴퍼넌트별 모듈 분리도 함께 진행했다면 더 빠른 모듈 분리가 진행되었겠으나, iOS만 진행되어 페이지단위 분리만 진행
+- Action -> State로 단방향 흐름이 되며, 복잡한 기능은 없음을 다시 한번 경험
+- 페이지별 분리가 아닌, 컴퍼넌트별 모듈 분리로 진행했다면 더 빠른 모듈 분리가 진행되었겠으나, iOS만 진행되어 페이지 단위로 한정
+  - 추후 모듈별 상세 분리를 진행하며 추가 분리 가능해짐
+- Android, iOS, (mobile)Web 모두 비슷한 로직임에도 서로 대화없이 진행됨에 대한 아쉬움
+  - Reactive Native, Flutter의 도입에 대해 논의 했으나 미뤄짐
+- 
 
 </td>
 </tr>
@@ -344,13 +353,48 @@ flowchart TD
 
 ## MVC -> MVVM 개선 (21.10 ~ 22.01)
 
-| **항목**              | **내용**                                           |
-|----------------------|---------------------------------------------------|
-| **역할**               | iOS 개발                                           |
-| **주요 기술**           | MVVM, input/output 패턴         |
-| **도전 과제 및 해결 방법** | viewDelegate선언 및 viewModel에 viewDelegate 주입<br> 하락                             |
-| **성과/지표**           | 전체 화면 중 30% 적용, Crash율 0.5% 상승, 버그율 10% 상승                                             |
-| **배운 점**             | 업무 파악 전 무리한 적용으로 안정성 하락, 명확한 아키텍처 통일 필요, 테스트 코드 필요성 확인, 팀원간 협업 및 내용 공유 부족함을 실감  |
+<table style="width: 100%;">
+<tr>
+<td style="width: 150px;"> 역할 </td>
+<td>
+
+- iOS 파트 리드(참여 인원 : iOS 2)
+</td>
+</tr>
+<td> 주요 기술 </td>
+<td>
+
+- MVVM, [input/output 패턴](https://github.com/kickstarter/native-docs/blob/master/inputs-outputs.md)
+</td>
+</tr>
+<td> 도전 과제 및 해결 방법 </td>
+<td>
+
+- MVC로 화면에 있는 
+- Input/Output 패턴보다 더 명확한 Action/State로 변경
+<img src="https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png" alt="리액터킷" style="width: 45%; height: auto;" />
+
+</td>
+</tr>
+<td> 성과/지표 </td>
+<td>
+
+- 3개의 페이지에 적용
+  - 추후 ReactorKit으로 대체
+- Crash율 0.5% 상승
+- 버그율 10% 상승
+
+</td>
+</tr>
+<td> 배운점/아쉬운점 </td>
+<td>
+
+- 업무 파악 전 무리한 적용으로 안정성 하락
+- 테스트 코드 필요성 확인
+- 팀원간 협업 및 내용 공유 부족함을 실감 이를 위한 명확한 아키텍처/패턴 통일 필요성 확인
+</td>
+</tr>
+</table>
 
 
 <br><br>
