@@ -76,7 +76,7 @@ gantt
 
 ## 아몬즈 아키텍처 개선 Tuist 적용 및 TMA 구조 확립 (24.04 ~ 24.12)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
@@ -139,7 +139,7 @@ flowchart TD
 
 ## App팀 배포열차 도입 (24.07 ~ 24.12)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
@@ -196,7 +196,7 @@ flowchart TD
 
 ## Swagger -> Swift 파일 전환 자동화 (23.05 ~ 23.06)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
@@ -248,7 +248,7 @@ flowchart TD
 
 ## Clean Architecture 도입 및 개선(23.02 ~ 23.12)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
@@ -305,7 +305,7 @@ flowchart TD
 
 ## ReactorKit을 활용한 ViewModel 마이그레이션 (22.03 ~ 22.12)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
@@ -353,7 +353,7 @@ flowchart TD
 
 ## MVC -> MVVM 개선 (21.10 ~ 22.01)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
@@ -401,7 +401,7 @@ flowchart TD
 
 # 하나모바일 (18.01 ~ 21.06)
 ## 더티켓
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -442,7 +442,7 @@ flowchart TD
 </table>
 
 ## [흔들어대리운전 (20.10 ~ 20.11)](https://apps.apple.com/kr/app/%ED%9D%94%EB%93%A4%EC%96%B4%EB%8C%80%EB%A6%AC%EC%9A%B4%EC%A0%84-13-%EC%A0%81%EB%A6%BD/id1245517555)
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -487,7 +487,7 @@ flowchart TD
 
 
 ## 두줄운세
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -526,7 +526,7 @@ flowchart TD
 </table>
 
 ## [Pickmecam](https://apps.apple.com/kr/app/%ED%94%BD%EB%AF%B8%EC%BA%A0-%EC%98%81%EC%83%81%EC%B1%84%ED%8C%85-%ED%99%94%EC%83%81%EC%B1%84%ED%8C%85/id1503303615) / [위픽캠](https://play.google.com/store/apps/details?id=com.live.camtalk&hl=ko)
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -571,7 +571,7 @@ flowchart TD
 
 ## 더스타 온라인(iOS/[Web](https://www.thestar.kr))
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -607,7 +607,7 @@ flowchart TD
 </table>
 
 ## Enjoy J Tour(iOS/Web)
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -644,7 +644,7 @@ flowchart TD
 </table>
 
 ## [스마트이미지](https://apps.apple.com/kr/app/smartimages/id889795772)
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -687,7 +687,7 @@ flowchart TD
 </table>
 
 ## 시상식 투표앱
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -737,7 +737,7 @@ flowchart TD
 </table>
 
 ## [FanPoint](https://apps.apple.com/us/app/%ED%8C%AC%ED%8F%AC%EC%9D%B8%ED%8A%B8-fanpoint-%ED%88%AC%ED%91%9C-%EB%AF%B8%EC%85%98-%EB%A6%AC%EC%9B%8C%EB%93%9C%EC%95%B1/id1258031653?l=ko)
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -783,7 +783,7 @@ flowchart TD
 
 # 새움테크 (15.05 ~ 18.01)
 ## [마이홈플러스포인트](https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%B4-%ED%99%88%ED%94%8C%EB%9F%AC%EC%8A%A4/id1297108925)
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -826,7 +826,7 @@ flowchart TD
 </table>
 
 ## [와인그래프](https://apps.apple.com/kr/app/%EC%99%80%EC%9D%B8%EA%B7%B8%EB%9E%98%ED%94%84-winegraph-%EC%99%80%EC%9D%B8-%EA%B2%80%EC%83%89-%EC%B6%94%EC%B2%9C/id1232552236)
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -867,7 +867,7 @@ flowchart TD
 </table>
 
 ## [나눔로또](https://apps.apple.com/kr/app/%EB%8F%99%ED%96%89%EB%B3%B5%EA%B6%8C/id1444390490)
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -911,7 +911,7 @@ flowchart TD
 
 ## 현대라이프 상담사용
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
@@ -948,7 +948,7 @@ flowchart TD
 
 ## [CJ One Card](https://apps.apple.com/us/app/cj-one/id387363739)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -993,7 +993,7 @@ flowchart TD
 
 ## 아주캐피탈 
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -1037,7 +1037,7 @@ flowchart TD
 
 ## [thePay](https://apps.apple.com/kr/app/thepay-mobile-recharge/id1088189940) / [99Pay](https://apps.apple.com/kr/app/99pay-mobile-recharge/id1229582503?l=en-GB)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -1080,7 +1080,7 @@ flowchart TD
 
 ## [엘리시안](https://apps.apple.com/pw/app/%EC%97%98%EB%A6%AC%EC%8B%9C%EC%95%88-%EB%A6%AC%EC%A1%B0%ED%8A%B8/id6447748695)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -1124,7 +1124,7 @@ flowchart TD
 # 유니텍 (14.07 ~ 15.04)
 ## MFCC(Multi Function Control console)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
 <td style="width: 150px;"> 역할 </td>
 <td>
@@ -1163,7 +1163,7 @@ flowchart TD
 # 강원대학교 전산원 (11.07 ~ 13.02)
 ## [강원대학교 App](https://play.google.com/store/apps/details?id=kr.ac.kangwon.kmobile&hl=ko&pli=1)
 
-<table style="width: 100%;">
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td> 이미지 </td>
     <td> 
@@ -1177,27 +1177,30 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
+<td style="width: 150px;"> 개요 </td>
 <td>
 
-- Android 메인 개발자 (참여 인원 : Android 1)
+- 목표: 강원대학교 전산원이 제공하는 대표 앱 제작(포탈 정보 제공, 식당 메뉴 정보 제공, 셔틀버스 정보 제공) 
+- 규모: Android 1, iOS 1, Back-end 1
+- 역할: Android 메인 개발
 </td>
 </tr>
 <tr>
 <td> 주요 기술 </td>
 <td>
 
-- Android Java
+- Android Java, XML통신
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
+<tr>
+<td> 주요 성과 </td>
 <td>
 
-- 강원대학교 학생 편의를 위한 App
-- 시간표, 식단표, 셔틀버스, 성적 조회 등 편의성 기능 제공
-- 최초 Native제작 참여, 추후 Flex Moblie로 변경 시 어시스턴스
-- 현재위치좌표, 암호화, 내부 DB사용
+- Native 제작 및 유지보수, 추후 Flex Moblie로 변경 시 어시스턴스
+- 위치좌표, 암호화, 내부 DB, API
 - 안드로이드 디바이스 8가지 최소 지원
+- 1만번 이상 다운로드
+- [뉴스 링크](https://n.news.naver.com/mnews/article/003/0005151175?sid=102)
 
 </td>
 </tr>
