@@ -78,16 +78,18 @@ gantt
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 개발 및 리딩 (참여인원: iOS 3)
+- 목표: Tuist 적용 및 TMA구조 확립을 통한 생상선 향상
+- 규모: iOS 3, QA 1
+- 역할: iOS 개발 및 리딩
 </td>
 </tr>
 <td style="border: 1px solid black;"> 주요 기술 </td>
 <td style="border: 1px solid black;">
 
-- [Tuist](https://docs.tuist.dev/en/), [The Modular Architecture (TMA)](https://docs.tuist.dev/en/guides/develop/projects/tma-architecture), [Swinject](https://github.com/Swinject/Swinject)  
+- [Tuist](https://docs.tuist.dev/en/), [The Modular Architecture(TMA)](https://docs.tuist.dev/en/guides/develop/projects/tma-architecture), [Swinject](https://github.com/Swinject/Swinject)  
 
 </td>
 </tr>
@@ -137,14 +139,15 @@ flowchart TD
 </tr>
 </table>
 
-## App팀 배포열차 도입 (24.07 ~ 24.12)
-
+## App팀 배포열차 도입 스쿼드 (24.07 ~ 24.12)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- 스쿼드 리더 (참여 인원 : Android 1, iOS 1, PO 1, QA 1)
+- 목표: 배포 관련 사항 결정 및 자동화로 배포 생산성 향상
+- 규모: Android 1, iOS 1, PO 1, QA 1
+- 역할: 스쿼드 리더
 </td>
 </tr>
 <td style="border: 1px solid black;"> 주요 기술 </td>
@@ -178,7 +181,7 @@ flowchart TD
 <td style="border: 1px solid black;"> 성과/지표 </td>
 <td style="border: 1px solid black;">
 
-- 주당 배포 횟수 21% 증가
+- 24년 상반기 대비 주당 배포 횟수 21% 증가
 - 슬랙 배포 관련 논의 15% 감소
 - 피쳐플래그를 통해 잘못된 배포 disable 처리 기능 제공
 - [관련 블로그](https://medium.com/@talq44/작은-pr-feature-flag-trunk-based-developement-그리고-자동화로-매일-develop-매주-production-배포하는-팀-되기-1-c9b2b63f424a)
@@ -188,7 +191,7 @@ flowchart TD
 <td style="border: 1px solid black;">
 
 - 유연한 CI/CD를 토대로 빠른 적용
-- 하나의 팀으로 정확한 내용공유
+- 하나의 팀으로 정확한 내용 공유
 - Store 심사제출까지 자동화 하지 못한 아쉬움
 </td>
 </tr>
@@ -198,10 +201,12 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- 메인 개발 (참여 인원 : iOS 1)
+- 목표: User API 문서 플랫폼 언어 파일 자동생성을 통한 생산성 향상
+- 규모: iOS 1, back-end 1, Android 1
+- 역할: 파트간 협의 담당 및 메인 개발
 </td>
 </tr>
 <td style="border: 1px solid black;"> 주요 기술 </td>
@@ -246,14 +251,17 @@ flowchart TD
 </tr>
 </table>
 
-## Clean Architecture 도입 및 개선(23.02 ~ 23.12)
+## Clean Architecture 도입 및 개선
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- App 팀 리드 (참여 인원 : Android 2, iOS 3, PO 1, QA 1)
+- 목표: Presenter / Domain / Data 분리를 통한 계층 명확성 향상
+- 기간: 2022.11 ~ 2023.09
+- 규모: Android 2, iOS 3, PO1, QA 1
+- 역할: App 팀 리드 / 클린아키텍처 스터디 주도 / 도메인 계층 생성 메인 개발
 </td>
 </tr>
 <td style="border: 1px solid black;"> 주요 기술 </td>
@@ -277,8 +285,8 @@ flowchart TD
   - DTO와 ViewState의 분리에 대해 강조 후 서로 다름을 인지시키도록 학습
   - 스냅샷 테스트를 통해, ViewState로 대체해가면서도 안정성있게 작업할 수 있도록 테스트코드 우선
 
-<img src="https://techblog.woowahan.com/wp-content/uploads/img/2019-10-02/the-clean-architecture.png" alt="클린아키텍처01" style="width: 45%; height: auto;" />
-<img src="https://jonghoonpark.com/assets/images/2023-10-24-%ED%81%B4%EB%A6%B0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/diagram-of-web-based-java-system.png" alt="클린아키텍처02" style="width: 45%; height: auto;" />
+<img src="https://techblog.woowahan.com/wp-content/uploads/img/2019-10-02/the-clean-architecture.png" alt="클린아키텍처01" style="width: 48%; height: auto;" />
+<img src="https://jonghoonpark.com/assets/images/2023-10-24-%ED%81%B4%EB%A6%B0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/diagram-of-web-based-java-system.png" alt="클린아키텍처02" style="width: 48%; height: auto;" />
 
 </td>
 </tr>
@@ -303,14 +311,163 @@ flowchart TD
 </tr>
 </table>
 
-## ReactorKit을 활용한 ViewModel 마이그레이션 (22.03 ~ 22.12)
+## 아몬즈 회원 가입 개선
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 파트 리드(참여 인원 : iOS 2)
+- 목표: 회원 가입 플로우에 대해 개선해 유저 진입율 향상
+- 기간: 2022.09 ~ 2022.11
+- 규모: Android 2, iOS 2, web 2, Designer 1, PO 1, QA 1
+- 역할: iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Coordinator 패턴, 모듈화
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 회원가입 및 로그인 화면을 어느화면에서도 띄울수 있도록 제작
+  - 모듈화 진행
+- 회원가입시 혜택 이미지 변경
+  - Config API요청. 다만 실행되지 않음
+  - Firebase RemoteConfig를 통해 Image URL을 지속해 바꿀수 있도록 가이드
+- 회원가입시 정보 입력에 대한 조건
+  - 안드로이드, iOS, Web 모두 동일한 정규식 사용하도록 가이드
+  - Firebase RemoteConfig를 통해 동일한 정규식을 사용하도록 함
+- 회원가입 확장가능성 추가
+  - 회원가입 도메인 모듈을 interface화해, SNS provider를 쉽게 추가할 수 있도록 제작
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 회원가입율 15% 증가
+- 다운로드 수 10% 증가
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 로그인화면의 경우 Present형 노출을 요청했으나 받아들여지지 않음
+  - 추후 HIG스터디를 진행해 공통된 UI에 대한 방향성 얼라인 주도
+- Coordinator 패턴 도입을 통해 화면 이동을 화면에서 ViewModel류로 분리 시작
+
+</td>
+</tr>
+</table>
+
+## 아몬즈 사용성 개선
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: UI 최신화를 위한 레거시 코드 개선 및 디자인 시스템 일부 도입
+- 기간: 2022.06 ~ 2022.10
+- 규모: Android 1, iOS 1, web 1, Designer 1, PO 1, QA 1
+- 역할: iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Design System, Component UI, Snapshot Test
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- UX 최신화를 위한 좌우간격 변경 및 동일 컬러 사용
+  - Color 및 간격에 대한 체계화를 통해 시스템화 진행
+- UI에 대한 지속적 확인 필요성 요청
+  - snapshot test를 추가하여 자동화된 테스트 추가
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- UX 최신화 85%에서 100% 달성
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 리소스상 디자인시스템화를 일부만 진행해 전체에 대한 적용을 하지 못한데에 대한 아쉬움
+- 체계화를 더 진행했어야 하나, 모든 플랫폼을 설득하지 못한데에 대한 아쉬움
+</td>
+</tr>
+</table>
+
+
+## 취소 반품 교환 리뉴얼
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 취소/반품/교환 화면 리뉴얼
+- 기간: 2022.03 ~ 2022.05
+- 규모: Android 1, iOS 1, web 1, back-end 1, Designer 1, PO 1, QA 1
+- 역할: iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Design System, Component UI, Snapshot Test
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 취소, 반품, 교환의 테스트에 대한 어려움
+  - 개발 모드 지원으로 테스트 용이성 향상 지원
+- 공통된 UI를 사용중에 있어 지속적 이슈 발생
+  - 취소, 반품, 교환 용 UI를 별도 분리
+  - 상품 목록형 Item과 취/반/교는 다른 도메인으로써 다르게 생성하도록 가이드
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 테스트커버리지 5% 증가
+- 버그 발생율 2% 감소
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 컴퍼넌트별 UI제작에 대해 Android, Web파트와도 공유 및 주도 했으나 결국은 iOS만 진행
+- 클린아키텍처 도입을 이어가기 위해 도메인 모듈의 통일성을 주도 했으나 Android 파트와 진행
+</td>
+</tr>
+</table>
+
+
+## ReactorKit을 활용한 ViewModel 마이그레이션
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: MVVM 구조 도입 및 ReactorKit 적용을 통한 인터페이스 화(마이그레이션)
+- 기간: 2022.01 ~ 2022.10
+- 규모: iOS 2, PO 1, QA 1
+- 역할: iOS 파트 리드 및 개발, ReactorKit 스터디 진행, 파트간 조율
 </td>
 </tr>
 <td style="border: 1px solid black;"> 주요 기술 </td>
@@ -323,9 +480,14 @@ flowchart TD
 <td style="border: 1px solid black;">
 
 - Input/Output 패턴보다 더 명확한 Action/State로 변경
-- 
-<img src="https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png" alt="리액터킷" style="width: 45%; height: auto;" />
+<img src="https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png" alt="리액터킷" style="width: 100%; height: auto;" />
 
+- TDD에 어울리도록 Action/State를 우선 정의 및 테스트코드 작성후 작업하도록 가이드
+- 스크럼 진행시 해당 화면을 마이그레이션 하도록 장려
+  - 타 파트와도 일정 관련하여 전달 및 Action/State 공유
+  - 기획서와의 매칭으로 정확한 동작에 대해 공유
+- DTO에서 State로 계층 분리
+  - 추후 Clean Architecture를 적용하며 추가 개선
 </td>
 </tr>
 <td style="border: 1px solid black;"> 성과/지표 </td>
@@ -335,6 +497,7 @@ flowchart TD
 - ReactorKit으로 대체한 화면의 Action당 테스트코드 0.7개 생성
 - 테스트커버리지 15% 향상
 - 버그 발생율 30% 감소
+- Analyitcs 개선 작업시 작업속도 타 플랫폼 대비 40% 빠르게 작업
 </td>
 </tr>
 <td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
@@ -345,20 +508,76 @@ flowchart TD
   - 추후 모듈별 상세 분리를 진행하며 추가 분리 가능해짐
 - Android, iOS, (mobile)Web 모두 비슷한 로직임에도 서로 대화없이 진행됨에 대한 아쉬움
   - Reactive Native, Flutter의 도입에 대해 논의 했으나 미뤄짐
-- 
+- 화면이 Rx에 강하게 묶여 Rx의존적인 구조가 됨
+</td>
+</tr>
+</table>
+
+## 아몬즈 홈 리뉴얼
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 홈에 사용중인 타입 개편 및 서브 홈 제작
+- 기간: 2021.11 ~ 2022.03
+- 규모: Android 2, iOS 2, web 2, back-end 2, PO 1, QA 1
+- 역할: iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Clean Architecture, RestfulAPI, ServerDriven UI, ReactorKit
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 타입은 있으나 사용하지 않는 타입들 삭제
+  - 연속성 있는 배포를 위해, 정의되어있지 않은 타입은 버리도록 전략 설정 유도
+  - 타입별 UI 테스트를 위한 SnapShot Test 추가
+- StoryBoard로 제작되어있던 UI를 Code Base로 대체
+- 두명이 동시에 개발을 진행하게 되어, 담당 분리
+  - 최초 클린아키텍처를 도입해, Presenter / Domain / Data 영역 분리
+  - Domain의 개발 메인 담당
+  - DTO와 ViewState에 대한 분리 실시
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 오늘출발 출시 와 함께 22년 상반기 연말 MAU 50만 유지
+- Crash 안정화 (99.5% -> 99.9%)
+- SnapShot 테스트 추가에 따른 지속적 홈 리팩토링 진행
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 클린아키텍처 도입의 이유를 어느정도 증명하며, 팀 전반적인 도입의 계기가 됨
+  - 다만 완벽하게 클린아키텍처를 알지 못한채 적용해 명확한 계층 분리가 되지 않음
+- Data(API)와 View간의 완벽한 분리가 일어나게 되며, 지속적 마이그레이션 및 리팩토링의 가능성을 만들게됨
+- API값을 받되 Domain에서 버리는 정책을 결정해 추후 A/B테스트와 타입 추가를 하면서도 연속성 있는 배포가능성 엶
+  - 1달에 1번 일어나던 배포 횟수를 줄일 수 있게됨
 
 </td>
 </tr>
 </table>
 
-## MVC -> MVVM 개선 (21.10 ~ 22.01)
+## MVC -> MVVM 개선
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 파트 리드(참여 인원 : iOS 2)
+- 목표: MVC구조로 인해 발생하는 유지 보수성 하락 개선
+- 기간: 2021.10 ~ 2021.12
+- 규모: iOS 2, PO 1, QA 1
+- 역할: iOS 파트 리드 및 메인 개발
 </td>
 </tr>
 <td style="border: 1px solid black;"> 주요 기술 </td>
@@ -396,6 +615,62 @@ flowchart TD
 </tr>
 </table>
 
+## 아몬즈 풀필먼트(오늘 출발) 추가
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 상품 목록 노출, 필터 추가, 상세페이지 오늘출발 노출을 통한 풀필먼트 기능 추가 
+- 기간: 2021.09 ~ 2021.11
+- 규모: Android 1, iOS 1, web 1, back-end 1, PO 1, QA 1
+- 역할: iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Swift, Design System, Snapshot test, SnapKit
+- (Domain) Home, Category, Search, Coupon, Brand, Product Detail
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 모든 목록에 노출되는 상품에 오늘출발 뱃지 추가
+  - Storyboard로 작업되어 있던 Cell을 Code Base UI로 대체
+  - 동일한 Item은 동일한 UI가 되도록 체계화
+  - Cell의 Snapshot test 추가
+- 목록에 오늘출발 필터 추가
+  - 상품목록 CollectionView에 extension을 통한 필터 기능 추가
+  - 추후 공통 목록 UI로 대체
+- 상품상세 오늘출발 UI 추가
+  - Storyboard로 제작되어있던 Header 중 일부 CodeBase로 대체
+  - 점진적 UI 개선 방향성에 대한 App팀 공유
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 오늘출발 출시 후 연말 MAU 60만 돌파
+- 판매량 30% 증가
+- [당시 기획전 링크](https://www.amondz.com/event/1307)
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 팀원간의 협업을 시작하며 Storyboard 사용 축소
+  - 머지 컨플릭을 줄이기 위해 담당 도메인 분리
+- 일부 디자인 시스템화를 통해 유지보수성 향상
+
+</td>
+</tr>
+</table>
+
 
 <br><br>
 
@@ -415,10 +690,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 티켓 예약 내역 및 이벤트/관람 정보를 확인 가능한 서비스 제공
+- 규모: Android 1, iOS 1, web 1, back-end 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -426,22 +703,20 @@ flowchart TD
 <td style="border: 1px solid black;">
 
 - Alamofire, Firebase, RxSwift, RxCocoa, RxGesture
-
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 티켓 예약 내역 및 이벤트/관람 정보를 확인 가능
-- 별도 상세 접수화면에서 추가 사항 기입 가능
+- 메인 페이지 서버 드리븐 UI 구성 및 제공
+- 상세페이지 커스텀 설정이 가능한 UI 제공
 - SNS를 통한 간편 로그인 기능 제공
 - Rx를 활용한 MVVM구조 프로젝트 작성
-
 </td>
 </tr>
 </table>
 
-## [흔들어대리운전 (20.10 ~ 20.11)](https://apps.apple.com/kr/app/%ED%9D%94%EB%93%A4%EC%96%B4%EB%8C%80%EB%A6%AC%EC%9A%B4%EC%A0%84-13-%EC%A0%81%EB%A6%BD/id1245517555)
+## [흔들어대리운전](https://apps.apple.com/kr/app/%ED%9D%94%EB%93%A4%EC%96%B4%EB%8C%80%EB%A6%AC%EC%9A%B4%EC%A0%84-13-%EC%A0%81%EB%A6%BD/id1245517555)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
     <td style="border: 1px solid black;"> 이미지 </td>
@@ -456,10 +731,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 위치좌표 및 모션 캡쳐를 활용한 대리운전 앱
+- 규모: Android 1, iOS 1, back-end 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -468,19 +745,15 @@ flowchart TD
 
 - Alamofire, NMapsMap(네이버맵), Firebase
 - RxSwift, RxCocoa, RxGesture
-
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 위치좌표 및 모션 캡쳐를 활용한 대리운전 앱
 - 네이버 맵을 이용한 현재 위치 표현
 - 별도 상세 접수화면에서 추가 사항 기입 가능
 - Rx를 활용한 MVVM구조의 프로젝트 작성
 - 위치좌표의 정확성에 따른 알럿창 구분
-
-
 </td>
 </tr>
 </table>
@@ -499,10 +772,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 운세 상담 및 전화상담 서비스 제공 App
+- 규모: Android 1, iOS 1, web 1, back-end 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -511,13 +786,11 @@ flowchart TD
 
 - Alamofire, Socket.IO-Client-Swift, Firebase, Kingfiser
 - RxSwift, RxCocoa, RxGesture
-
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 운세 상담 및 전화상담 서비스 제공 App
 - 메인 페이지 및 회원가입을 네이티브로 제작
 - 그외 추가 상세페이지는 웹뷰로 이동
 
@@ -540,10 +813,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 1:1 실시간 동영상 채팅 지원 App
+- 규모: Android 1, iOS 1, back-end 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -554,13 +829,12 @@ flowchart TD
 - StoreKit IgaworksCore, AdPopcornOfferwall, TwilioVideo, AdBrixRemastered
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 1:1 실시간 동영상 채팅 지원 App
 - 채팅과 동영상채팅 등의 실시간 지원을 위한 소켓 통신 지원
-- SNS 로그인 지원 ( 페이스북, 구글, 카카오톡, 네이버 )
-- 광고 지원 ( Adbrix, Nas )
+- SNS 로그인 지원(페이스북, 구글, 카카오톡, 네이버)
+- 광고 지원(Adbrix, Nas)
 - 인앱 구매 지원
 - 동영상 채팅은 Twilio를 사용해 지원
 - 소켓통신을 통해 실시간 채팅, 음성채팅 요청 및 연결 실시간 지원
@@ -582,10 +856,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발 및 web 개발
+- 목표: 더스타 매거진 공유를 위한 서비스
+- 규모: Android 1, iOS 1, web 1, back-end 1
+- 역할: iOS 메인 개발 및 web 개발
 </td>
 </tr>
 <tr>
@@ -593,14 +869,14 @@ flowchart TD
 <td style="border: 1px solid black;">
 
 - typescript, Angular2
-
+- swift, webview(webkit)
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 더스타 매거진
-- Angular2 로 제작
+- 적응형 웹페이지 제작을 통해, 리소스 효율화
+- 공유하기와 같은 모바일 특화 기술의 모듈화를 통해 웹뷰 기반 앱제작 효율화
 
 </td>
 </tr>
@@ -618,10 +894,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발 및 web 개발
+- 목표: 일본 내 숙소 예약용 페이지 제작
+- 규모: Android 1, iOS 1, web 2, back-end 1
+- 역할: iOS 메인 개발 및 web 개발 서브
 </td>
 </tr>
 <tr>
@@ -632,15 +910,26 @@ flowchart TD
 
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 일본 내 숙소 예약용 페이지
-- Angular2 로 제작
 - 예약의 전반적인 기능 수행
+- 모바일의 경우 푸시 지원 및 webview를 기반으로 제작
+- 적응형 web 제작을 통해 1코드로 모든 플랫폼이 동일한 화면을 제공받을 수 있도록 제작
 
 </td>
 </tr>
+<td style="border: 1px solid black;"> 배운점 </td>
+<td style="border: 1px solid black;">
+
+- 실제 서비스 론칭되지 못함
+  - 시험적인 서비스를 제작시 웹 개발의 효용성을 느낌
+- 주요 기능을 한곳에서 제작해야 하는 필요성 확인
+- 반응형 UI도 일부 필요하다는것을 느낌
+
+</td>
+</tr>
+
 </table>
 
 ## [스마트이미지](https://apps.apple.com/kr/app/smartimages/id889795772)
@@ -658,10 +947,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 저작권 있는 유료이미지(스톡) 등록 및 판매
+- 규모: Android 1, iOS 1, back-end 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -670,13 +961,11 @@ flowchart TD
 
 - Alamofire, Firebase(Core, Messaging)
 - MXParallaxHeader, MXSegmentedPager, Kingfisher
-
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 유료이미지 등록 및 판매를 위한 앱
 - 스마트폰에 있는 이미지 등록 지원
 - 이미지 크기 조절을 위한 이미지 프로세싱 기능 지원
 - 이미지 설명을 위한 태그 기능 지원
@@ -703,10 +992,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 각 시상식(더서울어워즈, 미스코리아, 서울가요대전, 소리바다, KPMA) 별 투표를 위한 앱 제작
+- 규모: Android 1, iOS 1, back-end 1, designer 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -719,18 +1010,19 @@ flowchart TD
 
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 더서울어워즈, 미스코리아, 서울가요대전, 소리바다, KPMA
-- 각 시상식별 투표를 위한 앱
-- 지역화 지원 ( 한국어, 영어, 중국어 간체/번체 )
+- Localizable 지원 (한국어, 영어, 중국어 간체/번체)
 - 시상식 후반 100만건 이상 접속을 위한 서버 통신 최적화
-- 인앱 결제 지원, 광고 지원 ( AdPopcorn, Adbrix, Tapjoy )
+  - dev 모드에서 동일한 API를 1초내로 요청시 알럿을 노출/로그출력 하도록 제작
+  - Task관리를 통해 중복 요청시 마지막 요청만 동작하도록 제작
+- 인앱 결제 지원, 광고 지원 (AdPopcorn, Adbrix, Tapjoy)
 - 타 플랫폼과 포인트 교환을 위한 Scheme 지원
 - UI의 변경을 쉽게 변경하기 위해 Design System화
 - 공통 모듈화 진행
-- 파이어베이스 DB를 별도 구축해 실시간 인앱구매 내역을 저장
+  - Utils, Manager 모듈을 제작해 사용
+- 파이어베이스 DB를 별도 구축해 실시간 인앱구매 내역 저장
 
 </td>
 </tr>
@@ -751,10 +1043,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 각종 시상식 앱과 연동해 포인트 교환 및 결제를 지원
+- 규모: Android 1, iOS 1, back-end 1, designer 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -766,14 +1060,18 @@ flowchart TD
 - StoreKit, TabjoySDK, Igaworkscore, AdPopcornOfferwall
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 시상식 앱과 연동해 포인트 교환 및 결제를 지원하는 앱
-- 지역화를 통해 4개언어 지원( 한국어, 영어, 중국어 간체/번체 )
-- 인앱결제 추가 및 인앱결제 재구매 프로세스 추가
-- Swift 1달 학습 후 투입된 첫 프로젝트
+- Localizable를 통해 4개언어 지원(한국어, 영어, 중국어 간체/번체)
+  - sheet -> csv -> .strings -> enum 변경 스크립트 제작
+  - 안드로이드, iOS 키값 통일
+  - sheet 변경시 노티해 다음 앱 업데이트에 추가되도록 자동화
 - 각종 시상식과 연계 가능한 Scheme 모듈화 진행
+- 인앱결제 추가 및 인앱결제 재구매 프로세스 추가
+  - 인앱 결제시 누락되는 정보가 발생해 별도 저장 방식 추가
+  - 결제 시작 부터, 결제 완료전까지 내부 DB + FireStore에 정보 저장
+  - 전체 결제에 약 1%정도 발생하던 결제 누락을 0.1% 이하로 감소
 
 </td>
 </tr>
@@ -797,10 +1095,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 홈플러스 사용 고객 마일리지 적립을 위한 서비스 App
+- 규모: Android 1, iOS 1, back-end 2, web 1
+- 역할: iOS 메인 개발 / 모바일 저장 방식 가이드 / API 디자인 리드
 </td>
 </tr>
 <tr>
@@ -814,8 +1114,7 @@ flowchart TD
 <td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
 <td style="border: 1px solid black;">
 
-- 홈플러스 사용 고객 마일리지 적립을 위한 서비스 App
-- 추후 관리 용이성을 위해 Webview로 제작
+- 관리 용이성을 위해 Webview로 제작
 - 마일리지 적립을 위한 바코드 리더 추가
 - 모바일 통신을 처음 경험한 서버개발자와 API 구축
 - 기초 20개 지원 후 10개 API 추후 추가
@@ -840,10 +1139,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 와인 정보와 게시물을 확인할 수 있는 와인 SNS 종합 정보 앱
+- 규모: Android 1, iOS 1, design 1, back-end 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -856,10 +1157,9 @@ flowchart TD
 <td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
 <td style="border: 1px solid black;">
 
-- 와인 정보와 게시물을 확인할 수 있는 와인 SNS 종합 정보 앱
-- 페이스북과 인스타그램의 장점만을 종합한 앱
 - SNS 로그인 지원
 - SNS 게시글 빠른 로드를 위해 API통신 추가 개발
+- 페이스북과 인스타그램의 장점만을 종합한 앱
 - 와인 라벨 스캔을 통한 검색 기능 지원
 
 </td>
@@ -881,10 +1181,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 나눔로또 당첨 확인 및 GPS기반 판매점 정보 지원
+- 규모: Android 1, iOS 1, web 2, back-end: 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -894,16 +1196,15 @@ flowchart TD
 - AFNetworking, Realm, Firbase(Core, Messaging), MXParallaxHeader
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 나눔로또 정보 확인 및 판매점 정보 확인을 위한 App
 - 서버 부하를 방지하기 위해 앱에 페이지 정보 데이터 저장
 - 업데이트를 통해 웹페이지 데이터 다운로드 및 변경 지원
 - QR Reader를 통해 복권 당첨여부 실시간 확인 가능
 - 복권 판매점 정보를 스마트폰에 저장을 위해 Realm 사용
 - 현재 위치 좌표 수신 및 실시간 사용
-- Git을 통해 프로젝트 공유 경험
+- Git을 통한 프로젝트 공유
 
 </td>
 </tr>
@@ -913,9 +1214,11 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
+- 목표: 현대라이프 상담사용 모바일/태블릿 어플리케이션 제작
+- 규모: Android 1, iOS 1, back-end: 3, web 2, design 1
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
@@ -929,12 +1232,11 @@ flowchart TD
 
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 보험설계사가 고객 가입을 위해 사용하는 App
-- 보험권 App이기에 보안 라이브러리 다수 사용
-- iPhone/iPad 사이즈 모두 지원 ( 별개 스토리보드로 구현 후 지원 )
+- 보안 라이브러리 다수 사용
+- iPhone/iPad 사이즈 모두 지원 (각각의 스토리보드로 구현 후 지원)
 - Enterprise 계정을 사용한 앱 공유
 - 공인인증서 지원
 - 웹 + 네이티브 병합된 형태로 script통신 지원
@@ -965,7 +1267,9 @@ flowchart TD
 <td style="width: 150px; border: 1px solid black;"> 역할 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+  - 목표: CJ One 카드 메인탭(5페이지) 리뉴얼
+  - 규모: Android 1, iOS 1, PM 겸 기획자 1, back-end 1, 디자이너 2
+  - 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -976,7 +1280,7 @@ flowchart TD
 - Server-Driven UI, Firebase, Mobile application Accessibility
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
 - 앱 모바일 접근성을 위한 UI배치, 가이드 문구 연결, 포커싱 지정
@@ -1007,10 +1311,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+- 목표: 유저 서비스 마이그레이션 및 내부 직원용 앱 개발
+- 규모: Android 1, iOS 1, web 2, back-end 2
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <tr>
@@ -1021,15 +1327,15 @@ flowchart TD
 - KWPki, MagicSE, MagicXSign, MagicMRS
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
 - 아주캐피탈 리뉴얼과 아주캐피탈 직원용 앱 개발
 - 직원용의 경우 **Enterprise 계정**을 통해 내부 배포
 - 관리의 용이성을 위해 Webview 사용률을 높임
+- 페이지별 관리를 위한 App <-> Web간의 페이지 일원화
 - 은행권 앱이기에 다양한 보안 모듈 사용 경험
 - 와이파이가 지원되지 않아 폐쇄적인 상황에서도 정상적인 개발 실시
-
 
 </td>
 </tr>
@@ -1051,10 +1357,12 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
+  - 목표: 국내외 사용자 해외전화 서비스 제공
+  - 규모: Android 1, iOS 1, Back-end 1
+  - 역할: iOS 메인 개발자
 </td>
 </tr>
 <tr>
@@ -1064,7 +1372,7 @@ flowchart TD
 - Objective-c, WebView, APNs, AFNetworking, Localizable
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
 - 13개 언어 지원을 위해, 화면 노출 시점에 문구 설정
@@ -1098,7 +1406,7 @@ flowchart TD
   <td style="border: 1px solid black;">
 
     - 목표: 엘리시안 강촌/제주 예약 및 실시간 스키장 확인 기능 제공
-    - 규모: Android 1, iOS 1, Back-end 1
+    - 규모: Android 1, iOS 1, web 1, Back-end 1
     - 역할: iOS 메인 개발자
   </td>
 </tr>
@@ -1109,10 +1417,9 @@ flowchart TD
 - Objective-c, WebView, APNs, AFNetworking
 </td>
 </tr>
-<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
 <td style="border: 1px solid black;">
 
-- 엘리시안 강촌/제주 예약 지원 앱
 - CCTV를 통해 스키장 현재 상태 확인 가능
 - 숙소 예약의 경우 외부 결제 지원
 - 네이티브와 웹의 병합된 형태
