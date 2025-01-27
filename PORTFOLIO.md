@@ -78,22 +78,22 @@ gantt
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 개발 및 리딩 (참여인원: iOS 3)
 </td>
 </tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - [Tuist](https://docs.tuist.dev/en/), [The Modular Architecture (TMA)](https://docs.tuist.dev/en/guides/develop/projects/tma-architecture), [Swinject](https://github.com/Swinject/Swinject)  
 
 </td>
 </tr>
 
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - Application / Feature / Domain / Core / Shared 계층 분리
 - 모듈별 구조 확립 및 테스트 코드 작성 유도
@@ -112,8 +112,8 @@ flowchart TD
 
 </td>
 </tr>
-<td> 성과/지표 </td>
-<td>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
 
 - CI 빌드테스트 속도 50% 감소(12분 -> 5분)
 - 개발속도 10% 증가(모듈별 빌드)
@@ -123,8 +123,8 @@ flowchart TD
 
 </td>
 </tr>
-<td> 배운점/아쉬운점 </td>
-<td>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
 
 - 명확한 계층정의로 협업 맴버 공통된 형태의 모듈 개발
 - 모듈별 테스트가 추가되어 안정성 향상
@@ -141,20 +141,20 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - 스쿼드 리더 (참여 인원 : Android 1, iOS 1, PO 1, QA 1)
 </td>
 </tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - [Trunk Based Develpment(TBD)](https://trunkbaseddevelopment.com/), Feature Flag, Jira Automation, Slack
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 배포 관련 일정 논의 및 결정
   - 매주 1회
@@ -175,8 +175,8 @@ flowchart TD
   - (실) 배포 완료시 상태 변경 자동화 
 </td>
 </tr>
-<td> 성과/지표 </td>
-<td>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
 
 - 주당 배포 횟수 21% 증가
 - 슬랙 배포 관련 논의 15% 감소
@@ -184,8 +184,8 @@ flowchart TD
 - [관련 블로그](https://medium.com/@talq44/작은-pr-feature-flag-trunk-based-developement-그리고-자동화로-매일-develop-매주-production-배포하는-팀-되기-1-c9b2b63f424a)
 </td>
 </tr>
-<td> 배운점/아쉬운점 </td>
-<td>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
 
 - 유연한 CI/CD를 토대로 빠른 적용
 - 하나의 팀으로 정확한 내용공유
@@ -198,20 +198,20 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - 메인 개발 (참여 인원 : iOS 1)
 </td>
 </tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Swift, OpenAPISpec 3.0, RestfulAPI, Moya, Alamofire, yaml
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - OAS 3.0기준 Swagger 문서를 UserAPI모듈로 생성하기
   - SwaggerCodeGen은 단순 DTO만 생성해서 탈락
@@ -224,8 +224,8 @@ flowchart TD
   - 별도 앱으로 생성해 작업시 변경되면 담당자가 덮어씌우도록 결정
 </td>
 </tr>
-<td> 성과/지표 </td>
-<td>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
 
 - API관련 이슈 90% 감소
 - 디코딩 에러 파악율 100% 달성
@@ -234,8 +234,8 @@ flowchart TD
 - [관련 블로그](https://medium.com/bejewel/swagger-converter-제작기-84e4726f2be2)
 </td>
 </tr>
-<td> 배운점/아쉬운점 </td>
-<td>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
 
 - 사람은 실수를 할 수 있어도, 기계는 실수하지 않는다. 
 - 자동화된 테스트코드 생성이 안정성 증가에 큰 도움을 줌
@@ -250,20 +250,20 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - App 팀 리드 (참여 인원 : Android 2, iOS 3, PO 1, QA 1)
 </td>
 </tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Clean Architecture, Snapshot Test
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 클린아키텍처에 대한 전반적인 지식 부족
   - 스터디 진행 및 지속적 가이드 실시
@@ -282,8 +282,8 @@ flowchart TD
 
 </td>
 </tr>
-<td> 성과/지표 </td>
-<td>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
 
 - 버그율 5% 감소
 - 작업속도 5% 증가
@@ -291,8 +291,8 @@ flowchart TD
 - [관련 블로그](https://medium.com/bejewel/저희는-클린한-구조를-지향하고-있습니다-888a3dc1c03a)
 </td>
 </tr>
-<td> 배운점 </td>
-<td>
+<td style="border: 1px solid black;"> 배운점 </td>
+<td style="border: 1px solid black;">
 
 - Data에 휘둘리지 않는 작업이 가능해짐
 - Backend-Client 동시 작업이 가능해짐
@@ -307,20 +307,20 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 파트 리드(참여 인원 : iOS 2)
 </td>
 </tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - ReactorKit, MVVM, RxSwift, Action/State
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - Input/Output 패턴보다 더 명확한 Action/State로 변경
 - 
@@ -328,8 +328,8 @@ flowchart TD
 
 </td>
 </tr>
-<td> 성과/지표 </td>
-<td>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
 
 - 전체 페이지의 60% ReactorKit으로 대체
 - ReactorKit으로 대체한 화면의 Action당 테스트코드 0.7개 생성
@@ -337,8 +337,8 @@ flowchart TD
 - 버그 발생율 30% 감소
 </td>
 </tr>
-<td> 배운점/아쉬운점 </td>
-<td>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
 
 - Action -> State로 단방향 흐름이 되며, 복잡한 기능은 없음을 다시 한번 경험
 - 페이지별 분리가 아닌, 컴퍼넌트별 모듈 분리로 진행했다면 더 빠른 모듈 분리가 진행되었겠으나, iOS만 진행되어 페이지 단위로 한정
@@ -355,20 +355,20 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 파트 리드(참여 인원 : iOS 2)
 </td>
 </tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - MVVM, [input/output 패턴](https://github.com/kickstarter/native-docs/blob/master/inputs-outputs.md)
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - MVC로 화면에 있는 
 - Input/Output 패턴보다 더 명확한 Action/State로 변경
@@ -376,8 +376,8 @@ flowchart TD
 
 </td>
 </tr>
-<td> 성과/지표 </td>
-<td>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
 
 - 3개의 페이지에 적용
   - 추후 ReactorKit으로 대체
@@ -386,8 +386,8 @@ flowchart TD
 
 </td>
 </tr>
-<td> 배운점/아쉬운점 </td>
-<td>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
 
 - 업무 파악 전 무리한 적용으로 안정성 하락
 - 테스트 코드 필요성 확인
@@ -403,8 +403,8 @@ flowchart TD
 ## 더티켓
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/theticket/image_00.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/theticket/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -415,22 +415,22 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Alamofire, Firebase, RxSwift, RxCocoa, RxGesture
 
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 티켓 예약 내역 및 이벤트/관람 정보를 확인 가능
 - 별도 상세 접수화면에서 추가 사항 기입 가능
@@ -444,8 +444,8 @@ flowchart TD
 ## [흔들어대리운전 (20.10 ~ 20.11)](https://apps.apple.com/kr/app/%ED%9D%94%EB%93%A4%EC%96%B4%EB%8C%80%EB%A6%AC%EC%9A%B4%EC%A0%84-13-%EC%A0%81%EB%A6%BD/id1245517555)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/shakecall/image_00.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/shakecall/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -456,23 +456,23 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Alamofire, NMapsMap(네이버맵), Firebase
 - RxSwift, RxCocoa, RxGesture
 
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 위치좌표 및 모션 캡쳐를 활용한 대리운전 앱
 - 네이버 맵을 이용한 현재 위치 표현
@@ -489,8 +489,8 @@ flowchart TD
 ## 두줄운세
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div>
         <img src="asset/twolinefortune/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/twolinefortune/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -499,23 +499,23 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Alamofire, Socket.IO-Client-Swift, Firebase, Kingfiser
 - RxSwift, RxCocoa, RxGesture
 
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 운세 상담 및 전화상담 서비스 제공 App
 - 메인 페이지 및 회원가입을 네이티브로 제작
@@ -528,8 +528,8 @@ flowchart TD
 ## [Pickmecam](https://apps.apple.com/kr/app/%ED%94%BD%EB%AF%B8%EC%BA%A0-%EC%98%81%EC%83%81%EC%B1%84%ED%8C%85-%ED%99%94%EC%83%81%EC%B1%84%ED%8C%85/id1503303615) / [위픽캠](https://play.google.com/store/apps/details?id=com.live.camtalk&hl=ko)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/pickmecam/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
         <img src="asset/pickmecam/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
@@ -540,22 +540,22 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Alamofire, Socket.IO-Client-Swift, Firebase, SVPorogressHUD, Toask-Swift
 - StoreKit IgaworksCore, AdPopcornOfferwall, TwilioVideo, AdBrixRemastered
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 1:1 실시간 동영상 채팅 지원 App
 - 채팅과 동영상채팅 등의 실시간 지원을 위한 소켓 통신 지원
@@ -573,8 +573,8 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/thestarmagazine/image_02.png" alt="이미지1" style="width: 24%; height: auto;" />
       </div>
@@ -582,22 +582,22 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발 및 web 개발
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - typescript, Angular2
 
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 더스타 매거진
 - Angular2 로 제작
@@ -609,8 +609,8 @@ flowchart TD
 ## Enjoy J Tour(iOS/Web)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/enjoyjtour/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
       </div>
@@ -618,22 +618,22 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발 및 web 개발
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - typescript, Angular2
 
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 일본 내 숙소 예약용 페이지
 - Angular2 로 제작
@@ -646,8 +646,8 @@ flowchart TD
 ## [스마트이미지](https://apps.apple.com/kr/app/smartimages/id889795772)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/smartimage/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/smartimage/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -658,23 +658,23 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Alamofire, Firebase(Core, Messaging)
 - MXParallaxHeader, MXSegmentedPager, Kingfisher
 
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 유료이미지 등록 및 판매를 위한 앱
 - 스마트폰에 있는 이미지 등록 지원
@@ -689,8 +689,8 @@ flowchart TD
 ## 시상식 투표앱
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/theseoulawards/image_00.png" alt="이미지1" style="width: 15%; height: auto;" />
         <img src="asset/misskorea/image_00.png" alt="이미지2" style="width: 15%; height: auto;" />
@@ -703,15 +703,15 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Alamofire, RealmSwift, Firebase
 - GoogleSignIn, TwitterKit, Facebook
@@ -719,8 +719,8 @@ flowchart TD
 
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 더서울어워즈, 미스코리아, 서울가요대전, 소리바다, KPMA
 - 각 시상식별 투표를 위한 앱
@@ -739,8 +739,8 @@ flowchart TD
 ## [FanPoint](https://apps.apple.com/us/app/%ED%8C%AC%ED%8F%AC%EC%9D%B8%ED%8A%B8-fanpoint-%ED%88%AC%ED%91%9C-%EB%AF%B8%EC%85%98-%EB%A6%AC%EC%9B%8C%EB%93%9C%EC%95%B1/id1258031653?l=ko)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/fanpoint/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/fanpoint/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -751,23 +751,23 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 
 - Alamofire, Kingfisher, Firbase(Core, Messaging, Crash), RealmSwift
 - StoreKit, TabjoySDK, Igaworkscore, AdPopcornOfferwall
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 시상식 앱과 연동해 포인트 교환 및 결제를 지원하는 앱
 - 지역화를 통해 4개언어 지원( 한국어, 영어, 중국어 간체/번체 )
@@ -785,8 +785,8 @@ flowchart TD
 ## [마이홈플러스포인트](https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%B4-%ED%99%88%ED%94%8C%EB%9F%AC%EC%8A%A4/id1297108925)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/myhomeplus/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/myhomeplus/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -797,22 +797,22 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - AFNetworking, ZXingObjc, Firbase(Core, Messaging, Crash)
 - Facebook(Core, Login, Share), Bolts, IgaworksCore
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 홈플러스 사용 고객 마일리지 적립을 위한 서비스 App
 - 추후 관리 용이성을 위해 Webview로 제작
@@ -828,8 +828,8 @@ flowchart TD
 ## [와인그래프](https://apps.apple.com/kr/app/%EC%99%80%EC%9D%B8%EA%B7%B8%EB%9E%98%ED%94%84-winegraph-%EC%99%80%EC%9D%B8-%EA%B2%80%EC%83%89-%EC%B6%94%EC%B2%9C/id1232552236)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/winegraph/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/winegraph/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -840,21 +840,21 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - AFNetworking, Firbase(Core, Messaging, Crash)
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 와인 정보와 게시물을 확인할 수 있는 와인 SNS 종합 정보 앱
 - 페이스북과 인스타그램의 장점만을 종합한 앱
@@ -869,8 +869,8 @@ flowchart TD
 ## [나눔로또](https://apps.apple.com/kr/app/%EB%8F%99%ED%96%89%EB%B3%B5%EA%B6%8C/id1444390490)
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/nanumlotto/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/nanumlotto/image_05.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -881,21 +881,21 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - AFNetworking, Realm, Firbase(Core, Messaging), MXParallaxHeader
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 나눔로또 정보 확인 및 판매점 정보 확인을 위한 App
 - 서버 부하를 방지하기 위해 앱에 페이지 정보 데이터 저장
@@ -913,15 +913,15 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - AFNetworking, Realm, Firbase
 - SVProgressHUD, ZBarSDK, SDWebImage, SDVersion
@@ -929,8 +929,8 @@ flowchart TD
 
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 보험설계사가 고객 가입을 위해 사용하는 App
 - 보험권 App이기에 보안 라이브러리 다수 사용
@@ -950,8 +950,8 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/cjonecard/image_00.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/cjonecard/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -962,22 +962,22 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Objective-c, WebView, Deeplink, APNs
 - Server-Driven UI, Firebase, Mobile application Accessibility
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 앱 모바일 접근성을 위한 UI배치, 가이드 문구 연결, 포커싱 지정
 - 서버드리븐한 홈 구성을 위한 다이나믹 UI 적용
@@ -995,8 +995,8 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/ajucapital/image_00.png" alt="이미지3" style="width: 24%; height: auto;" />
         <img src="asset/ajucapital/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
@@ -1007,22 +1007,22 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td> 역할 </td>
-<td>
+<td style="border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td style="width: 150px;"> 주요 기술 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Sanne, NAppProtect, MDM, NFilter, SmartAIBFramework
 - KWPki, MagicSE, MagicXSign, MagicMRS
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 아주캐피탈 리뉴얼과 아주캐피탈 직원용 앱 개발
 - 직원용의 경우 **Enterprise 계정**을 통해 내부 배포
@@ -1039,8 +1039,8 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/thepay/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/thepay/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -1051,21 +1051,21 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+<td style="width: 150px; border: 1px solid black;"> 역할 </td>
+<td style="border: 1px solid black;">
 
 - iOS 메인 개발자 (참여 인원 : iOS 1)
 </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Objective-c, WebView, APNs, AFNetworking, Localizable
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 13개 언어 지원을 위해, 화면 노출 시점에 문구 설정
 - 디바이스 언어 외에도 직접 변경이 가능하도록 shared 한 언어 설정값 사용
@@ -1082,8 +1082,8 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-    <td> 이미지 </td>
-    <td> 
+    <td style="border: 1px solid black;"> 이미지 </td>
+    <td style="border: 1px solid black;"> 
       <div style="display: flex; justify-content: space-between;">
         <img src="asset/elysian/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
         <img src="asset/elysian/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -1094,21 +1094,23 @@ flowchart TD
   </tr>
 </tr>
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+  <td style="width: 150px; border: 1px solid black;"> 개요 </td>
+  <td style="border: 1px solid black;">
 
-- iOS 메인 개발자 (참여 인원 : iOS 1)
-</td>
+    - 목표: 엘리시안 강촌/제주 예약 및 실시간 스키장 확인 기능 제공
+    - 규모: Android 1, iOS 1, Back-end 1
+    - 역할: iOS 메인 개발자
+  </td>
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - Objective-c, WebView, APNs, AFNetworking
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
 
 - 엘리시안 강촌/제주 예약 지원 앱
 - CCTV를 통해 스키장 현재 상태 확인 가능
@@ -1126,25 +1128,24 @@ flowchart TD
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
-<td style="width: 150px;"> 역할 </td>
-<td>
+  <td style="width: 150px; border: 1px solid black;"> 개요 </td>
+  <td style="border: 1px solid black;">
 
-- 인터페이스 연결 및 UI 개발 담당(투입인원: 3명)
-</td>
+  - 목표: 선유도 어뢰 컨트롤 콘솔 제작
+  - 규모: 3인 개발
+  - 역할: UI 와 인터페이스 데이터 연결
+  </td> 
 </tr>
 <tr>
-<td> 주요 기술 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
 
 - MFC, c++
 </td>
 </tr>
-<td> 도전 과제 및 해결 방법 </td>
-<td>
+<td style="border: 1px solid black;"> 주요 성과 </td>
+<td style="border: 1px solid black;">
 
-- 선유도 어뢰 관리통제를 위한 사용자 프로그램
-- LIG 넥스원과 차기중어뢰 개발 협력
-- 선에 연결된 어뢰와 데이터를 실시간으로 주고받으며 화면에 표시
 - 모의 전투를 위한 시뮬레이션 기능 제공
 - 유속, 방향, 레이더, 어뢰 속도 등의 추가 정보 화면에 표시
 - 연결 선의 최적 길이 및 속도 확인 가능
@@ -1153,6 +1154,7 @@ flowchart TD
 - 독일 어뢰 업체로부터 기술 자문 ( 업체명은 극비 사항 )
 - 실제 어뢰발사를 위해 바다에서 테스트
 - 발사한 위치와 현재 발사체와의 거리 추가 기능 지원
+- [관련 뉴스](https://www.econovill.com/news/articleView.html?idxno=345147)
 
 </td>
 </tr>
@@ -1164,45 +1166,44 @@ flowchart TD
 ## [강원대학교 App](https://play.google.com/store/apps/details?id=kr.ac.kangwon.kmobile&hl=ko&pli=1)
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
-<tr>
-    <td> 이미지 </td>
-    <td> 
-      <div style="display: flex; justify-content: space-between;">
-        <img src="asset/kangwonuniv/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
-        <img src="asset/kangwonuniv/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
-        <img src="asset/kangwonuniv/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
-        <img src="asset/kangwonuniv/image_04.png" alt="이미지4" style="width: 24%; height: auto;" />
-      </div>
-    </td>
+  <tr>
+  <td style="border: 1px solid black;"> 이미지 </td>
+  <td style="border: 1px solid black;"> 
+    <div style="display: flex; justify-content: space-between;">
+      <img src="asset/kangwonuniv/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
+      <img src="asset/kangwonuniv/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
+      <img src="asset/kangwonuniv/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
+      <img src="asset/kangwonuniv/image_04.png" alt="이미지4" style="width: 24%; height: auto;" />
+    </div>
+  </td>
   </tr>
-</tr>
-<tr>
-<td style="width: 150px;"> 개요 </td>
-<td>
+  <tr>
+  <td style="width: 150px; border: 1px solid black;"> 개요 </td>
+  <td style="border: 1px solid black;">
 
-- 목표: 강원대학교 전산원이 제공하는 대표 앱 제작(포탈 정보 제공, 식당 메뉴 정보 제공, 셔틀버스 정보 제공) 
-- 규모: Android 1, iOS 1, Back-end 1
-- 역할: Android 메인 개발
-</td>
-</tr>
-<tr>
-<td> 주요 기술 </td>
-<td>
+  - 목표: 강원대학교 전산원이 제공하는 대표 앱 제작(포탈 정보 제공, 식당 메뉴 정보 제공, 셔틀버스 정보 제공 등)
+  - 규모: Android 1, iOS 1, Back-end 1
+  - 역할: Android 메인 개발
+  </td>
+  </tr>
+  <tr>
+  <td style="border: 1px solid black;"> 주요 기술 </td>
+  <td style="border: 1px solid black;">
 
-- Android Java, XML통신
-</td>
-</tr>
-<tr>
-<td> 주요 성과 </td>
-<td>
+  - Android Java, XML통신
+  </td>
+  </tr>
+  <tr>
+  <td style="border: 1px solid black;"> 주요 성과 </td>
+  <td style="border: 1px solid black;">
 
-- Native 제작 및 유지보수, 추후 Flex Moblie로 변경 시 어시스턴스
-- 위치좌표, 암호화, 내부 DB, API
-- 안드로이드 디바이스 8가지 최소 지원
-- 1만번 이상 다운로드
-- [뉴스 링크](https://n.news.naver.com/mnews/article/003/0005151175?sid=102)
+  - 1만회 이상 다운로드
+  - Native 제작 및 유지보수, 추후 Flex Moblie로 변경 시 어시스턴스
+  - 위치좌표, 암호화, 내부 DB, API
+  - 안드로이드 디바이스 8가지 최소 지원
+  - [뉴스 링크](https://n.news.naver.com/mnews/article/003/0005151175?sid=102)
 
-</td>
-</tr>
+  </td>
+  </tr>
 </table>
 
