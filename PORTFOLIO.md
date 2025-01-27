@@ -251,6 +251,166 @@ flowchart TD
 </tr>
 </table>
 
+
+## App팀 CI/CD 스쿼드
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: CI/CD를 위한 브랜치 룰 설정 및 CI/CD 자동화 적용
+- 기간: 2023.01 ~ 2023.08
+- 규모: Android 2, iOS 2
+- 역할: App팀 리드 및 CI/CD 결정 / 파트간 내용 공유
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Git Flow, Github Flow, Github Action, Xcode Cloud
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 비주얼만의 브랜치 관리 방식을 사용해 단순화 필요
+  - Git flow 적용
+  - workflow 정리
+- CI(build-test) 적용 범위
+  - 코드 병합을 위해 통과가 선행되어야 병합이 가능하도록 protection rule 설정
+  - 주단위 자동화된 테스트 진행
+  - 계층 이동마다 통과가 선행되어야 병합이 가능하도록 protection rule 설정
+- CD(지속적 전달/배포)을 위한 내용 정리
+  - 스킴 설정을 기본으로 설정해 잘못된 심사제출이 되지 않도록 설정
+  - 배포 프로세스를 Xcode Cloud에 대부분 넘겨 관련 리소스 투입하지 않음
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 개발속도 증가
+- 버그율 감소
+- 심사 제출 시간 30% 감소
+  - 2시간 이상 걸리던 심사제출 프로세스를 30분 이내로 축소
+- 관련 블로그 작성
+  - https://medium.com/bejewel/자동화를-향한-여정-1-브랜치-전략-수립-a687342ad711
+  - https://medium.com/bejewel/자동화를-향한-여정-2-ci-cd-workflow의-이해와-시점에-대한-정리-c69ea3ebf313
+  - https://medium.com/bejewel/자동화를-향한-여정-3-자동화-배포-e8df29884b79
+  - https://medium.com/bejewel/자동화를-향한-여정-4-빌드-테스트의-자동화-609ff88581be
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 사람이 많을 수록 체계는 단순화가 필요함을 느낌
+- 모두가 모든것을 알지 못해도 되도록 프로세스의 단단함의 필요성을 느낌
+- Git Flow도 복잡해 추후 Github Flow, TBD로 대체
+- 릴리즈 노트 및 슬랙 공유의 불편함을 느낌
+  - 배포 열차를 정비하며 이를 자동화 실시
+</td>
+</tr>
+</table>
+
+## 상품상세 마이그레이션 및 아날리틱스 개선
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 상품상세 코드 개선 및 유저행동 추적 개선
+- 기간: 2022.12 ~ 2023.02
+- 규모: Android 1, iOS 1, PO 1, QA 1
+- 역할: iOS 메인 개발 및 아날리틱스 주도
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Firebase, GoogleAnalytics
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- API를 통해 추적되는 아날리틱스 확인에 어려움 발생
+  - Google Analytics로 유저 행동 로그 전송 추가
+- Action 체계화
+  - Android, iOS, web 행동 로그 체계화
+  - 동일한 값을 수집하며 플랫폼을 통해 구분되도록 개선
+- 상품상세내 크래쉬 개선
+  - tableView index이슈로 지속적인 크래쉬 발생
+  - tableView로 구성되어 있던 UI를 일부 stackView로 개선
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 상품상세 내 유저 행동 99% 추적
+- Crash 미발생율 향상 (99.8% -> 99.9%)
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 유저 행동 추적을 위한 아날리틱스 체계화의 필요성 대두
+  - 아날리틱스 모듈화 및 아날리틱스 스쿼드 리드 진행
+- 개발자의 역할뿐만 아니라 개선을 위한 주도적 리딩 시작
+</td>
+</tr>
+</table>
+
+## 카테고리 세분화
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 카테고리 및 카테고리 상세화면 세분화 및 아날리틱스 추가
+- 기간: 2022.11 ~ 2022.12
+- 규모: Android 1, iOS 1, PO 1, QA 1
+- 역할: iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- A/B Test, Coordinator 패턴, 모듈화
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 카테고리 노출 세분화를 데이터 검증 후 개선
+  - Firebase를 통한 A/B테스팅 진행
+- 데이터 측정의 필요성
+  - analytics 일부 적용
+  - 선택에 대한 체계화 진행
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 기존 A보다 세분화된 화면인 B에서의 진입률 -15% 확인
+  - 코드 원복 실시
+- 아몬즈 유저의 경우 아이쇼핑의 비중이 높다는 데이터적인 검증 실시
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- A/B 테스트와 빠른 개발을 통해 기능 테스트의 필요성을 배움
+- 더 나은 기능을 제작하더라도 실패할 수 있다는 교훈을 얻음
+- 이후 2주내로 제작 및 배포 후 A/B테스트를 하는 스크럼들에 도움
+- 더 쉽게 원복하기 위한 Feature Flag의 필요성에 대해 지속적 공유
+</td>
+</tr>
+</table>
+
 ## Clean Architecture 도입 및 개선
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
@@ -550,7 +710,7 @@ flowchart TD
 <td style="border: 1px solid black;">
 
 - 오늘출발 출시 와 함께 22년 상반기 연말 MAU 50만 유지
-- Crash 안정화 (99.5% -> 99.9%)
+- Crash 안정화 (99.5% -> 99.8%)
 - SnapShot 테스트 추가에 따른 지속적 홈 리팩토링 진행
 </td>
 </tr>
