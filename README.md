@@ -40,23 +40,23 @@ Company | Entry Date | Leave Date | Team / Position | Form
 [강원대학교_정보화본부](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%EA%B0%95%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90-%EC%A0%84%EC%82%B0%EC%9B%90-1107--1302)             | 2012-09    | 2013-03    | 정보화본부 / 계약직 | 계약직
 [강원대학교_전산원](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%EA%B0%95%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90-%EC%A0%84%EC%82%B0%EC%9B%90-1107--1302) | 2011-09 | 2012-08 | App개발 / 인턴 | 인턴
 
-## 주요 프로젝트
+## [주요 프로젝트](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4)
 - 40개 + @
 
 Company        | Project                | Skills              | Special Note
 ---------------|------------------------|---------------------|---------------------
-비주얼 | Amondz App 아키텍처 개선              | Swift, Tuist, Swinject, MVVM, Clean Architecture, ReactorKit  | Architecture, Migration, Refactoring, TDD
-비주얼 | App팀 CI/CD 구축                     | Github Action, fast lane, Xcode Cloud, Feature Flag, TBD      | Proecess, CI/CD, TDD
-비주얼 | Analytics 체계화                     | GoogleAnalytics, Braze, Amplitude, AppsFlyer, Airbridge       | Analytics, Migration
-비주얼 | Swagger Converter                  | Swift, Open API Spec 3.0, Restfull                            | Converter, Proecces, Automation
-하나모바일 | MVVM 전환 및 Input/Outut Protocol | Swift, MVVM, Input/Output patter                              | Architecture, Refactoring
-하나모바일 | 모듈화 및 Localizable 자동화        | Swift, Script                                                 | Proecess, Architecture, Automation
-하나모바일 | 프로젝트 Obj-c -> Swift 개선       | Objective-c, Swift                                            | Migration, DesignSystem
-새움테크 | CJ One Card 메인탭 개선             | Objective-c, Firebase, Design System                          | Mobile application Accessibility, ServerDrive UI
-새움테크 | 마이홈플러스포인트                    | Objective-c, WebView(WebKit), Realm                             | Script Bridge
+비주얼 | [Amondz App 아키텍처 개선](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%EC%95%84%EB%AA%AC%EC%A6%88-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B0%9C%EC%84%A0-tuist-%EC%A0%81%EC%9A%A9-%EB%B0%8F-tma-%EA%B5%AC%EC%A1%B0-%ED%99%95%EB%A6%BD)              | Swift, Tuist, Swinject, MVVM, Clean Architecture, ReactorKit  | Architecture, Migration, Refactoring, TDD
+비주얼 | [App팀 CI/CD 구축](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#app%ED%8C%80-cicd-%EC%8A%A4%EC%BF%BC%EB%93%9C)                     | Github Action, fast lane, Xcode Cloud, Feature Flag, TBD      | Proecess, CI/CD, TDD
+비주얼 | [Analytics 체계화](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#analytics-%EB%AA%A8%EB%93%88-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%A0%81%EC%9A%A9)                     | GoogleAnalytics, Braze, Amplitude, AppsFlyer, Airbridge       | Analytics, Migration
+비주얼 | [Swagger Converter](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#swagger---swift-%ED%8C%8C%EC%9D%BC-%EC%A0%84%ED%99%98-%EC%9E%90%EB%8F%99%ED%99%94)                  | Swift, Open API Spec 3.0, Restfull                            | Converter, Proecces, Automation
+비주얼 | [MVVM 전환 및 Input/Outut Protocol](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#mvc---mvvm-%EA%B0%9C%EC%84%A0) | Swift, MVVM, Input/Output patter                              | Architecture, Refactoring
+하나모바일 | [모듈화 및 Localizable 자동화](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%EC%8B%9C%EC%83%81%EC%8B%9D-%ED%88%AC%ED%91%9C%EC%95%B1)        | Swift, Script                                                 | Proecess, Architecture, Automation
+하나모바일 | [프로젝트 Obj-c -> Swift 개선](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%EC%8B%9C%EC%83%81%EC%8B%9D-%ED%88%AC%ED%91%9C%EC%95%B1)       | Objective-c, Swift                                            | Migration, DesignSystem
+새움테크 | [CJ One Card 메인탭 개선](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#cj-one-card)             | Objective-c, Firebase, Design System                          | Mobile application Accessibility, ServerDrive UI
+새움테크 | [마이홈플러스포인트](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%EB%A7%88%EC%9D%B4%ED%99%88%ED%94%8C%EB%9F%AC%EC%8A%A4%ED%8F%AC%EC%9D%B8%ED%8A%B8)                    | Objective-c, WebView(WebKit), Realm                             | Script Bridge
 
 
-## 리딩 경험
+## [리딩 경험](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%EB%A6%AC%EB%94%A9-%EA%B2%BD%ED%97%98)
 Team(Part) | Role        | Team Members              | Duration            | Key Achievements
 -----------|------------|----------------------------|---------------------|---------------------
 Client Team| Lead       | Android(3), iOS(3), web(4) | 2024.10 ~ 2024.12 | 도메인 계층 통일(20%)
