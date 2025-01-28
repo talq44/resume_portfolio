@@ -74,7 +74,222 @@ gantt
 
 # 비주얼 (21.07 ~ 24.12)
 
-## 아몬즈 아키텍처 개선 Tuist 적용 및 TMA 구조 확립 (24.04 ~ 24.12)
+## 구매전환 개선 스크럼
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 구매전환 개선을 위한 상품상세, 옵션선택, 장바구니 개선
+- 기간: 2024.09 ~ 2024.11
+- 규모: Android 1, iOS 1, web 1, PO 1, QA 1
+- 역할: iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Swift, TMA, Analytics, A/B Test
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 장바구니 담는 횟수에 비해 장바구니 화면 진입율이 낮음을 개선
+  - 상품상세에서 장바구니 담기시 스낵바를 통해 진입 유도
+- 옵션 선택화면을 모든 화면에서 사용이 가능하도록 작업
+  - option 선택 도메인 생성
+  - 옵션 선택용 Feature Component Layer 모듈 생성
+  - 이후 홈, 좋아요에 적용
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 상품상세에서 장바구니 진입 0.5% 증가
+- 좋아요화면에서 상품 선택 대비, 장바구니 버튼 노출시 구매율 1% 증가
+- 홈 타임딜에서 옵션 선택화면 노출시 구매율 유지
+- 모두 크게 개선되지 않았지만 상승이 되어 기능 유지
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- A/B test를 통해 하락하지 않음을 확인하고 대체
+- 작업은 진행했으나 유저가 빠져나가고 있던 상황이라 정확한 데이터였는지에 대한 아쉬움 존재
+- Funnle 스크럼 덕분에 증가 감소에 대한 명확한 데이터를 수집할 수 있게됨을 확인
+</td>
+</tr>
+</table>
+
+## App팀 배포열차 도입 스쿼드
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 배포 관련 사항 결정 및 자동화로 배포 생산성 향상
+- 기간: 2024.07 ~ 2024.12
+- 규모: Android 1, iOS 1, PO 1, QA 1
+- 역할: 스쿼드 리더
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- [Trunk Based Develpment(TBD)](https://trunkbaseddevelopment.com/), Feature Flag, Jira Automation, Slack
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 배포 관련 일정 논의 및 결정
+  - 매주 1회
+  - 검수 프로세스 월~목
+  - 심사 제출 금
+  - 실 배포 화요일
+- 배포 자동화
+  - FeatureFlag 상태가 개발중 -> 작업완료시 자동 내부 배포
+  - PO / QA 슬랙을 통해 배포 앱 생성 기능 제공
+  - 금요일 오전 최종 확인용 앱 자동 내부 배포
+- 슬랙 리마인더
+  - 작업 담장자 가이드 문구 자동 노출
+  - PO / QA 내용 공유
+  - 포함되는 기능(티켓 + 피쳐플래그) 내용 공유
+- 지라 상태 자동화
+  - 개발 완료시 상태 변경 자동화
+  - 담당자 지정 자동화
+  - (실) 배포 완료시 상태 변경 자동화 
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 24년 상반기 대비 주당 배포 횟수 21% 증가
+- 슬랙 배포 관련 논의 15% 감소
+- 피쳐플래그를 통해 잘못된 배포 disable 처리 기능 제공
+- [관련 블로그](https://medium.com/@talq44/작은-pr-feature-flag-trunk-based-developement-그리고-자동화로-매일-develop-매주-production-배포하는-팀-되기-1-c9b2b63f424a)
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 유연한 CI/CD를 토대로 빠른 적용
+- 하나의 팀으로 정확한 내용 공유
+- Store 심사제출까지 자동화 하지 못한 아쉬움
+</td>
+</tr>
+</table>
+
+## App팀 브랜치 관리 방식 교체 및 Feature Flag 적용
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 브랜치 관리 방식 교체 및 피쳐플래그 적용을 통해 작업 및 배포 속도 향상
+- 기간: 2024.04 ~ 2024.08
+- 규모: Android 3, iOS 3, PO 1, QA 1
+- 역할: App팀 리드 및 iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Trunk Based Development(TBD), Feature Flag, Firebase(RemoteConfig)
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- Github Flow에서도 부족한 방식들이 존재
+  - [TBD](https://trunkbaseddevelopment.com/)와 명확한 가이드를 공유
+  - 구글엔지니어는 이렇게 일한다 스터디를 주도하며 거대한 구글에서도 사용하는 방식임을 공유
+- 언제든지 배포가 가능한 메인 브랜치의 적용
+  - FeatureFlag를 병행해 메인 개발 진행
+  - Firebase RemoteConfige의 Release를 사용해 무료방식을 채택
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 23년 대비 배포 횟수 30% 증가
+- 24년 상반기 잘못된 배포 3회 발생했으나 피쳐플래그로 모두 off를 진행해 추가적인 배포가 진행되지 않음
+- [관련 블로그](https://medium.com/@talq44/작은-pr-feature-flag-trunk-based-developement-그리고-자동화로-매일-develop-매주-production-배포하는-팀-되기-1-c9b2b63f424a) 
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 팀 전반적인 발전을 위해 지속적 스터디가 필요함을 느끼고 주도
+- 타 파트에도 공통 적용을 위해 공유를 실시했으나 받아들여지지 않아 App팀만 적용
+- 피쳐플래그를 기능성으로 묶기위해 노력했으나 받아들여지지 않아 Firebase로 구현
+
+</td>
+</tr>
+</table>
+
+## Funnel 스크럼
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 모든 플랫폼 전자상거래 아날리틱스 개선 및 추가 적용
+- 기간: 2024.04 ~ 2024.12
+- 규모: Android 1, iOS 1, web 1, PO 1, QA 1, 마케팅 1, 운영 1
+- 역할: 스크럼 리더 및 iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Modular Architecture
+- Google Analytics, Braze, Amplitude, Airbridge
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- Analytics 이벤트가 체계적으로 관리되지 않음
+  - 명확한 기준점 공유
+- Funnel이 더 길어지지 않음
+  - 목록 전자상거래 이벤트를 추가해 퍼널의 파악이 더 높게 가능하도록 함
+  - view_item_list, select_item을 모든 플랫폼에 적용
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 모든 플랫폼 전자상거래 데이터 신빙성 100% 달성
+- 목록 전자상거래 97% 적용
+- 관련 블로그
+  - https://medium.com/bejewel/유저-마음에-닿기를-analytics-개선기-0-ios-analytics-module-5d669dd07af1
+  - https://medium.com/bejewel/유저-마음에-닿기를-analytics-개선기-1-ios-analytics-module-50a6da62a1a9
+  - https://medium.com/bejewel/유저-마음에-닿기를-analytics-개선기-2-개발자가-이해하기-2fc0e6607e6b
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 데이터 파이프라인의 필요성에 대해 팀 전반적인 이해도 향상
+- 조회, 장바구니, 구매의 전자상거래 파악이 가능해지며 콘텐츠 유지에 대한 데이터로 활용
+- KPI의 근거 자료로 활용됨
+- 장바구니에서의 구매 트래킹에 대해 지속적 작업 요청을 했으나 아쉽게 진행되지 않음
+- 개발자가 아닌 스크럼 리딩을 통해, 개발 속도의 느림을 확인
+  - QA 와 개발이 교차적으로 진행 가능한 프로세스 도입
+  - 추후 배포열차 도입으로 이어짐
+
+</td>
+</tr>
+</table>
+
+## 아몬즈 아키텍처 개선 Tuist 적용 및 TMA 구조 확립
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
@@ -82,6 +297,7 @@ gantt
 <td style="border: 1px solid black;">
 
 - 목표: Tuist 적용 및 TMA구조 확립을 통한 생상선 향상
+- 기간: 2024.04 ~ 2024.12
 - 규모: iOS 3, QA 1
 - 역할: iOS 개발 및 리딩
 </td>
@@ -139,65 +355,125 @@ flowchart TD
 </tr>
 </table>
 
-## App팀 배포열차 도입 스쿼드 (24.07 ~ 24.12)
+## Analytics 모듈 구축 및 적용
+
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
 <td style="width: 150px; border: 1px solid black;"> 개요 </td>
 <td style="border: 1px solid black;">
 
-- 목표: 배포 관련 사항 결정 및 자동화로 배포 생산성 향상
-- 규모: Android 1, iOS 1, PO 1, QA 1
-- 역할: 스쿼드 리더
+- 목표: Analytics 모듈 분리를 통해 유동적 관리 및 이벤트 체계화/자동화
+- 기간: 2023.11 ~ 2024.03
+- 규모: iOS 1, PO 1, QA 1, 마케팅 1
+- 역할: iOS 메인 개발
 </td>
 </tr>
 <td style="border: 1px solid black;"> 주요 기술 </td>
 <td style="border: 1px solid black;">
 
-- [Trunk Based Develpment(TBD)](https://trunkbaseddevelopment.com/), Feature Flag, Jira Automation, Slack
+- Modular Architecture
+- Google Analytics, Braze, Amplitude, Airbridge
 </td>
 </tr>
 <td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
 <td style="border: 1px solid black;">
 
-- 배포 관련 일정 논의 및 결정
-  - 매주 1회
-  - 검수 프로세스 월~목
-  - 심사 제출 금
-  - 실 배포 화요일
-- 배포 자동화
-  - FeatureFlag 상태가 개발중 -> 작업완료시 자동 내부 배포
-  - PO / QA 슬랙을 통해 배포 앱 생성 기능 제공
-  - 금요일 오전 최종 확인용 앱 자동 내부 배포
-- 슬랙 리마인더
-  - 작업 담장자 가이드 문구 자동 노출
-  - PO / QA 내용 공유
-  - 포함되는 기능(티켓 + 피쳐플래그) 내용 공유
-- 지라 상태 자동화
-  - 개발 완료시 상태 변경 자동화
-  - 담당자 지정 자동화
-  - (실) 배포 완료시 상태 변경 자동화 
+- Analytics 이벤트가 체계적으로 관리되지 않음
+  - 명확한 기준점 결정(Google Analytics)
+  - 내부 코드가 CSV 형태로 output 할수 있도록 구성
+  - Analytics Core Module만의 별도앱으로 배포
+- Braze, Amplitude의 업데이트가 일어나지 않고 있음
+  - SDK 업데이트시 충돌이 발생
+  - Long Lived 브랜치로 별도 분리해 작업 진행
+  - 메인 브랜치에 작업물이 합쳐질때마다 지속적 업데이트 실시
+- 모든 이벤트에 대한 대체 필요
+  - 기존 TrackingUtils라는 파일에서 우선적 대체
+  - 이상이 없음을 판단 후 Analytics 모듈을 사용하도록 점진적 대체
+
 </td>
 </tr>
 <td style="border: 1px solid black;"> 성과/지표 </td>
 <td style="border: 1px solid black;">
 
-- 24년 상반기 대비 주당 배포 횟수 21% 증가
-- 슬랙 배포 관련 논의 15% 감소
-- 피쳐플래그를 통해 잘못된 배포 disable 처리 기능 제공
-- [관련 블로그](https://medium.com/@talq44/작은-pr-feature-flag-trunk-based-developement-그리고-자동화로-매일-develop-매주-production-배포하는-팀-되기-1-c9b2b63f424a)
+- 비대해진 TrackingUtils의 의존성 모두 제거 및 삭제 완료
+- 공통된 protocol로 SDK추가의 용이성 확보
+- Braze(구 Appboy), Amplitude SDK 성공적 적용
+  - cocoapods에서 SPM으로 모두 이관
+- 현재 적용중인 Analytics를 파악할 수 있는 데이터 지속적 공유
+  - 추후 아날리틱스 사용을 취소할때도 1시간 안에 작업
+- 관련 블로그
+  - https://medium.com/bejewel/유저-마음에-닿기를-analytics-개선기-0-ios-analytics-module-5d669dd07af1
+  - https://medium.com/bejewel/유저-마음에-닿기를-analytics-개선기-1-ios-analytics-module-50a6da62a1a9
+
 </td>
 </tr>
 <td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
 <td style="border: 1px solid black;">
 
-- 유연한 CI/CD를 토대로 빠른 적용
-- 하나의 팀으로 정확한 내용 공유
-- Store 심사제출까지 자동화 하지 못한 아쉬움
+- 긴 생명주기를 가진 브랜치로 작업했지만, 비슷한 작업이 일어난다면 Feature Flag로 작업 할것으로 예상
+  - 외부 SDK를 캡슐화 한후 최소한의 기능만 외부 노출하도록 작업
+  - 대체가 모두 완료되면 이후 SDK를 업데이트하는 방식으로 진행할 예정
+- 아날리틱스 대체를 통해 서비스 전반적인 이해도가 오름
+  - 이후 신규 입사자 온보딩에도 아날리틱스 이벤트를 통해 서비스 이해도 향상 주도
+- 타 플랫폼의 아날리틱스 모듈화를 계속 설득했으나 아쉽게도 진행되지 못함
+  - 추후 funnel 스크럼 리드를 맡으며 주도
+
 </td>
 </tr>
 </table>
 
-## Swagger -> Swift 파일 전환 자동화 (23.05 ~ 23.06)
+
+## 홈 모듈 분리
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 홈 도메인의 빠른 기능 개발 및 검증을 위한 모듈 분리
+- 기간: 2023.04 ~ 2023.05
+- 규모: iOS 1, PO 1, QA 1
+- 역할: iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- Modular Architecture, Coordinator 패턴
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 홈 도메인에 지속적인 기능 추가와 검증을 위한 모듈 분리
+  - Common Layer와 Shared Layer의 분리
+  - API 모듈 분리
+  - 이후 Feature Layer에 홈 도메인 모듈 분리
+- 홈에서 화면 이동
+  - 모든 화면 이동을 해당 모듈로 옮기는데에 한계가 존재
+  - Coordinator 패턴 도입
+  - Coordinator를 Application Layer에서 주입하는식으로 대체
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 홈 개발 시간 10% 감소
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 우선 모듈이 분리되고 독립적이 되며 지속적인 마이그레이션이 가능한 형태로 발전
+- 이후 신규 입사자가 담당자가 되어도 개발속도 유지
+
+</td>
+</tr>
+</table>
+
+## Swagger -> Swift 파일 전환 자동화
 
 <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
 <tr>
@@ -205,6 +481,7 @@ flowchart TD
 <td style="border: 1px solid black;">
 
 - 목표: User API 문서 플랫폼 언어 파일 자동생성을 통한 생산성 향상
+- 기간: 2023.04 ~ 2023.06
 - 규모: iOS 1, back-end 1, Android 1
 - 역할: 파트간 협의 담당 및 메인 개발
 </td>
@@ -251,6 +528,53 @@ flowchart TD
 </tr>
 </table>
 
+
+## 홈 라이브 커머스 추가
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+<tr>
+<td style="width: 150px; border: 1px solid black;"> 개요 </td>
+<td style="border: 1px solid black;">
+
+- 목표: 홈 화면 라이브 커머스 도입
+- 기간: 2023.02 ~ 2023.03
+- 규모: Android 1, iOS 1, bacek-end 1, PO 1, UX 1
+- 역할: iOS 메인 개발
+</td>
+</tr>
+<td style="border: 1px solid black;"> 주요 기술 </td>
+<td style="border: 1px solid black;">
+
+- ShopLive, Modular Architecture, A/B Test, Google Analytics
+</td>
+</tr>
+<td style="border: 1px solid black;"> 도전 과제 및 해결 방법 </td>
+<td style="border: 1px solid black;">
+
+- 홈 라이브 커머스 도입
+  - 리소스 부족으로, 외부 SDK를 도입하기로 결정
+- 성과 측정 데이터 추가
+  - Google Analytics의 화면 유지시간을 지표로써 건의 및 채택
+  - 홈 전체의 선택 데이터 내부 API에서 Analyitcs로 확대
+</td>
+</tr>
+<td style="border: 1px solid black;"> 성과/지표 </td>
+<td style="border: 1px solid black;">
+
+- 홈 유지시간 10% 증가
+- 홈 상품상세 이동 5% 증가
+
+</td>
+</tr>
+<td style="border: 1px solid black;"> 배운점/아쉬운점 </td>
+<td style="border: 1px solid black;">
+
+- 라이브커머스 도입을 통해 성과를 확인했으나 지속적 관리가 되지 못해 효과성이 떨어짐
+- 캐쉬관련 이슈가 발생했었으나 지속적 모니터링으로 빠르게 해결
+- A/B 테스트를 통해 지속적 확인을 하며, Feature flag 도입시 근거 자료로 사용
+</td>
+</tr>
+</table>
 
 ## App팀 CI/CD 스쿼드
 
