@@ -1,4 +1,54 @@
 # 포트폴리오
+### 목차
+- [기술 스택](#기술-스택)
+- [경력 사항](#경력-사항)
+- [비주얼](#비주얼)
+  - [구매전환 개선 스크럼](#구매전환-개선-스크럼)
+  - [App팀 배포열차 도입 스쿼드](#app팀-배포열차-도입-스쿼드)
+  - [App팀 브랜치 관리 방식 교체 및 Feature Flag 적용](#app팀-브랜치-관리-방식-교체-및-feature-flag-적용)
+  - [Funnel 스크럼](#funnel-스크럼)
+  - [아몬즈 아키텍처 개선 Tuist 적용 및 TMA 구조 확립](#아몬즈-아키텍처-개선-tuist-적용-및-tma-구조-확립)
+  - [Analytics 모듈 구축 및 적용](#analytics-모듈-구축-및-적용)
+  - [홈 모듈 분리](#홈-모듈-분리)
+  - [Swagger -> Swift 파일 전환 자동화](#swagger---swift-파일-전환-자동화)
+  - [홈 라이브 커머스 추가](#홈-라이브-커머스-추가)
+  - [App팀 CI/CD 스쿼드](#app팀-cicd-스쿼드)
+  - [상품상세 마이그레이션 및 아날리틱스 개선](#상품상세-마이그레이션-및-아날리틱스-개선)
+  - [Clean Architecture 도입 및 개선](#clean-architecture-도입-및-개선)
+  - [아몬즈 회원 가입 개선](#아몬즈-회원-가입-개선)
+  - [아몬즈 사용성 개선](#아몬즈-사용성-개선)
+  - [취소 반품 교환 리뉴얼](#취소-반품-교환-리뉴얼)
+  - [ReactorKit을 활용한 ViewModel 마이그레이션](#reactorkit을-활용한-viewmodel-마이그레이션)
+  - [아몬즈 홈 리뉴얼](#아몬즈-홈-리뉴얼)
+  - [MVC -> MVVM 개선](#mvc---mvvm-개선)
+  - [오늘출발](#아몬즈-풀필먼트오늘-출발-추가)
+- [하나모바일](#하나모바일)
+  - [더티켓](#더티켓)
+  - [흔들어대리운전](#흔들어대리운전)
+  - [두줄운세](#두줄운세)
+  - [Pickmecam/위피캠](#pickmecam--위픽캠)
+  - [더스타 온라인](#더스타-온라인iosweb)
+  - [Enjoy J Tour](#enjoy-j-touriosweb)
+  - [스마트이미지](#스마트이미지)
+  - [시상식 투표앱](#시상식-투표앱)
+  - [FanPoint](#fanpoint)
+- [새움테크](#새움테크)
+  - [마이홈플러스](#마이홈플러스포인트)
+  - [와인그래프](#와인그래프)
+  - [나눔로또](#나눔로또)
+  - [현대라이프 상담사용](#현대라이프-상담사용)
+  - [CJ One Card](#cj-one-card)
+  - [아주캐피탈](#아주캐피탈)
+  - [thePay/99Pay](#thepay--99pay)
+  - [엘리시안](엘리시안)
+- [유니텍](#유니텍)
+  - [MFCC](#mfccmulti-function-control-console)
+- [강원대학교](#강원대학교)
+  - [강원대학교 App](#강원대학교-app)
+- [리딩 경험](#리딩-경험)
+
+<br><br>
+
 # 기술 스택
 
 ``` mermaid
@@ -72,7 +122,7 @@ gantt
 
 <br><br>
 
-# 비주얼 (21.07 ~ 24.12)
+# 비주얼
 
 ## 구매전환 개선 스크럼
 ### 개요
@@ -102,6 +152,11 @@ gantt
 - A/B test를 통해 하락하지 않음을 확인하고 대체
 - 작업은 진행했으나 유저가 빠져나가고 있던 상황이라 정확한 데이터였는지에 대한 아쉬움 존재
 - Funnle 스크럼 덕분에 증가 감소에 대한 명확한 데이터를 수집할 수 있게됨을 확인
+
+-----
+
+<br>
+
 
 ## App팀 배포열차 도입 스쿼드
 ### 개요
@@ -144,6 +199,10 @@ gantt
 - 하나의 팀으로 정확한 내용 공유
 - Store 심사제출까지 자동화 하지 못한 아쉬움
 
+-----
+
+<br>
+
 ## App팀 브랜치 관리 방식 교체 및 Feature Flag 적용
 
 ### 개요
@@ -173,6 +232,9 @@ gantt
 - 타 파트에도 공통 적용을 위해 공유를 실시했으나 받아들여지지 않아 App팀만 적용
 - 피쳐플래그를 기능성으로 묶기위해 노력했으나 받아들여지지 않아 Firebase로 구현
 
+-----
+
+<br>
 
 ## Funnel 스크럼
 ### 개요
@@ -208,6 +270,10 @@ gantt
 - 개발자가 아닌 스크럼 리딩을 통해, 개발 속도의 느림을 확인
   - QA 와 개발이 교차적으로 진행 가능한 프로세스 도입
   - 추후 배포열차 도입으로 이어짐
+
+-----
+
+<br>
 
 ## 아몬즈 아키텍처 개선 Tuist 적용 및 TMA 구조 확립
 
@@ -251,6 +317,10 @@ flowchart TD
 - 클린아키텍처, cocoapods -> SPM으로 모두 변경, 모듈 레이어 등 선행이 필요한 업무가 늦어지며 너무 늦게 반영한데에 대한 아쉬움
 - 마이그레이션 하며 기존 코드도 지우는 프로세스를 확립하지 못함
 - 80% 이상 모듈로 대체하려 했으나 회사 사정으로 모두 완수하지 못한데에 대한 아쉬움
+
+-----
+
+<br>
 
 ## Analytics 모듈 구축 및 적용
 
@@ -297,6 +367,10 @@ flowchart TD
 - 타 플랫폼의 아날리틱스 모듈화를 계속 설득했으나 아쉽게도 진행되지 못함
   - 추후 funnel 스크럼 리드를 맡으며 주도
 
+-----
+
+<br>
+
 ## 홈 모듈 분리
 ### 개요
 - 목표: 홈 도메인의 빠른 기능 개발 및 검증을 위한 모듈 분리
@@ -324,6 +398,9 @@ flowchart TD
 - 우선 모듈이 분리되고 독립적이 되며 지속적인 마이그레이션이 가능한 형태로 발전
 - 이후 신규 입사자가 담당자가 되어도 개발속도 유지
 
+-----
+
+<br>
 
 ## Swagger -> Swift 파일 전환 자동화
 
@@ -361,6 +438,10 @@ flowchart TD
   - 당시 Feature Flag가 확립되지 않아, 서비스에 영향을 끼칠 우려가 있어 미룸
   - 파이썬으로 코드를 대체해 Github Action으로 만들 구상까지 하고 다른 업무로 포기
 
+-----
+
+<br>
+
 ## 홈 라이브 커머스 추가
 
 ### 개요
@@ -388,6 +469,10 @@ flowchart TD
 - 라이브커머스 도입을 통해 성과를 확인했으나 지속적 관리가 되지 못해 효과성이 떨어짐
 - 캐쉬관련 이슈가 발생했었으나 지속적 모니터링으로 빠르게 해결
 - A/B 테스트를 통해 지속적 확인을 하며, Feature flag 도입시 근거 자료로 사용
+
+-----
+
+<br>
 
 ## App팀 CI/CD 스쿼드
 ### 개요
@@ -428,6 +513,10 @@ flowchart TD
 - Git Flow도 복잡해 추후 Github Flow, TBD로 대체
 - 릴리즈 노트 및 슬랙 공유의 불편함을 느낌
   - 배포 열차를 정비하며 이를 자동화 실시
+
+-----
+
+<br>
 
 ## 상품상세 마이그레이션 및 아날리틱스 개선
 ### 개요
@@ -487,6 +576,10 @@ flowchart TD
 - 이후 2주내로 제작 및 배포 후 A/B테스트를 하는 스크럼들에 도움
 - 더 쉽게 원복하기 위한 Feature Flag의 필요성에 대해 지속적 공유
 
+-----
+
+<br>
+
 ## Clean Architecture 도입 및 개선
 
 ### 개요
@@ -527,6 +620,10 @@ flowchart TD
   - 추가) Domain Driven Design(DDD) 스터디 추가 진행
   - 추가) Design First 도입
 
+-----
+
+<br>
+
 ## 아몬즈 회원 가입 개선
 
 ### 개요
@@ -559,6 +656,10 @@ flowchart TD
   - 추후 HIG스터디를 진행해 공통된 UI에 대한 방향성 얼라인 주도
 - Coordinator 패턴 도입을 통해 화면 이동을 화면에서 ViewModel류로 분리 시작
 
+-----
+
+<br>
+
 ## 아몬즈 사용성 개선
 ### 개요
 - 목표: UI 최신화를 위한 레거시 코드 개선 및 디자인 시스템 일부 도입
@@ -581,6 +682,10 @@ flowchart TD
 ### 배운점/아쉬운점
 - 리소스상 디자인시스템화를 일부만 진행해 전체에 대한 적용을 하지 못한데에 대한 아쉬움
 - 체계화를 더 진행했어야 하나, 모든 플랫폼을 설득하지 못한데에 대한 아쉬움
+
+-----
+
+<br>
 
 ## 취소 반품 교환 리뉴얼
 ### 개요
@@ -606,6 +711,10 @@ flowchart TD
 ### 배운점/아쉬운점
 - 컴퍼넌트별 UI제작에 대해 Android, Web파트와도 공유 및 주도 했으나 결국은 iOS만 진행
 - 클린아키텍처 도입을 이어가기 위해 도메인 모듈의 통일성을 주도 했으나 Android 파트와 진행
+
+-----
+
+<br>
 
 ## ReactorKit을 활용한 ViewModel 마이그레이션
 
@@ -644,6 +753,10 @@ flowchart TD
   - Reactive Native, Flutter의 도입에 대해 논의 했으나 미뤄짐
 - 화면이 Rx에 강하게 묶여 Rx의존적인 구조가 됨
 
+-----
+
+<br>
+
 ## 아몬즈 홈 리뉴얼
 ### 개요
 - 목표: 홈에 사용중인 타입 개편 및 서브 홈 제작
@@ -676,6 +789,10 @@ flowchart TD
 - API값을 받되 Domain에서 버리는 정책을 결정해 추후 A/B테스트와 타입 추가를 하면서도 연속성 있는 배포가능성 엶
   - 1달에 1번 일어나던 배포 횟수를 줄일 수 있게됨
 
+-----
+
+<br>
+
 ## MVC -> MVVM 개선
 ### 개요
 - 목표: MVC구조로 인해 발생하는 유지 보수성 하락 개선
@@ -700,6 +817,10 @@ flowchart TD
 - 업무 파악 전 무리한 적용으로 안정성 하락
 - 테스트 코드 필요성 확인
 - 팀원간 협업 및 내용 공유 부족함을 실감 이를 위한 명확한 아키텍처/패턴 통일 필요성 확인
+
+-----
+
+<br>
 
 ## 아몬즈 풀필먼트(오늘 출발) 추가
 
@@ -735,9 +856,11 @@ flowchart TD
 - 머지 컨플릭을 줄이기 위해 담당 도메인 분리
 - 일부 디자인 시스템화를 통해 유지보수성 향상
 
+-----
+
 <br><br>
 
-# 하나모바일 (18.01 ~ 21.06)
+# 하나모바일
 ## 더티켓
 <div style="display: flex; justify-content: space-between;">
 <img src="asset/theticket/image_00.png" alt="이미지1" style="width: 24%; height: auto;" />
@@ -760,6 +883,10 @@ flowchart TD
 - 상세페이지 커스텀 설정이 가능한 UI 제공
 - SNS를 통한 간편 로그인 기능 제공
 - Rx를 활용한 MVVM구조 프로젝트 작성
+
+-----
+
+<br>
 
 ## [흔들어대리운전](https://apps.apple.com/kr/app/%ED%9D%94%EB%93%A4%EC%96%B4%EB%8C%80%EB%A6%AC%EC%9A%B4%EC%A0%84-13-%EC%A0%81%EB%A6%BD/id1245517555)
 <div style="display: flex; justify-content: space-between;">
@@ -786,6 +913,9 @@ flowchart TD
 - Rx를 활용한 MVVM구조의 프로젝트 작성
 - 위치좌표의 정확성에 따른 알럿창 구분
 
+-----
+
+<br>
 
 ## 두줄운세
 <div>
@@ -807,10 +937,11 @@ flowchart TD
 - 메인 페이지 및 회원가입을 네이티브로 제작
 - 그외 추가 상세페이지는 웹뷰로 이동
 
+-----
+
+<br>
 
 ## [Pickmecam](https://apps.apple.com/kr/app/%ED%94%BD%EB%AF%B8%EC%BA%A0-%EC%98%81%EC%83%81%EC%B1%84%ED%8C%85-%ED%99%94%EC%83%81%EC%B1%84%ED%8C%85/id1503303615) / [위픽캠](https://play.google.com/store/apps/details?id=com.live.camtalk&hl=ko)
-
-
 <div style="display: flex; justify-content: space-between;">
 <img src="asset/pickmecam/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
 <img src="asset/pickmecam/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
@@ -835,6 +966,9 @@ flowchart TD
 - 동영상 채팅은 Twilio를 사용해 지원
 - 소켓통신을 통해 실시간 채팅, 음성채팅 요청 및 연결 실시간 지원
 
+-----
+
+<br>
 
 ## 더스타 온라인(iOS/[Web](https://www.thestar.kr))
 
@@ -855,6 +989,9 @@ flowchart TD
 - 적응형 웹페이지 제작을 통해, 리소스 효율화
 - 공유하기와 같은 모바일 특화 기술의 모듈화를 통해 웹뷰 기반 앱제작 효율화
 
+-----
+
+<br>
 
 ## Enjoy J Tour(iOS/Web)
 <div style="display: flex; justify-content: space-between;">
@@ -879,6 +1016,9 @@ flowchart TD
 - 주요 기능을 한곳에서 제작해야 하는 필요성 확인
 - 반응형 UI도 일부 필요하다는것을 느낌
 
+-----
+
+<br>
 
 ## [스마트이미지](https://apps.apple.com/kr/app/smartimages/id889795772)
 <div style="display: flex; justify-content: space-between;">
@@ -903,6 +1043,10 @@ flowchart TD
 - 이미지 설명을 위한 태그 기능 지원
 - 서버 부담을 줄이기 위해 최대 이미지 고정 및 자동 사이즈 조정
 - 이미지별 사이즈에 맞게 보여주기 위한 이미지 리사이즈 리스트 반영 지원
+
+-----
+
+<br>
 
 ## 시상식 투표앱
 <div style="display: flex; justify-content: space-between;">
@@ -937,6 +1081,9 @@ flowchart TD
 - Utils, Manager 모듈을 제작해 사용
 - 파이어베이스 DB를 별도 구축해 실시간 인앱구매 내역 저장
 
+-----
+
+<br>
 
 ## [FanPoint](https://apps.apple.com/us/app/%ED%8C%AC%ED%8F%AC%EC%9D%B8%ED%8A%B8-fanpoint-%ED%88%AC%ED%91%9C-%EB%AF%B8%EC%85%98-%EB%A6%AC%EC%9B%8C%EB%93%9C%EC%95%B1/id1258031653?l=ko)
 <div style="display: flex; justify-content: space-between;">
@@ -968,9 +1115,11 @@ flowchart TD
 - 결제 시작 부터, 결제 완료전까지 내부 DB + FireStore에 정보 저장
 - 전체 결제에 약 1%정도 발생하던 결제 누락을 0.1% 이하로 감소
 
+-----
+
 <br><br>
 
-# 새움테크 (15.05 ~ 18.01)
+# 새움테크
 ## [마이홈플러스포인트](https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%B4-%ED%99%88%ED%94%8C%EB%9F%AC%EC%8A%A4/id1297108925)
 
 <div style="display: flex; justify-content: space-between;">
@@ -996,6 +1145,10 @@ flowchart TD
 - 기초 20개 지원 후 10개 API 추후 추가
 - 업데이트를 최소화 하기 위해 스마트폰에 데이터를 저장/읽기 기능 지원
 
+-----
+
+<br>
+
 ## [와인그래프](https://apps.apple.com/kr/app/%EC%99%80%EC%9D%B8%EA%B7%B8%EB%9E%98%ED%94%84-winegraph-%EC%99%80%EC%9D%B8-%EA%B2%80%EC%83%89-%EC%B6%94%EC%B2%9C/id1232552236)
 <div style="display: flex; justify-content: space-between;">
 <img src="asset/winegraph/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
@@ -1020,6 +1173,9 @@ flowchart TD
 - 페이스북과 인스타그램의 장점만을 종합한 앱
 - 와인 라벨 스캔을 통한 검색 기능 지원
 
+-----
+
+<br>
 
 ## [나눔로또](https://apps.apple.com/kr/app/%EB%8F%99%ED%96%89%EB%B3%B5%EA%B6%8C/id1444390490)
 
@@ -1046,6 +1202,9 @@ flowchart TD
 - 현재 위치 좌표 수신 및 실시간 사용
 - Git을 통한 프로젝트 공유
 
+-----
+
+<br>
 
 ## 현대라이프 상담사용
 
@@ -1070,6 +1229,10 @@ flowchart TD
 - 프로젝트 이전 개발자가 1달 개발 후 나가 이어서 작업 시작
 - Firebase Crashlytics 지원으로 앱 크래시 체크
 - 실시간 디버깅을 위해 디버그 모드 및 로그 출력 화면 추가 지원
+
+-----
+
+<br>
 
 ## [CJ One Card](https://apps.apple.com/us/app/cj-one/id387363739)
 
@@ -1098,6 +1261,10 @@ flowchart TD
 - 애니메이션, 속도 향상에 중점적 작업
 - Voice Over 기능 확인
 
+-----
+
+<br>
+
 ## 아주캐피탈 
 
 <div style="display: flex; justify-content: space-between;">
@@ -1124,6 +1291,10 @@ flowchart TD
 - 은행권 앱이기에 다양한 보안 모듈 사용 경험
 - 와이파이가 지원되지 않아 폐쇄적인 상황에서도 정상적인 개발 실시
 
+-----
+
+<br>
+
 ## [thePay](https://apps.apple.com/kr/app/thepay-mobile-recharge/id1088189940) / [99Pay](https://apps.apple.com/kr/app/99pay-mobile-recharge/id1229582503?l=en-GB)
 
 <div style="display: flex; justify-content: space-between;">
@@ -1149,6 +1320,9 @@ flowchart TD
 - (파일을 통한)모듈화로 앱간의 통일성 향상
 - 하단 유동 배너 광고 지원
 
+-----
+
+<br>
 
 ## [엘리시안](https://apps.apple.com/pw/app/%EC%97%98%EB%A6%AC%EC%8B%9C%EC%95%88-%EB%A6%AC%EC%A1%B0%ED%8A%B8/id6447748695)
 <div style="display: flex; justify-content: space-between;">
@@ -1172,9 +1346,11 @@ flowchart TD
 - 숙소 예약의 경우 외부 결제 지원
 - 네이티브와 웹의 병합된 형태- APNS 푸시 지
 
+-----
+
 <br><br>
 
-# 유니텍 (14.07 ~ 15.04)
+# 유니텍
 ## MFCC(Multi Function Control console)
 
 ### 개요
@@ -1197,9 +1373,12 @@ flowchart TD
 - 발사한 위치와 현재 발사체와의 거리 추가 기능 지원
 - [관련 뉴스](https://www.econovill.com/news/articleView.html?idxno=345147)
 
+-----
+
 <br><br>
 
-# 강원대학교 전산원 (11.07 ~ 13.02)## [강원대학교 App](https://play.google.com/store/apps/details?id=kr.ac.kangwon.kmobile&hl=ko&pli=1)
+# 강원대학교 전산원
+## [강원대학교 App](https://play.google.com/store/apps/details?id=kr.ac.kangwon.kmobile&hl=ko&pli=1)
 <div style="display: flex; justify-content: space-between;">
 <img src="asset/kangwonuniv/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
 <img src="asset/kangwonuniv/image_02.png" alt="이미지2" style="width: 24%; height: auto;" />
@@ -1221,3 +1400,59 @@ flowchart TD
 - 위치좌표, 암호화, 내부 DB, API
 - 안드로이드 디바이스 8가지 최소 지원
 - [뉴스 링크](https://n.news.naver.com/mnews/article/003/0005151175?sid=102)
+
+-----
+
+<br><br><br>
+
+# 리딩 경험
+## Client 팀 팀장
+### 개요
+- 팀원: Android 3, iOS 3, web 4
+- 기간: 2024.10 ~ 2024.12
+
+### 주요 성과
+- web파트 워크플로우 개선
+- web파트 CI/CD 사용량 개선
+- Jira Cloud 자동화
+
+## App팀 팀장
+### 개요
+- 팀원: Android 3, iOS 3
+- 기간: 2023.09 ~ 2024.10
+
+### 주요 성과
+- 2024년 하반기
+  - 속도 + 단순화: TBD 도입, 배포열차 도입, Jira Cloud 자동화
+  - 속도 + 안정성: 피쳐플래그 도입, 에러 처리 결정
+  - 단순화 + 안정성: Tuist 적용
+  - 속도 + 안정성 + 단순화: 모듈 분리(TMA)
+  - [관련 블로그](https://medium.com/@talq44/2024년-하반기를-돌아보며-ed168522eae2)
+- 2024년 상반기
+  - 속도 향상: cocoapods -> SPM, Swift UI 적용, TBD 적용
+  - 안정성 향상: [TDD 적용](https://medium.com/@talq44/ios-개발자의-쉽게-쓰는-테스트코드-tdd의-생활화-1-구조와-방식-c5609aa8b886)
+  - 원활한 공유: 테크스팩 작성, 배포 공유 자동화, 프리뷰
+- 2023년 하반기
+  - 프로세스 개선: 브랜치 룰 개선, CI/CD 개선
+  - 아키텍처 개선: MVVM(MVI에 가까운), 클린아키텍처
+  - 모듈화: 계층 분리, 기능별 배포
+  - 데이터 수집 강화: GA강화, CI/CD 데이터 수집
+  - [관련 블로그](https://medium.com/bejewel/app팀은-이렇게-일해요-1-팀장의-일상-1eb969fcf694)
+
+### 기타
+- 월 1회 1:1 진행
+- 개인별 목표 설정 및 평가 진행
+- TIL(Today I Learned) 공유 진행
+- 데일리 스탠드업 미팅 진행
+  - 스크럼 단위로 확장 진행
+
+## iOS 파트 매니져
+### 개요
+- 팀원: iOS 3
+- 기간: 2022.09 ~ 2023.09
+
+### 주요 성과
+- ReactorKit 적용을 통한 화면 인터페이스 공유
+- 커스텀 브랜치 룰에서 Git Flow 적용
+- CI/CD 중 빌드테스트, 배포 타이밍 결정 주도
+- 내부 배포 자동화
