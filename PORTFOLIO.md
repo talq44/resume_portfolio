@@ -23,8 +23,8 @@
 gantt
   dateFormat  YYYY-MM
   section Language
-  Swift :i3, 2018-03, 2025-01
-  typeScript :a1, 2024-10, 2024-12
+  Swift :i3, 2018-03, 2025-02
+  typeScript :a1, 2024-10, 2025-02
   typeScript :a1, 2019-04, 2020-01
   Objective-c :l5, 2015-08, 2019-02
   MFC(c++) :l3, 2014-03, 2015-04
@@ -32,26 +32,26 @@ gantt
   Android(Java) :l1, 2011-09, 2016-06
 
   section Architecture
-  MVVM :a1, 2020-05, 2025-01
-  TMA: a5, 2024-01, 2025-01
-  MVI :a2, 2022-07, 2025-01
-  Clean Architecture :a1, 2022-01, 2025-01
+  MVVM :a1, 2020-05, 2025-02
+  TMA: a5, 2024-01, 2025-02
+  MVI :a2, 2022-07, 2025-02
+  Clean Architecture :a1, 2022-01, 2025-02
   VIPER: a4, 2020-06, 2022-06
   Ribs: a4, 2020-06, 2022-09
   MVC : a3, 2015-05, 2020-12
 
   section UI
-  SwiftUI : c1, 2023-07, 2024-12
+  SwiftUI : c1, 2023-07, 2025-02
   PinLayout/FlexLayout : u3, 2022-03, 2022-07
   SnapKit : c3, 2020-01, 2025-01
-  AutoLayout : c2, 2016-07, 2025-01
+  AutoLayout : c2, 2016-07, 2025-02
   Autoresizing Mask : u2, 2015-09, 2017-03
   StoryBoard : u1, 2015-09, 2023-01
 
   section Asynchronous
-  Async/Await: r3, 2022-07, 2025-01
-  Combine: r2, 2020-02, 2025-01
-  RxSwift: r1, 2019-07, 2025-01
+  Async/Await: r3, 2022-07, 2025-02
+  Combine: r2, 2020-02, 2025-02
+  RxSwift: r1, 2019-07, 2025-02
 
   section Analytics/Ad
   AirBridge : s3, 2023-01, 2024-12
@@ -59,11 +59,11 @@ gantt
   Braze : s2, 2021-07, 2024-12
   Google Ads: aa2, 2019-11, 2021-06
   IGAWorks : aa1, 2017-10, 2021-06
-  FireBase(GoogleAnayltics) : s2, 2016-12, 2025-01
+  FireBase(GoogleAnayltics) : s2, 2016-12, 2025-02
 
   section Tools
-  Xcode-cloud: t6, 2022-06, 2025-01
-  Github-Action: t6, 2022-01, 2025-01
+  Xcode-cloud: t6, 2022-06, 2025-02
+  Github-Action: t6, 2022-01, 2025-02
   Slack: t5, 2021-07, 2024-12
   Jira: t4, 2021-02, 2024-12
   Figma: t3, 2020-07, 2025-01
@@ -93,6 +93,12 @@ gantt
 # 비주얼
 
 ## 구매전환 개선 스크럼
+<div>
+<img src="asset/amondz/IMG_0253.png" alt="이미지1" style="width: 24%; height: auto;" />
+<img src="asset/amondz/IMG_0254.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/IMG_0251.png" alt="이미지2" style="width: 24%; height: auto;" />
+</div>
+
 ### 개요
 - 목표: 구매전환 개선을 위한 상품상세, 옵션선택, 장바구니 개선
 - 기간: 2024.09 ~ 2024.11
@@ -339,6 +345,36 @@ flowchart TD
 
 <br>
 
+## cocoadpos -> SPM 이전
+### 개요
+- 목표: 모듈 분리와 Tuist 적용을 쉽게 하기 위한 Cocoapods -> SPM 이전
+- 기간: 2023.06 ~ 2023.11
+- 규모: iOS 1, PO 1, QA 1
+- 역할: iOS 메인 개발
+
+### 주요 기술
+- Modular Architecture, SPM
+
+### 도전 과제 및 해결 방법
+- 홈 도메인에 지속적인 기능 추가와 검증을 위한 모듈 분리
+  - Common Layer와 Shared Layer의 분리
+  - API 모듈 분리
+  - 이후 Feature Layer에 홈 도메인 모듈 분리
+
+### 주요 성과
+- CI 시간 단축
+  - 15분 -> 10분 으로 감소
+- 관리되지 않던 SDK 버전 업데이트 진행
+- Tuist 쉽게 적용 할 수 있는 토대 완성
+
+### 배운점/아쉬운점
+- 버전 향상이 필요한 이유에 대해 개발자를 제외한 전반적인 팀원과 내용 공유
+- 최신 버전 유지에 대한 공감대 형성 및 자연스러운 업데이트 문화 장착
+
+-----
+
+<br>
+
 ## 홈 모듈 분리
 ### 개요
 - 목표: 홈 도메인의 빠른 기능 개발 및 검증을 위한 모듈 분리
@@ -347,7 +383,7 @@ flowchart TD
 - 역할: iOS 메인 개발
 
 ### 주요 기술
-- Modular Architecture, Coordinator 패턴
+- Modular Architecture, Coordinator 패턴, Snapshot test
 
 ### 도전 과제 및 해결 방법
 - 홈 도메인에 지속적인 기능 추가와 검증을 위한 모듈 분리
@@ -516,6 +552,14 @@ flowchart TD
 - 개발자의 역할뿐만 아니라 개선을 위한 주도적 리딩 시작
 
 ## 카테고리 세분화
+
+<div>
+<img src="asset/amondz/image57.png" alt="이미지1" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image63.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image72.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image53.png" alt="이미지2" style="width: 24%; height: auto;" />
+</div>
+
 ### 개요
 
 - 목표: 카테고리 및 카테고리 상세화면 세분화 및 아날리틱스 추가
@@ -656,6 +700,14 @@ flowchart TD
 <br>
 
 ## 취소 반품 교환 리뉴얼
+
+<div>
+<img src="asset/amondz/image44.png" alt="이미지1" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image46.png" alt="이미지2" style="width: 24%; height: auto;" />
+
+</div>
+
+
 ### 개요
 - 목표: 취소/반품/교환 화면 리뉴얼
 - 기간: 2022.03 ~ 2022.05
@@ -726,6 +778,14 @@ flowchart TD
 <br>
 
 ## 아몬즈 홈 리뉴얼
+
+<div>
+<img src="asset/amondz/image74.png" alt="이미지1" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image68.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image58.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image50.png" alt="이미지2" style="width: 24%; height: auto;" />
+</div>
+
 ### 개요
 - 목표: 홈에 사용중인 타입 개편 및 서브 홈 제작
 - 기간: 2021.11 ~ 2022.03
@@ -791,6 +851,14 @@ flowchart TD
 <br>
 
 ## 아몬즈 풀필먼트(오늘 출발) 추가
+
+<div>
+<img src="asset/amondz/image2.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image49.png" alt="이미지1" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image48.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image71.png" alt="이미지2" style="width: 24%; height: auto;" />
+
+</div>
 
 ### 개요
 - 목표: 상품 목록 노출, 필터 추가, 상세페이지 오늘출발 노출을 통한 풀필먼트 기능 추가 
@@ -966,6 +1034,14 @@ flowchart TD
 <img src="asset/enjoyjtour/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
 </div>
 
+<br>
+
+<div style="display: flex; justify-content: space-between;">
+<img src="asset/enjoyjtour/image1.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+<img src="asset/enjoyjtour/image2.png" alt="이미지1" style="width: 45%; height: auto;" />
+</div>
+
 ### 개요
 - 목표: 일본 내 숙소 예약용 페이지 제작
 - 규모: Android 1, iOS 1, web 2, back-end 1
@@ -988,6 +1064,43 @@ flowchart TD
 
 <br>
 
+## Celebalarm
+
+<div style="display: flex; justify-content: space-between;">
+<img src="asset/celebalarm/image1.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+<img src="asset/celebalarm/image2.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+</div>
+<br>
+<div style="display: flex; justify-content: space-between;">
+<img src="asset/celebalarm/image3.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+<img src="asset/celebalarm/image4.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+</div>
+
+### 개요
+- 목표: 삼성에서 제공하는 셀럽보이스의 소개용 마이크로페이지 제작
+- 규모: Android 1, web 1, back-end 1
+- 역할: web 개발 담당
+
+### 주요 기술
+- typescript, Angular2
+
+### 주요 성과
+- 마이크로페이지 제공
+- 파이어베이스를 통한 유저 진입율 파악
+
+### 배운점
+- 웹개발의 흐름(ex. promise) 앱 개발과의 비슷한 방식을 파악
+- typescript를 통한 개발 가능 확인
+- 반응형 UI도 일부 필요하다는것을 느낌
+
+-----
+
+<br>
+
 ## [스마트이미지](https://apps.apple.com/kr/app/smartimages/id889795772)
 <div style="display: flex; justify-content: space-between;">
 <img src="asset/smartimage/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
@@ -995,6 +1108,7 @@ flowchart TD
 <img src="asset/smartimage/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
 <img src="asset/smartimage/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
 </div>
+
 
 ### 개요
 - 목표: 저작권 있는 유료이미지(스톡) 등록 및 판매
