@@ -516,6 +516,14 @@ flowchart TD
 - 개발자의 역할뿐만 아니라 개선을 위한 주도적 리딩 시작
 
 ## 카테고리 세분화
+
+<div>
+<img src="asset/amondz/image57.png" alt="이미지1" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image63.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image72.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image53.png" alt="이미지2" style="width: 24%; height: auto;" />
+</div>
+
 ### 개요
 
 - 목표: 카테고리 및 카테고리 상세화면 세분화 및 아날리틱스 추가
@@ -726,6 +734,14 @@ flowchart TD
 <br>
 
 ## 아몬즈 홈 리뉴얼
+
+<div>
+<img src="asset/amondz/image74.png" alt="이미지1" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image68.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image58.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image50.png" alt="이미지2" style="width: 24%; height: auto;" />
+</div>
+
 ### 개요
 - 목표: 홈에 사용중인 타입 개편 및 서브 홈 제작
 - 기간: 2021.11 ~ 2022.03
@@ -791,6 +807,14 @@ flowchart TD
 <br>
 
 ## 아몬즈 풀필먼트(오늘 출발) 추가
+
+<div>
+<img src="asset/amondz/image2.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image49.png" alt="이미지1" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image48.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/image71.png" alt="이미지2" style="width: 24%; height: auto;" />
+
+</div>
 
 ### 개요
 - 목표: 상품 목록 노출, 필터 추가, 상세페이지 오늘출발 노출을 통한 풀필먼트 기능 추가 
@@ -966,6 +990,14 @@ flowchart TD
 <img src="asset/enjoyjtour/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
 </div>
 
+<br>
+
+<div style="display: flex; justify-content: space-between;">
+<img src="asset/enjoyjtour/image1.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+<img src="asset/enjoyjtour/image2.png" alt="이미지1" style="width: 45%; height: auto;" />
+</div>
+
 ### 개요
 - 목표: 일본 내 숙소 예약용 페이지 제작
 - 규모: Android 1, iOS 1, web 2, back-end 1
@@ -988,6 +1020,43 @@ flowchart TD
 
 <br>
 
+## Celebalarm
+
+<div style="display: flex; justify-content: space-between;">
+<img src="asset/celebalarm/image1.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+<img src="asset/celebalarm/image2.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+</div>
+<br>
+<div style="display: flex; justify-content: space-between;">
+<img src="asset/celebalarm/image3.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+<img src="asset/celebalarm/image4.png" alt="이미지1" style="width: 45%; height: auto;" />
+
+</div>
+
+### 개요
+- 목표: 삼성에서 제공하는 셀럽보이스의 소개용 마이크로페이지 제작
+- 규모: Android 1, web 1, back-end 1
+- 역할: web 개발 담당
+
+### 주요 기술
+- typescript, Angular2
+
+### 주요 성과
+- 마이크로페이지 제공
+- 파이어베이스를 통한 유저 진입율 파악
+
+### 배운점
+- 웹개발의 흐름(ex. promise) 앱 개발과의 비슷한 방식을 파악
+- typescript를 통한 개발 가능 확인
+- 반응형 UI도 일부 필요하다는것을 느낌
+
+-----
+
+<br>
+
 ## [스마트이미지](https://apps.apple.com/kr/app/smartimages/id889795772)
 <div style="display: flex; justify-content: space-between;">
 <img src="asset/smartimage/image_01.png" alt="이미지1" style="width: 24%; height: auto;" />
@@ -995,6 +1064,7 @@ flowchart TD
 <img src="asset/smartimage/image_03.png" alt="이미지3" style="width: 24%; height: auto;" />
 <img src="asset/smartimage/image_04.png" alt="이미지3" style="width: 24%; height: auto;" />
 </div>
+
 
 ### 개요
 - 목표: 저작권 있는 유료이미지(스톡) 등록 및 판매
