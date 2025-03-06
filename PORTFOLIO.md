@@ -15,7 +15,18 @@
 ### 정보
 - Github : https://github.com/talq44 / https://github.com/bejewel-changkyu
 - 개인블로그 : https://medium.com/@talq44
+
 <br><br>
+
+### 스타일
+
+<div>
+<img src="asset/contributor/git_2022.png" alt="이미지1"/>
+<img src="asset/contributor/git_2023.png" alt="이미지1"/>
+<img src="asset/contributor/git_2024.png" alt="이미지1"/>
+</div>
+
+- 지속적이며 점진적인 개발로 꾸준히 나아가기 위해 노력합니다.
 
 # 기술 스택
 
@@ -87,6 +98,15 @@ gantt
   section 인턴/계약직
   강원대학교 :a2, 2011-09, 2013-03
 ```
+
+Company | Entry Date | Leave Date | Team / Position | Form
+--------|------------|------------|----------|----------------
+비주얼 | 2021-07    | 2024-12    | Client팀 / 팀장  | 정규직
+하나모바일    | 2018-01    | 2021-06    | iOS개발팀 / 과장 | 정규직
+새움테크   | 2015-05    | 2018-01    | App개발팀 / 대리 | 정규직
+유니텍         | 2014-07    | 2015-04    | 어뢰사업부 / 사원 | 정규직
+강원대학교_정보화본부   | 2012-09    | 2013-03    | 정보화본부 / 계약직 | 계약직
+강원대학교_전산원 | 2011-09 | 2012-08 | App개발 / 인턴 | 인턴
 
 <br><br>
 
