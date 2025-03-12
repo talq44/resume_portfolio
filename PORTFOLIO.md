@@ -104,9 +104,9 @@ Company | Entry Date | Leave Date | Team / Position | Form
 
 ## 구매전환 개선 스크럼
 <div>
-<img src="asset/amondz/IMG_0253.png" alt="이미지1" style="width: 24%; height: auto;" />
-<img src="asset/amondz/IMG_0254.png" alt="이미지2" style="width: 24%; height: auto;" />
-<img src="asset/amondz/IMG_0251.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/img0253.png" alt="이미지1" style="width: 24%; height: auto;" />
+<img src="asset/amondz/img0254.png" alt="이미지2" style="width: 24%; height: auto;" />
+<img src="asset/amondz/img0251.png" alt="이미지2" style="width: 24%; height: auto;" />
 </div>
 
 ### 개요
