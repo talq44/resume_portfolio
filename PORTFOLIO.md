@@ -103,11 +103,6 @@ Company | Entry Date | Leave Date | Team / Position | Form
 # 비주얼
 
 ## 구매전환 개선 스크럼
-<div>
-<img src="asset/amondz/img0253.png" alt="이미지1" style="width: 24%; height: auto;" />
-<img src="asset/amondz/img0254.png" alt="이미지2" style="width: 24%; height: auto;" />
-<img src="asset/amondz/img0251.png" alt="이미지2" style="width: 24%; height: auto;" />
-</div>
 
 ### 개요
 - 목표: 구매전환 개선을 위한 상품상세, 옵션선택, 장바구니 개선
