@@ -1,4 +1,4 @@
-# 서비스와 함께 성장하는 개발자 박창규 입니다.
+# 안된다는 핑계 대신, 해내는 방법을 찾는 개발자 박창규입니다.
 
 ## 자기 소개
 
@@ -13,9 +13,8 @@
 
 서비스와 함께 성장하며, 발맞추어 나가는 것을 넘어 한 걸음 앞서기 위해 끊임없이 노력하는 iOS 개발자, 박창규입니다.
 
-### 정보
-- Github : https://github.com/talq44 / https://github.com/bejewel-changkyu
-- 개인블로그 : https://medium.com/@talq44
+### 학력
+- 강원대학교 정보통신공학전공 학부 졸업 (2007.03 ~ 2014.02)
 
 ### 기술 스택
 
@@ -26,8 +25,10 @@
 - Amplitude, Braze, Airbridge, Firebase(Google Analytics)
 - Github Action, Xcode Cloud
 
-### 학력
-- 강원대학교 정보통신공학전공 학부 졸업 (2007.03 ~ 2014.02)
+### 정보
+- Github : https://github.com/talq44 / https://github.com/bejewel-changkyu
+- 개인블로그 : https://medium.com/@talq44
+
  
 ## 경력 사항
 - 총 경력: 11년 + @
