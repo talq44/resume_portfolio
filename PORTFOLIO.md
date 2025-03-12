@@ -24,8 +24,8 @@
 gantt
   dateFormat  YYYY-MM
   section Language
-  Swift :i3, 2018-03, 2025-02
-  typeScript :a1, 2024-10, 2025-02
+  Swift :i3, 2018-03, 2025-03
+  typeScript :a1, 2024-10, 2025-03
   typeScript :a1, 2019-04, 2020-01
   Objective-c :l5, 2015-08, 2019-02
   MFC(c++) :l3, 2014-03, 2015-04
@@ -33,26 +33,26 @@ gantt
   Android(Java) :l1, 2011-09, 2016-06
 
   section Architecture
-  MVVM :a1, 2020-05, 2025-02
-  TMA: a5, 2024-01, 2025-02
-  MVI :a2, 2022-07, 2025-02
-  Clean Architecture :a1, 2022-01, 2025-02
+  MVVM :a1, 2020-05, 2025-03
+  TMA: a5, 2024-01, 2025-03
+  MVI :a2, 2022-07, 2025-03
+  Clean Architecture :a1, 2022-01, 2025-03
   VIPER: a4, 2020-06, 2022-06
   Ribs: a4, 2020-06, 2022-09
   MVC : a3, 2015-05, 2020-12
 
   section UI
-  SwiftUI : c1, 2023-07, 2025-02
+  SwiftUI : c1, 2023-07, 2025-03
   PinLayout/FlexLayout : u3, 2022-03, 2022-07
-  SnapKit : c3, 2020-01, 2025-01
-  AutoLayout : c2, 2016-07, 2025-02
+  SnapKit : c3, 2020-01, 2025-03
+  AutoLayout : c2, 2016-07, 2025-03
   Autoresizing Mask : u2, 2015-09, 2017-03
   StoryBoard : u1, 2015-09, 2023-01
 
   section Asynchronous
-  Async/Await: r3, 2022-07, 2025-02
-  Combine: r2, 2020-02, 2025-02
-  RxSwift: r1, 2019-07, 2025-02
+  Async/Await: r3, 2022-07, 2025-03
+  Combine: r2, 2020-02, 2025-03
+  RxSwift: r1, 2019-07, 2025-03
 
   section Analytics/Ad
   AirBridge : s3, 2023-01, 2024-12
@@ -60,11 +60,11 @@ gantt
   Braze : s2, 2021-07, 2024-12
   Google Ads: aa2, 2019-11, 2021-06
   IGAWorks : aa1, 2017-10, 2021-06
-  FireBase(GoogleAnayltics) : s2, 2016-12, 2025-02
+  FireBase(GoogleAnayltics) : s2, 2016-12, 2025-03
 
   section Tools
-  Xcode-cloud: t6, 2022-06, 2025-02
-  Github-Action: t6, 2022-01, 2025-02
+  Xcode-cloud: t6, 2022-06, 2025-03
+  Github-Action: t6, 2022-01, 2025-03
   Slack: t5, 2021-07, 2024-12
   Jira: t4, 2021-02, 2024-12
   Figma: t3, 2020-07, 2025-01
