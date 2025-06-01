@@ -35,6 +35,7 @@
 
 Company | Entry Date | Leave Date | Team / Position | Form
 --------|------------|------------|----------|----------------
+[버블탭](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%EB%B9%84%EC%A3%BC%EC%96%BC) | 2025-03    | 재직중    | 앱서비스팀 / 팀원  | 정규직
 [비주얼](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#%EB%B9%84%EC%A3%BC%EC%96%BC) | 2021-07    | 2024-12    | Client팀 / 팀장  | 정규직
 [하나모바일](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#하나모바일)    | 2018-01    | 2021-06    | iOS개발팀 / 과장 | 정규직
 [새움테크](https://github.com/talq44/resume_portfolio/blob/main/PORTFOLIO.md#새움테크)    | 2015-05    | 2018-01    | App개발팀 / 대리 | 정규직
