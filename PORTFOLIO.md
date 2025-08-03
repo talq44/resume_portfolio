@@ -24,7 +24,7 @@
 gantt
   dateFormat  YYYY-MM
   section Language
-  Swift :i3, 2018-03, 2025-06
+  Swift :i3, 2018-03, 2025-08
   typeScript :a1, 2024-10, 2025-01
   typeScript :a1, 2019-04, 2020-01
   Objective-c :l5, 2015-08, 2019-02
@@ -33,43 +33,43 @@ gantt
   Android(Java) :l1, 2011-09, 2016-06
 
   section Architecture
-  MVVM :a1, 2020-05, 2025-06
-  TMA: a5, 2024-01, 2025-06
-  MVI :a2, 2022-07, 2025-06
-  Clean Architecture :a1, 2022-01, 2025-06
+  MVVM :a1, 2020-05, 2025-08
+  TMA: a5, 2024-01, 2025-08
+  MVI :a2, 2022-07, 2025-08
+  Clean Architecture :a1, 2022-01, 2025-08
   VIPER: a4, 2020-06, 2022-06
   Ribs: a4, 2020-06, 2022-09
   MVC : a3, 2015-05, 2020-12
 
   section UI
-  SwiftUI : c1, 2023-07, 2025-06
+  SwiftUI : c1, 2023-07, 2025-08
   PinLayout/FlexLayout : u3, 2022-03, 2022-07
-  SnapKit : c3, 2020-01, 2025-06
-  AutoLayout : c2, 2016-07, 2025-06
+  SnapKit : c3, 2020-01, 2025-08
+  AutoLayout : c2, 2016-07, 2025-08
   Autoresizing Mask : u2, 2015-09, 2017-03
   StoryBoard : u1, 2015-09, 2023-01
 
   section Asynchronous
   Async/Await: r3, 2022-07, 2025-06
   Combine: r2, 2020-02, 2025-06
-  RxSwift: r1, 2019-07, 2025-06
+  RxSwift: r1, 2019-07, 2025-08
 
   section Analytics/Ad
-  AirBridge : s3, 2023-01, 2025-06
+  AirBridge : s3, 2023-01, 2025-08
   Ampltude : s2, 2022-03, 2024-12
   Braze : s2, 2021-07, 2024-12
   Google Ads: aa2, 2019-11, 2021-06
   IGAWorks : aa1, 2017-10, 2021-06
-  FireBase(GoogleAnayltics) : s2, 2016-12, 2025-06
+  FireBase(GoogleAnayltics) : s2, 2016-12, 2025-08
 
   section Tools
-  Xcode-cloud: t6, 2022-06, 2025-06
+  Xcode-cloud: t6, 2022-06, 2025-08
   Github-Action: t6, 2022-01, 2025-06
-  Slack: t5, 2021-07, 2025-06
+  Slack: t5, 2021-07, 2025-08
   Jira: t4, 2021-02, 2024-12
-  Figma: t3, 2020-07, 2025-06
+  Figma: t3, 2020-07, 2025-08
   Zeplin: t2, 2018-07, 2025-01
-  Git: t1, 2016-06, 2025-06
+  Git: t1, 2016-06, 2025-08
   SVN: t0, 2011-09, 2019-02
 ```
 
@@ -81,7 +81,7 @@ gantt
 gantt
   dateFormat  YYYY-MM
   section 정규직
-  버블탭 :i4, 2025-03, 2025-07
+  버블탭 :i4, 2025-03, 2025-08
   비주얼 :i3, 2021-07, 2025-01
   탭글로벌 :i2, 2018-08, 2019-07
   하나모바일 :i2, 2018-01, 2021-06
@@ -107,7 +107,7 @@ Company | Entry Date | Leave Date | Team / Position | Form
 ## 팅글챗 서비스 분리 및 배포
 ### 개요
 - 목표: 1소스 2앱 제공을 위한 구조 확립
-- 기간: 2025.03 ~ 2025.05
+- 기간: 2025.03 ~ 2025.06
 - 규모: Android 1, iOS 1, web 1, Back-end 1, Design 1
 - 역할: iOS 개발
 
