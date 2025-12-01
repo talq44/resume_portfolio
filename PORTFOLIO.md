@@ -18,6 +18,18 @@
 
 <br><br>
 
+## GitHub 활동
+- 최근 3년 총 6,129 contributions(2022: 370 / 2023: 2,363 / 2024: 3,396)
+- 프로필: https://github.com/talq44 | https://github.com/bejewel-changkyu
+
+<div style="display: flex; gap: 12px; flex-wrap: wrap;">
+  <img src="asset/contributor/git_2022.png" alt="2022 GitHub contribution heatmap" style="width: 32%; min-width: 280px; height: auto;" />
+  <img src="asset/contributor/git_2023.png" alt="2023 GitHub contribution heatmap" style="width: 32%; min-width: 280px; height: auto;" />
+  <img src="asset/contributor/git_2024.png" alt="2024 GitHub contribution heatmap" style="width: 32%; min-width: 280px; height: auto;" />
+</div>
+
+<br><br>
+
 # 기술 스택
 
 ``` mermaid
